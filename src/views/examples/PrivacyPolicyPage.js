@@ -1,6 +1,6 @@
 // import React, { useEffect, useState, StyleSheet } from "react";
 import React, { useEffect } from "react";
-import { headerScrolling } from "./commons";
+
 import OtherNavbar from "../../components/NavBars/OtherNavbar";
 import DarkFooter from "../../components/Footers/DarkFooter";
 // import { Container } from "reactstrap";
@@ -14,12 +14,6 @@ import LandingPageHeader from "../../components/Headers/LandingPageHeader";
 const PrivacyPolicyPage = () => {
     const message = "Privacy Policy";
 
-    useEffect(() => {
-        headerScrolling();
-      });
-
-      
-
     return (
         <>
           <OtherNavbar />
@@ -30,29 +24,29 @@ const PrivacyPolicyPage = () => {
             contentClassName={"content-center-other-pages"}
             titleClassName={"title-small-header"}
             />
-            
+
             <div style={styles.ContainerStyle} >
                 <div style={styles.IntroductionTitleStyle}>Introduction</div>
                 <div style={styles.IntroductionStyle}>
-                    This privacy policy is to provide information to you, our patient, on how your personal information (which includes your health information) is collected and used within our practice, and the circumstances in which we may share it with third parties. 
+                    This privacy policy is to provide information to you, our patient, on how your personal information (which includes your health information) is collected and used within our practice, and the circumstances in which we may share it with third parties.
                 </div>
-            
 
 
 
-                
+
+
 
 
                 <div>
                     <btn style={styles.btn} id="Question1">
                         Why and when your consent is necessary?
                     </btn>
-                    
+
                     <UncontrolledCollapse toggler="#Question1">
-                        
+
                         <Card>
                             <CardBody>
-                                <ul style={styles.LineStyle}> 
+                                <ul style={styles.LineStyle}>
                                     <p> When you register as a patient of our practice, you provide consent for our GPs and practice staff to access and use your personal information so they can provide you with the best possible healthcare. Only staff who need to see your personal information will have access to it. If we need to use your information for anything else, we will seek additional consent from you to do this. </p>
                                 </ul>
                             </CardBody>
@@ -62,7 +56,7 @@ const PrivacyPolicyPage = () => {
 
                 <div>
                     <btn style={styles.btn}  id="Question2" block>
-                        Why do we collect, use, hold and share your personal information? 
+                        Why do we collect, use, hold and share your personal information?
                     </btn>
                     <UncontrolledCollapse toggler="#Question2">
                         <Card>
@@ -77,7 +71,7 @@ const PrivacyPolicyPage = () => {
 
                 <div>
                     <btn style={styles.btn} id="Question3">
-                    What personal information do we collect? 
+                    What personal information do we collect?
                     </btn>
                     <UncontrolledCollapse toggler="#Question3">
                         <Card>
@@ -97,7 +91,7 @@ const PrivacyPolicyPage = () => {
 
                 <div>
                     <btn style={styles.btn} id="Question4">
-                    Dealing with us anonymously 
+                    Dealing with us anonymously
                     </btn>
                     <UncontrolledCollapse toggler="#Question4">
                         <Card>
@@ -112,7 +106,7 @@ const PrivacyPolicyPage = () => {
 
                 <div>
                     <btn style={styles.btn} id="Question5">
-                    How do we collect your personal information? 
+                    How do we collect your personal information?
                     </btn>
                     <UncontrolledCollapse toggler="#Question5">
                         <Card>
@@ -185,8 +179,8 @@ const PrivacyPolicyPage = () => {
                         <Card>
                             <CardBody>
                                 <ul style={styles.LineStyle}>
-                                    <p>You have the right to request access to, and correction of, your personal information.</p> 
-                                    <p>Our practice acknowledges patients may request access to their medical records. We require you to put this request in writing and our practice will respond within 30 days or another reasonable time discussed with the practice manager. To transfer your records to another practice we charge $22.00 for pensioners and $33.00 for all other patients. This covers the cost of staff time, equipment used and postage to the chosen clinic or practitioner.</p> 
+                                    <p>You have the right to request access to, and correction of, your personal information.</p>
+                                    <p>Our practice acknowledges patients may request access to their medical records. We require you to put this request in writing and our practice will respond within 30 days or another reasonable time discussed with the practice manager. To transfer your records to another practice we charge $22.00 for pensioners and $33.00 for all other patients. This covers the cost of staff time, equipment used and postage to the chosen clinic or practitioner.</p>
                                     <p>Individuals have an enforceable right of access to their health information under the Victorian Health Records Act 2001. The act enables an individual to request health information collected on or after 1 July 2002 in a number of ways. Access can be way of:</p>
                                     <p>•    A printout of information for inspection and opportunity to take notes</p>
                                     <p>•    A provision of a copy of the health information</p>
@@ -199,7 +193,7 @@ const PrivacyPolicyPage = () => {
                                                     <th>{['The maximum fee is…']}</th>
                                                 </tr>
                                             </thead>
-                                            
+
                                             <thead>
                                                 <tr>
                                                     <td >{['Provide a copy of health records to the person (under schedule 1, item 3, a &amp; b)']}</td>
@@ -228,7 +222,7 @@ const PrivacyPolicyPage = () => {
                         </Card>
                     </UncontrolledCollapse>
                 </div>
-                
+
                 <div>
                     <btn style={styles.btn} id="Question9">
                     How can you lodge a privacy-related complaint, and how will the complaint be handled at our practice?
@@ -255,9 +249,9 @@ const PrivacyPolicyPage = () => {
                     <p style={styles.SignStyleLine}><h style={{fontWeight: 'bold'}}>Document title:</h> GPS 001 Privacy Policy</p>
                     <p style={styles.SignStyleLine}><h style={{fontWeight: 'bold'}}>Reviewed by:</h> Annette Baumgarten – Practice Manager</p>
                     <p style={styles.SignStyleLine}><h style={{fontWeight: 'bold'}}>Version:</h> 2020/001 Effective Date: 16 th January 2020</p>
-                    <p style={styles.SignStyleLine}><h style={{fontWeight: 'bold'}}>Next Review Date:</h> 16 th January 2021</p> 
+                    <p style={styles.SignStyleLine}><h style={{fontWeight: 'bold'}}>Next Review Date:</h> 16 th January 2021</p>
                 </div>
-            
+
             </div>
           </div>
           <DarkFooter />
@@ -276,7 +270,7 @@ btn:{
     fontSize:20,
     backgroundColor: '#4085F4',
     display: 'block',
-    
+
     marginTop: 20,
     paddingTop:20,
     paddingBottom:20,
@@ -296,7 +290,7 @@ ContainerStyle:{
     justifyContent: 'center',
     fontSize: 20,
     textAlign: 'justify',
-    
+
     },
 IntroductionTitleStyle:{
 
@@ -304,7 +298,7 @@ IntroductionTitleStyle:{
     fontSize: 30,
     textAlign: 'center',
     marginBottom: 50,
-    // backgroundColor: '#4085F4', 
+    // backgroundColor: '#4085F4',
     // color:'white',
 
 },
@@ -315,7 +309,7 @@ IntroductionStyle:{
     //textAlign: 'justify',
     marginBottom: 50,
     marginLeft:10,
-    marginRight:10,    
+    marginRight:10,
 },
 
 LineStyle:{
@@ -327,7 +321,7 @@ SignStyle:{
     marginTop: 120,
     marginLeft:10,
     textAlign: 'right',
-   
+
 },
 
 SignStyleLine:{

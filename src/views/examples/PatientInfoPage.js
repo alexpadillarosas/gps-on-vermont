@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import { Link } from "react-router-dom";
 import OtherNavbar from "../../components/NavBars/OtherNavbar";
-import { headerScrolling } from "./commons";
+
 import patientsInfo from "../../data/patientsInfo-content";
 import InfoCard from "../../components/General/InfoCard";
 import BookingButton from "../../components/General/BookingButton";
@@ -11,10 +11,6 @@ import LandingPageHeader from "../../components/Headers/LandingPageHeader";
 
 const PatientInfoPage = () => {
   const message = "Patients Information";
-
-  useEffect(() => {
-    headerScrolling();
-  });
 
   return (
     <>

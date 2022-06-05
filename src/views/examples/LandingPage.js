@@ -15,7 +15,6 @@ import LandingPageHeader from "../../components/Headers/LandingPageHeader.js";
 import HomeNavbar from "../../components/NavBars/HomeNavbar";
 import newsContent from "../../data/news-content";
 import staffContent from "../../data/staff-content";
-import { headerScrolling } from "./commons";
 // import Announcement from "../../components/General/Announcement";
 import TeleHealth from "../../components/General/TeleHealth";
 import SearchNews from "../../components/General/SearchNews";
@@ -30,11 +29,6 @@ function LandingPage() {
   // const telehealth = "gpv-telehealth.png"
   const landingPagePreviewNews = newsContent.filter( news => news.enabled );
   //const enabledNews = newsContent.filter( emp => emp.enabled );
-
-
-  useEffect(() => {
-    headerScrolling();
-  });
 
   let seeMoreComponent = (
     <Row>
@@ -57,19 +51,19 @@ function LandingPage() {
           imageClassName={"page-header page-header-small"}
           contentClassName={"content-center"}
           titleClassName={"title-landing-page"}
-          
+
         />
 {/* <a href={`https://www.hotdoc.com.au/medical-centres/wodonga-VIC-3690/gps-on-vermont/doctors/`}
-          title="Book medical appointments with Dr Carmen Padilla at GPs On Vermont Medical Centre in Wodonga VIC 3690, through HotDoc" 
-          target="_blank" 
-          data-hotdoc-widget="lightbox" 
+          title="Book medical appointments with Dr Carmen Padilla at GPs On Vermont Medical Centre in Wodonga VIC 3690, through HotDoc"
+          target="_blank"
+          data-hotdoc-widget="lightbox"
           data-hotdoc-button class={` icon-calendar`}
           // data-hotdoc-button class={`large icon-calendar`}
           >Book Appointment</a> */}
         <div className="section section-about-us" >
           <Container >
           {/* ${doctorId}   ${size}*/}
-          
+
 
             <BarButtonsLandPageHeader />
             <Row>
@@ -128,7 +122,7 @@ function LandingPage() {
               <Col sm="12" md="6" lg="6" >
                 <Announcement />
               </Col>
-            </Row> 
+            </Row>
             <Row >
               <Col sm="12" md="8" lg="8" className={"ml-auto mr-auto"}>
               <h5 className="description text-center">
@@ -152,7 +146,7 @@ function LandingPage() {
               </Col>
             </Row>
 
-            
+
           </Container>
         </div>
 
@@ -168,9 +162,9 @@ function LandingPage() {
               <Col sm="12" md="6" lg="3" className="ml-auto mr-auto text-center align-self-center" >
                 <SearchNews />
               </Col>
-              
+
             </Row>
-            
+
             <NewsCardsPreview news={landingPagePreviewNews} start={0} quantity={6} bottomComponent={seeMoreComponent} />
           </Container>
         </div>

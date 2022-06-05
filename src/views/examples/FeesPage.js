@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import OtherNavbar from "../../components/NavBars/OtherNavbar";
-import { headerScrolling } from "./commons";
+
 import { Container } from "reactstrap";
 import TableData from "../../components/General/TableData";
 import feeContent from "../../data/fees-content";
@@ -10,10 +10,6 @@ import LandingPageHeader from "../../components/Headers/LandingPageHeader";
 
 const FeesPage = () => {
   const message = "";
-
-  useEffect(() => {
-    headerScrolling();
-  });
 
   return (
     <>
@@ -37,7 +33,7 @@ const FeesPage = () => {
             />
           </Container>
           ))}
-          
+
         </div>
       </div>
       <DarkFooter />

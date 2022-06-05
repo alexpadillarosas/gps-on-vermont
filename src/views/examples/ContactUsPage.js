@@ -11,7 +11,7 @@ import {
   Badge
 } from "reactstrap";
 import Iframe from "react-iframe";
-import { headerScrolling } from "./commons";
+
 import IconNumber from "../../components/General/IconNumber";
 import BookingButton from "../../components/General/BookingButton";
 import DarkFooter from "../../components/Footers/DarkFooter";
@@ -19,10 +19,6 @@ import IconSocialMediaItem from "../../components/General/IconSocialMediaItem";
 import OtherNavbar from "../../components/NavBars/OtherNavbar";
 
 const ContactUsPage = () => {
-
-  useEffect(() => {
-    headerScrolling();
-  });
 
   return (
     <>
@@ -106,7 +102,7 @@ const ContactUsPage = () => {
                       </div>
                     </div>
                     {/* <hr></hr> */}
-                    
+
                   </CardBody>
                   <CardFooter>
                     {/* phone-badge */}
@@ -169,7 +165,7 @@ const ContactUsPage = () => {
                     </div>
                     {/* <hr className="mt-4"></hr> */}
 
-                    
+
                   </CardBody>
                   <CardFooter  >
                     {/* align-items-center  */}

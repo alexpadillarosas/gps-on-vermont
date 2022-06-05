@@ -4,16 +4,12 @@ import LandingPageHeader from '../../components/Headers/LandingPageHeader';
 import BookingButton from '../../components/General/BookingButton';
 import { Container } from 'reactstrap';
 import NewsCardsPreviewPagination from '../../components/General/NewsCardsPreviewPagination';
-import { headerScrolling } from './commons';
 import DarkFooter from '../../components/Footers/DarkFooter';
 import BackButton from '../../components/General/BackButton';
 
 
 const NewsNavigationPage = ( ) => {
     // const idFound = match.params.range;
-    useEffect(() => {
-        headerScrolling();
-    });
 
     return (
         <>
@@ -28,9 +24,9 @@ const NewsNavigationPage = ( ) => {
                 <div className="section text-center" >
                     <BackButton children={"Go Back"} className="btn-round our-services-go-back-button" />
                     <Container className="text-muted">
-                        
+
                         <NewsCardsPreviewPagination itemsPerPage={9}  />
-                    </Container> 
+                    </Container>
                 </div>
             </div>
             <DarkFooter />

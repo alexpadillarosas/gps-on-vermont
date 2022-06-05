@@ -1,16 +1,12 @@
 import React, { useEffect } from "react";
 import OtherNavbar from "../../components/NavBars/OtherNavbar";
-import { headerScrolling } from "./commons";
+
 import { Container } from "reactstrap";
 import DarkFooter from "../../components/Footers/DarkFooter";
 import LandingPageHeader from "../../components/Headers/LandingPageHeader";
 
 const AfterHoursPage = () => {
   const message = "Please contact";
-
-  useEffect(() => {
-    headerScrolling();
-  });
 
   return (
     <>

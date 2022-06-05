@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import OtherNavbar from "../../components/NavBars/OtherNavbar";
-import { headerScrolling } from "./commons";
+
 import { Container } from "reactstrap";
 import patientsInfo from "../../data/patientsInfo-content";
 import InfoCard from "../../components/General/InfoCard";
@@ -11,10 +11,6 @@ import LandingPageHeader from "../../components/Headers/LandingPageHeader";
 //https://daveceddia.com/pluggable-slots-in-react-components/
 const AppointmentsPage = () => {
   const message = "Schedule now";
-
-  useEffect(() => {
-    headerScrolling();
-  });
 
   return (
     <>

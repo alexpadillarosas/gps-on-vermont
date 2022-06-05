@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Container } from "reactstrap";
 import OtherNavbar from "../../components/NavBars/OtherNavbar";
-import { headerScrolling } from "./commons";
+
 import Services from "../../components/General/Services";
 import servicesContent from "../../data/services-content";
 import DarkFooter from "../../components/Footers/DarkFooter";
@@ -9,10 +9,6 @@ import LandingPageHeader from "../../components/Headers/LandingPageHeader";
 
 const OurServicesPage = () => {
   const message = "Our Services";
-
-  useEffect(() => {
-    headerScrolling();
-  });
 
   return (
     <>

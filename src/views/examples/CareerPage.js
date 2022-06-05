@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { headerScrolling } from "./commons";
+
 import OtherNavbar from "../../components/NavBars/OtherNavbar";
 import DarkFooter from "../../components/Footers/DarkFooter";
 import { Container, Row, Col } from "reactstrap";
@@ -9,10 +9,6 @@ import jobOffers from "../../data/job-offers";
 import ReactLinkify from "react-linkify";
 
 const CareerPage = () => {
-  useEffect(() => {
-    headerScrolling();
-  });
-
   const messageTitle = "CAREER";
   const DEFAULT_IMAGE = "gpv-news.png";
 
@@ -30,7 +26,7 @@ const CareerPage = () => {
 
         <div className="section section-about-us" >
           <ReactLinkify >
-                        
+
             <Container >
               <Row >
                   <Col sm="12" lg="12" className="">
@@ -75,7 +71,7 @@ const CareerPage = () => {
                   </Col>
               </Row>
         </Container>
-      </ReactLinkify>  
+      </ReactLinkify>
     </div>
 
         <div className="section text-center">
@@ -112,7 +108,7 @@ const CareerPage = () => {
                             </cite>
                           ))}
                         </div>
-                        
+
                         {/* <div className="p-1 text-center font-paragraph ">
                         email us :
                           <a

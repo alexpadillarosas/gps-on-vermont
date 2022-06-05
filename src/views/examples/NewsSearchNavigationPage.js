@@ -4,20 +4,16 @@ import LandingPageHeader from '../../components/Headers/LandingPageHeader';
 import BookingButton from '../../components/General/BookingButton';
 import { Container } from 'reactstrap';
 import NewsCardsPreviewPagination from '../../components/General/NewsCardsPreviewPagination';
-import { headerScrolling } from './commons';
 import DarkFooter from '../../components/Footers/DarkFooter';
 import BackButton from '../../components/General/BackButton';
 // import SearchNewsPanel from '../../components/General/SearchNewsPanel';
 
 const NewsSearchNavigationPage = ({match}) => {
     const idFound = match.params.range;
-    useEffect(() => {
-        headerScrolling();
-    });
 
     return (
         <>
-            <OtherNavbar />        
+            <OtherNavbar />
             <div className="wrapper">
                 <LandingPageHeader
                     title={<BookingButton className="btn-weight" size="large" />}

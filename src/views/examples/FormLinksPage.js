@@ -1,16 +1,11 @@
 import React, { useEffect } from "react";
 import { Container } from "reactstrap";
 import OtherNavbar from "../../components/NavBars/OtherNavbar";
-import { headerScrolling } from "./commons";
 import DarkFooter from "../../components/Footers/DarkFooter";
 import LandingPageHeader from "../../components/Headers/LandingPageHeader";
 
 const FormLinksPage = () => {
   const message = "ABC";
-
-  useEffect(() => {
-    headerScrolling();
-  });
 
   return (
     <>
