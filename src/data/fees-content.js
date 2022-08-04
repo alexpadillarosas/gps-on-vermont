@@ -11,9 +11,9 @@ const fees = [
             {
                 rownum: 1,
                 data: [
-                    ["Standard Consult", "(less than 20 minutes)"],
-                    "$74.10",
-                    "$39.10",
+                    ["Standard Consult / Telehealth", "(less than 20 minutes)"],
+                    "$74.75",
+                    "$39.75",
                     "$35.00"
                 ]
 
@@ -21,9 +21,9 @@ const fees = [
             {
                 rownum: 2,
                 data: [
-                    ["Long Consult", "(more than 20 minutes)"],
-                    "$110.75",
-                    "$75.75",
+                    ["Long Consult / Telehealth", "(more than 20 minutes)"],
+                    "$111.95",
+                    "$76.95",
                     "$35.00"
                 ]
 
@@ -32,19 +32,9 @@ const fees = [
                 rownum: 3,
                 data: [
                     ["Extended Consult", " "],
-                    "$146.50",
-                    "$111.50",
+                    "$148.30",
+                    "$113.30",
                     "$35.00"
-                ]
-
-            },
-            {
-                rownum: 4,
-                data: [
-                    ["Saturday"],
-                    "86.00",
-                    "51.00",
-                    "35.00"
                 ]
 
             },
@@ -52,28 +42,18 @@ const fees = [
                 rownum: 5,
                 data: [
                     ["Saturday After Hours"],
-                    "122.40",
-                    "87.40",
-                    "35.00"
-                ]
-
-            },
-            {
-                rownum: 6,
-                data: [
-                    ["Telehealth"],
-                    "74.10",
-                    "39.10",
-                    "35.00"
+                    "$172.25",
+                    "$137.25",
+                    "$35.00"
                 ]
 
             },
             {
                 rownum: 7,
                 data: [
-                    ["Pensioner Standard Consult", "(less than 20 minutes)"],
-                    "$59.10",
-                    "$39.10",
+                    ["Pensioner Standard Consult / Telehealth", "(less than 20 minutes)"],
+                    "$59.75",
+                    "$39.75",
                     "$20.00"
                 ]
 
@@ -81,9 +61,9 @@ const fees = [
             {
                 rownum: 8,
                 data: [
-                    ["Pensioner Long Consult", "(more than 20 minutes)"],
-                    "$95.75",
-                    "$75.75",
+                    ["Pensioner Long Consult / Telehealth", "(more than 20 minutes)"],
+                    "$96.95",
+                    "$76.95",
                     "$20.00"
                 ]
 
@@ -92,19 +72,9 @@ const fees = [
                 rownum: 9,
                 data: [
                     ["Pensioner Extended Consult", " "],
-                    "$131.50",
-                    "$111.50",
+                    "$133.30",
+                    "$113.30",
                     "$20.00"
-                ]
-
-            },
-            {
-                rownum: 10,
-                data: [
-                    ["Pensioner Saturday"],
-                    "71.00",
-                    "51.00",
-                    "20.00"
                 ]
 
             },
@@ -112,18 +82,8 @@ const fees = [
                 rownum: 11,
                 data: [
                     ["Pensioner Saturday After Hours"],
-                    "107.40",
-                    "87.40",
-                    "20.00"
-                ]
-
-            },
-            {
-                rownum: 12,
-                data: [
-                    ["Pensioner Telehealth"],
-                    "59.10",
-                    "39.10",
+                    "157.25",
+                    "137.25",
                     "20.00"
                 ]
 
@@ -213,9 +173,9 @@ const fees = [
             {
                 rownum: 1,
                 data: [
-                    ["Standard Consult", "(less than 20 minutes)"],
-                    "$74.10",
-                    "$39.10",
+                    ["Standard Consult / Telehealth", "(less than 20 minutes)"],
+                    "$74.75",
+                    "$39.75",
                     "$35.00"
                 ]
 
@@ -223,9 +183,9 @@ const fees = [
             {
                 rownum: 2,
                 data: [
-                    ["Long Consult", "(more than 20 minutes)"],
-                    "$110.75",
-                    "$75.75",
+                    ["Long Consult / Telehealth", "(more than 20 minutes)"],
+                    "$111.95",
+                    "$76.95",
                     "$35.00"
                 ]
 
@@ -233,9 +193,19 @@ const fees = [
             {
                 rownum: 3,
                 data: [
-                    ["Pensioner Standard Consult", "(less than 20 minutes)"],
-                    "$59.10",
-                    "$39.10",
+                    ["Extended Consult", "(more than 20 minutes)"],
+                    "$148.30",
+                    "$113.30",
+                    "$35.00"
+                ]
+
+            },
+            {
+                rownum: 3,
+                data: [
+                    ["Pensioner Standard Consult / Telehealth", "(less than 20 minutes)"],
+                    "$59.75",
+                    "$39.75",
                     "$20.00"
                 ]
 
@@ -243,9 +213,19 @@ const fees = [
             {
                 rownum: 4,
                 data: [
-                    ["Pensioner Long Consult", "(more than 20 minutes)"],
-                    "$95.75",
-                    "$75.75",
+                    ["Pensioner Long Consult / Telehealth", "(more than 20 minutes)"],
+                    "$96.95",
+                    "$76.95",
+                    "$20.00"
+                ]
+
+            },
+            {
+                rownum: 4,
+                data: [
+                    ["Extended Consult"],
+                    "$133.30",
+                    "$113.30",
                     "$20.00"
                 ]
 

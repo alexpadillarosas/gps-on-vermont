@@ -13,27 +13,27 @@ const OpeningHours2 = () => {
                 <CardImgOverlay>
                     <CardTitle tag="h5" className=" clearfix opening-hours pt-4">
                         <div className="float-left">Monday</div>
-                        <div className="float-right">8:00 am to 5:20 pm</div>
+                        <div className="float-right">7:45 am to 5:30 pm</div>
                     </CardTitle>
                     <CardTitle tag="h5" className=" clearfix opening-hours">
                         <div className="float-left">Tuesday</div>
-                        <div className="float-right">8:00 am to 5:20 pm</div>
+                        <div className="float-right">7:45 am to 5:30 pm</div>
                     </CardTitle>
                     <CardTitle tag="h5" className=" clearfix opening-hours">
                         <div className="float-left">Wednesday</div>
-                        <div className="float-right">8:00 am to 5:20 pm</div>
+                        <div className="float-right">7:45 am to 5:30 pm</div>
                     </CardTitle>
                     <CardTitle tag="h5" className=" clearfix opening-hours">
                         <div className="float-left">Thursday</div>
-                        <div className="float-right">8:00 am to 5:20 pm</div>
+                        <div className="float-right">7:45 am to 5:30 pm</div>
                     </CardTitle>
                     <CardTitle tag="h5" className=" clearfix opening-hours">
                         <div className="float-left">Friday</div>
-                        <div className="float-right">8:00 am to 5:20 pm</div>
+                        <div className="float-right">7:45 am to 5:30 pm</div>
                     </CardTitle>
                     <CardTitle tag="h5" className=" clearfix opening-hours">
                         <div className="float-left">Saturday</div>
-                        <div className="float-right">9:00 am to 4:20 pm</div>
+                        <div className="float-right">9:00 am to 4:00 pm</div>
                     </CardTitle>
                     <CardTitle tag="h5" className=" clearfix opening-hours">
                         <div className="float-left">Sunday</div>
