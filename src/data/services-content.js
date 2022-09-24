@@ -645,7 +645,7 @@ const services = [
   {
     id: "12",
     title: "LGBTQI+ community",
-    icon: "fa fa-genderless fa-lg",
+    icon: "fa fa-rainbow fa-lg",
     image: "rainbow.svg",
     shortIntro:
       "We are GPs who create an environment where all patients feel welcome and can better meet their patients' often complex health care needs.",
@@ -745,7 +745,7 @@ const services = [
     items: [],
     sections: [
       {
-        title: "Q-Fever Vaccines",
+        title: "Q Fever Vaccines",
         topics: [
           {
             icon: "",
