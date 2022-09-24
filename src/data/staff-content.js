@@ -252,7 +252,7 @@ const staff = [
         link: "tel: 0260252189"
       }
     ],
-    enabled: true
+    enabled: false
   },
   {
     titleAbr: "Ms",
