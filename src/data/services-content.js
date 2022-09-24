@@ -181,7 +181,7 @@ const services = [
     ],
     items: [],
     sections: [],
-    enabled: true
+    enabled: false
   },
   {
     id: "5",
@@ -660,7 +660,62 @@ const services = [
     items: [],
     sections: [],
     enabled: true
+  },
+  {
+    id: "14",
+    title: "Covid-19 Vaccines",
+    icon: "fa fa-virus fa-lg",
+    image: "vaccine.svg",
+    shortIntro:
+      "The Australian government recommends COVID-19 vaccines for everyone 5 years and older.",
+    introDescriptions: [
+      "The protection someone gains from having COVID-19 varies from person to person.",
+      "The government recommends that people who have had COVID-19 and recovered should still be vaccinated, approximately 3 months after the confirmed infection, whether that’s an initial shot or a booster dose.",
+      "A nurse or doctor can give the injection which is usually given into the upper arm and only takes a few seconds.",
+      "The vaccines will change time, based on predictions of which strains will be most active. That’s why it’s important to keep your boosters up to date as the virus is still circulating and people can get re-infected or infected with a different strain.",
+      "If you have any concerns your doctor will be able to advise you on the whether the vaccine is appropriate for you and your family, based on your age, vaccine availability and eligibility to receive vaccination free of charge."
+    ],
+    items: [],
+    sections: [],
+    enabled: true
+  },
+  {
+    id: "15",
+    title: "weight loss clinic",
+    icon: "fa fa-balance-scale fa-lg",
+    image: "skincheck.svg",
+    shortIntro:
+      "Early detection and regular skin examinations are your best chances at preventing, identifying and treating skin cancers.",
+    introDescriptions: [
+      "Skin cancer is by far the most common cancer in Australia, killing 5 people every day.",
+      "Australia has the highest incidence of skin cancer in the world. Not all of them are melanoma’s. In fact nonmelanoma skin cancers in Australia are now nearly seven times more common than all other cancers combined; approximately half of these are removed by general practitioners.",
+      "As part of our patients continuity of care we recommend regular skin checks with us to be able to detect any changes as soon as possible."
+    ],
+    items: [],
+    sections: [],
+    enabled: false
+  },
+  {
+    id: "16",
+    title: "Q-Fever Vaccine",
+    icon: "fa fa-balance-scale fa-lg",
+    image: "vaccine.svg",
+    shortIntro:
+      "The Q Fever Vaccine (Q-VAX®) is recommended for those aged 15 years or over who are in contact with high-risk animals or their products.",
+    introDescriptions: [
+      "People may also require the vaccine if they do activities in regional and rural areas where there is exposure to high-risk animals such as cattle, sheep or goats.",
+      "Q-fever is a bacterial infection caused by exposure to the Q-fever bacteria. The bacteria is usually passed from animals to humans, especially after exposure to contaminated air, soil or dust.",
+      "A Q-fever infection causes flu-like symptoms that can be severe and in some people may cause long-term health issues.",
+      "The Q-fever though highly effective is unfortunately not suitable for everyone. If you have a known egg proteins allergy, are pregnant or are a child under 15 years of age you should not have the vaccine.",
+      "If you have a weakened immune system, have had Q-fever previously or are being treated for another health condition you will need to arrange a pre-vaccination screening as you may not be eligible for the vaccine.",
+      "A pre-vaccination screening can help to identify who can be vaccinated.",
+      "If you have any concerns your doctor will be able to advise you on the whether or not the vaccine is right for you."
+    ],
+    items: [],
+    sections: [],
+    enabled: true
   }
+
 ];
 
 export default services;
