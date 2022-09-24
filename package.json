@@ -8,7 +8,6 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "moment": "2.24.0",
-    "node-sass": "^4.14.1",
     "nouislider": "^14.7.0",
     "npm": "^7.17.0",
     "react": "^16.14.0",
@@ -58,6 +57,7 @@
     "typescript": "3.5.3"
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^2.2.0",
+    "sass": "^1.55.0"
   }
 }
