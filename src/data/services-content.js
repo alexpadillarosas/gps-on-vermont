@@ -50,12 +50,26 @@ const services = [
     shortIntro:
       "Flu vaccination, involves having an injection given into the upper arm by a nurse or doctor and only takes a few seconds.",
     introDescriptions: [
-      "The Majority of Australians benefit from having a yearly flu vaccination. Whilst groups such as 65+ years old, pregnant women, children are those most at risk. A nurse or doctor can give the injection which is usually given into the upper arm and only takes a few seconds",
-      "The vaccines change each year, based on predictions of which flu strains will be most active that coming winter. They are usually given around late autumn to provide protection over the flu season. Your immunity is highest during 3-4 months after getting the flu shot therefore, we highly recommend getting immunised before the start of flu season to stay protected.",
-      "Remember it’s important to get re-vaccinated every year to protect yourself against the flu viruses circulating that year. Your doctor will be able to advise you on the most adequate vaccine for you and your family, based on your age, vaccine availability and eligibility to receive vaccination free of charge."
+      "The Majority of Australians benefit from having a yearly flu vaccination. Whilst groups such as 65+ years old, children and those who are pregnant are those most at risk"
     ],
     items: [],
-    sections: [],
+    sections: [
+      {
+        title: "Flu Vaccines",
+        topics: [
+          {
+            icon: "",
+            type: "PARAGRAPH",
+            title: "",
+            descriptions: [
+              "A nurse or doctor can give the injection which is usually given into the upper arm and only takes a few seconds",
+              "The vaccines change each year, based on predictions of which flu strains will be most active that coming winter. They are usually given around late autumn to provide protection over the flu season. Your immunity is highest during 3-4 months after getting the flu shot therefore, we highly recommend getting immunised before the start of flu season to stay protected.",
+              "Remember it’s important to get re-vaccinated every year to protect yourself against the flu viruses circulating that year. Your doctor will be able to advise you on the most adequate vaccine for you and your family, based on your age, vaccine availability and eligibility to receive vaccination free of charge."
+            ]
+          }
+        ]
+      }
+    ],
     enabled: true
   },
   {
@@ -664,25 +678,48 @@ const services = [
   {
     id: "14",
     title: "Covid-19 Vaccines",
-    icon: "fa fa-virus fa-lg",
+    icon: "fa fa-virus-covid fa-lg",
     image: "vaccine.svg",
     shortIntro:
       "The Australian government recommends COVID-19 vaccines for everyone 5 years and older.",
     introDescriptions: [
-      "The protection someone gains from having COVID-19 varies from person to person.",
-      "The government recommends that people who have had COVID-19 and recovered should still be vaccinated, approximately 3 months after the confirmed infection, whether that’s an initial shot or a booster dose.",
-      "A nurse or doctor can give the injection which is usually given into the upper arm and only takes a few seconds.",
-      "The vaccines will change time, based on predictions of which strains will be most active. That’s why it’s important to keep your boosters up to date as the virus is still circulating and people can get re-infected or infected with a different strain.",
-      "If you have any concerns your doctor will be able to advise you on the whether the vaccine is appropriate for you and your family, based on your age, vaccine availability and eligibility to receive vaccination free of charge."
+      "The protection someone gains from having COVID-19 varies from person to person."
     ],
     items: [],
-    sections: [],
+    sections: [
+      {
+        title: "covid-19 Vaccines",
+        topics: [
+          {
+            icon: "",
+            type: "PARAGRAPH",
+            title: "",
+            descriptions: [
+              "The government recommends that people who have had COVID-19 and recovered should still be vaccinated, approximately 3 months after the confirmed infection, whether that’s an initial shot or a booster dose.",
+              "A nurse or doctor can give the injection which is usually given into the upper arm and only takes a few seconds.",
+              "The vaccines will change with time, based on predictions of which strains will be most active. That’s why it’s important to keep your boosters up to date as the virus is still circulating and people can get re-infected or infected with a different strain."  
+            ]
+          }
+        ]
+      },
+      {
+        title: "Queries and concerns",
+        topics: [
+          {
+            icon: "",
+            type: "CARD",
+            title: "If you have any concerns your doctor will be able to advise you on the whether the vaccine is appropriate for you and your family, based on your",
+            descriptions: ["Age", "Health", "Vaccine availability", "Vaccine eligibility"]
+          }
+        ]
+      }
+    ],
     enabled: true
   },
   {
     id: "15",
     title: "weight loss clinic",
-    icon: "fa fa-balance-scale fa-lg",
+    icon: "fa fa-weight fa-lg",
     image: "skincheck.svg",
     shortIntro:
       "Early detection and regular skin examinations are your best chances at preventing, identifying and treating skin cancers.",
@@ -697,22 +734,35 @@ const services = [
   },
   {
     id: "16",
-    title: "Q-Fever Vaccine",
-    icon: "fa fa-balance-scale fa-lg",
+    title: "Q Fever Vaccine",
+    icon: "fa fa-syringe fa-lg",
     image: "vaccine.svg",
     shortIntro:
       "The Q Fever Vaccine (Q-VAX®) is recommended for those aged 15 years or over who are in contact with high-risk animals or their products.",
     introDescriptions: [
-      "People may also require the vaccine if they do activities in regional and rural areas where there is exposure to high-risk animals such as cattle, sheep or goats.",
-      "Q-fever is a bacterial infection caused by exposure to the Q-fever bacteria. The bacteria is usually passed from animals to humans, especially after exposure to contaminated air, soil or dust.",
-      "A Q-fever infection causes flu-like symptoms that can be severe and in some people may cause long-term health issues.",
-      "The Q-fever though highly effective is unfortunately not suitable for everyone. If you have a known egg proteins allergy, are pregnant or are a child under 15 years of age you should not have the vaccine.",
-      "If you have a weakened immune system, have had Q-fever previously or are being treated for another health condition you will need to arrange a pre-vaccination screening as you may not be eligible for the vaccine.",
-      "A pre-vaccination screening can help to identify who can be vaccinated.",
-      "If you have any concerns your doctor will be able to advise you on the whether or not the vaccine is right for you."
+      "People may also require the vaccine if they do activities in regional and rural areas where there is exposure to high-risk animals such as cattle, sheep or goats."
     ],
     items: [],
-    sections: [],
+    sections: [
+      {
+        title: "Q-Fever Vaccines",
+        topics: [
+          {
+            icon: "",
+            type: "PARAGRAPH",
+            title: "",
+            descriptions: [
+              "Q fever is a bacterial infection caused by exposure to the Q fever bacterium Coxiella burnetii. The bacteria is usually passed from animals to humans, especially after exposure to contaminated air, soil or dust.",
+              "A Q fever infection causes flu-like symptoms that can be severe and in some people may cause long-term health issues.",
+              "The Q fever vaccine though highly effective is unfortunately not suitable for everyone. If you have a known egg proteins allergy, are pregnant or are a child under 15 years of age you should not have the vaccine.",
+              "If you have a weakened immune system, have had Q fever previously or are being treated for another health condition you will need to arrange a pre-vaccination screening as you may not be eligible for the vaccine.",
+              "A pre-vaccination screening can help to identify who can be vaccinated.",
+              "If you have any concerns your doctor will be able to advise you on the whether or not the vaccine is right for you."
+            ]
+          }
+        ]
+      }
+    ],
     enabled: true
   }
 

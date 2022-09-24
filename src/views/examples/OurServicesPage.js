@@ -10,6 +10,9 @@ import LandingPageHeader from "../../components/Headers/LandingPageHeader";
 const OurServicesPage = () => {
   const message = "Our Services";
 
+
+  const enabledServicesContent = servicesContent.filter( service => service.enabled );
+  
   useEffect(() => {
     headerScrolling();
   });
@@ -26,7 +29,7 @@ const OurServicesPage = () => {
         />
         <div className="section text-center">
           <Container className="text-muted">
-            <Services servicesData={servicesContent} />
+            <Services servicesData={enabledServicesContent} />
           </Container>
         </div>
       </div>
