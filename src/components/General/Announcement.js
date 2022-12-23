@@ -20,10 +20,10 @@ const Announcement = () => {
                         </div>
                     </CardTitle> */}
 
-                    <CardTitle tag="h5" className=" clearfix opening-hours">
-                        <div className="float-left">Christmas Eve</div>
-                        <div className="float-right">8:00 am to 12:00 pm</div>
-                    </CardTitle>
+                    {/* <CardTitle tag="h5" className=" clearfix opening-hours"> */}
+                        {/* <div className="float-left">Christmas Eve</div> */}
+                        {/* <div className="float-right">8:00 am to 12:00 pm</div> */}
+                    {/* </CardTitle> */}
                     <CardTitle tag="h5" className=" clearfix opening-hours">
                         <div className="float-left">Christmas Day</div>
                         <div className="float-right">CLOSED</div>
@@ -38,24 +38,27 @@ const Announcement = () => {
                     </CardTitle>
                     <CardTitle tag="h5" className=" clearfix opening-hours">
                         <div className="float-left">28 Dec</div>
-                        <div className="float-right">CLOSED</div>
+                        <div className="float-right">8:00 am to 4:00 pm</div>
                     </CardTitle>
                     <CardTitle tag="h5" className=" clearfix opening-hours">
                         <div className="float-left">29 Dec</div>
-                        <div className="float-right">8:00 am to 6:00 pm</div>
+                        <div className="float-right">8:00 am to 4:00 pm</div>
                     </CardTitle>
                     <CardTitle tag="h5" className=" clearfix opening-hours">
                         <div className="float-left">30 Dec</div>
-                        <div className="float-right">8:00 am to 6:00 pm</div>
+                        <div className="float-right">8:00 am to 4:00 pm</div>
                     </CardTitle>
                     <CardTitle tag="h5" className=" clearfix opening-hours">
                         <div className="float-left">New Year's Eve</div>
-                        <div className="float-right">9:00 am to 1:00 pm</div>
+                        <div className="float-right">CLOSED</div>
                     </CardTitle><CardTitle tag="h5" className=" clearfix opening-hours">
                         <div className="float-left">New Year's Day</div>
                         <div className="float-right">CLOSED</div>
                     </CardTitle>
-                    
+                    <CardTitle tag="h5" className=" clearfix opening-hours">
+                        <div className="float-left">02 Jan</div>
+                        <div className="float-right">CLOSED</div>
+                    </CardTitle>
 
                 </CardImgOverlay>
             </Card>

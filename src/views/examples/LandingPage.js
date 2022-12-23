@@ -16,7 +16,7 @@ import HomeNavbar from "../../components/NavBars/HomeNavbar";
 import newsContent from "../../data/news-content";
 import staffContent from "../../data/staff-content";
 import { headerScrolling } from "./commons";
-// import Announcement from "../../components/General/Announcement";
+import Announcement from "../../components/General/Announcement";
 import TeleHealth from "../../components/General/TeleHealth";
 import SearchNews from "../../components/General/SearchNews";
 
@@ -113,7 +113,7 @@ function LandingPage() {
               </Col>
             </Row>
             {/* For Anouncements use this */}
-            {/* <Row>
+            <Row>
               <Col sm="12" md="8" lg="6" className="ml-auto mr-auto text-center" >
                 <h2 className="title text-muted">Opening Hours</h2>
               </Col>
@@ -138,9 +138,9 @@ function LandingPage() {
                   On behalf of the GPs on Vermont team, we thank you for your support, patience and understanding throughout 2021, and we wish you a healthy, safe and merry festive season and a happy new year!
               </h5>
               </Col>
-            </Row> */}
+            </Row>
 
-            {/* For other days use this */}
+            {/* For other days use this 
             <Row>
               <Col sm="12" md="8" lg="8" className="ml-auto mr-auto text-center" >
                 <h2 className="title text-muted">Opening Hours</h2>
@@ -151,7 +151,7 @@ function LandingPage() {
                 <OpeningHours2 />
               </Col>
             </Row>
-
+            */}
             
           </Container>
         </div>
