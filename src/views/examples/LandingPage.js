@@ -113,7 +113,7 @@ function LandingPage() {
               </Col>
             </Row>
             {/* For Anouncements use this */}
-            <Row>
+            {/* <Row>
               <Col sm="12" md="8" lg="6" className="ml-auto mr-auto text-center" >
                 <h2 className="title text-muted">Opening Hours</h2>
               </Col>
@@ -135,12 +135,12 @@ function LandingPage() {
                   <b>Christmas Opening Hours GPs on Vermont</b> will be operating at reduced hours over the holiday period.
                   We recommend checking your prescriptions and certificates etc. to ensure you are adequately covered for this time.
                   If there is an emergency during this time please dial 000 or go to the emergency department across the road.
-                  On behalf of the GPs on Vermont team, we thank you for your support, patience and understanding throughout 2021, and we wish you a healthy, safe and merry festive season and a happy new year!
+                  On behalf of the GPs on Vermont team, we thank you for your support, patience and understanding throughout 2022, and we wish you a healthy, safe and merry festive season and a happy new year!
               </h5>
               </Col>
-            </Row>
+            </Row> */}
 
-            {/* For other days use this 
+            {/* For other days use this */}
             <Row>
               <Col sm="12" md="8" lg="8" className="ml-auto mr-auto text-center" >
                 <h2 className="title text-muted">Opening Hours</h2>
@@ -151,7 +151,6 @@ function LandingPage() {
                 <OpeningHours2 />
               </Col>
             </Row>
-            */}
             
           </Container>
         </div>
