@@ -13,7 +13,7 @@ import "./assets/demo/nucleo-icons-page-styles.css";
 // import 'react-bootstrap-table2-paginator/dist/react-bootstrap-table2-paginator.min.css';
 
 // pages for this kit
-// import Index from "./views/Index";
+import Index from "./views/Index";
 import LandingPage from "./views/examples/LandingPage";
 import ContactUsPage from "./views/examples/ContactUsPage";
 import ProfilePage from "./views/examples/ProfilePage";

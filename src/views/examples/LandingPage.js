@@ -16,9 +16,10 @@ import HomeNavbar from "../../components/NavBars/HomeNavbar";
 import newsContent from "../../data/news-content";
 import staffContent from "../../data/staff-content";
 import { headerScrolling } from "./commons";
-import Announcement from "../../components/General/Announcement";
+// import Announcement from "../../components/General/Announcement";
 import TeleHealth from "../../components/General/TeleHealth";
 import SearchNews from "../../components/General/SearchNews";
+import ModalAnnouncement from "../../components/General/ModalAnnouncement";
 
 function LandingPage() {
   // const [firstFocus, setFirstFocus] = useState(false);
@@ -153,6 +154,9 @@ function LandingPage() {
             </Row>
             
           </Container>
+
+
+          <ModalAnnouncement/>
         </div>
 
         <div className="section section-team text-center" style={{ padding: 0 }}>
