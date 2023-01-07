@@ -1,5 +1,5 @@
 import React from "react"
-import { Button, Modal, ModalBody, CardImg } from "reactstrap";
+import { Button, Modal, CardImg } from "reactstrap";
 
 
 const ModalAnnouncement = () => {
