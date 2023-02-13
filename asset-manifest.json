@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.480058d2.chunk.css",
-    "main.js": "/static/js/main.f97093e6.chunk.js",
-    "main.js.map": "/static/js/main.f97093e6.chunk.js.map",
+    "main.js": "/static/js/main.e16864cb.chunk.js",
+    "main.js.map": "/static/js/main.e16864cb.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e2e433b3.js",
     "runtime-main.js.map": "/static/js/runtime-main.e2e433b3.js.map",
     "static/css/2.13c9dd37.chunk.css": "/static/css/2.13c9dd37.chunk.css",
-    "static/js/2.007ce8da.chunk.js": "/static/js/2.007ce8da.chunk.js",
-    "static/js/2.007ce8da.chunk.js.map": "/static/js/2.007ce8da.chunk.js.map",
+    "static/js/2.b09df566.chunk.js": "/static/js/2.b09df566.chunk.js",
+    "static/js/2.b09df566.chunk.js.map": "/static/js/2.b09df566.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.2fb9a983fe3888a4f5068b02ace6cfe6.js": "/precache-manifest.2fb9a983fe3888a4f5068b02ace6cfe6.js",
+    "precache-manifest.b5079adc84df53e7e2808c88595c7c1b.js": "/precache-manifest.b5079adc84df53e7e2808c88595c7c1b.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.13c9dd37.chunk.css.map": "/static/css/2.13c9dd37.chunk.css.map",
     "static/css/main.480058d2.chunk.css.map": "/static/css/main.480058d2.chunk.css.map",
-    "static/js/2.007ce8da.chunk.js.LICENSE.txt": "/static/js/2.007ce8da.chunk.js.LICENSE.txt",
+    "static/js/2.b09df566.chunk.js.LICENSE.txt": "/static/js/2.b09df566.chunk.js.LICENSE.txt",
     "static/media/Annette-Baumgarten.jpg": "/static/media/Annette-Baumgarten.4a291657.jpg",
     "static/media/Bayleigh-Reedy.jpg": "/static/media/Bayleigh-Reedy.666e5f58.jpg",
     "static/media/Evie-Frawley.jpg": "/static/media/Evie-Frawley.60d7a159.jpg",
@@ -26,6 +26,7 @@
     "static/media/aboriginalflag.svg": "/static/media/aboriginalflag.328be05c.svg",
     "static/media/after-hours.jpg": "/static/media/after-hours.ecf46a1e.jpg",
     "static/media/alzheimers-dementia-news.jpg": "/static/media/alzheimers-dementia-news.53f29299.jpg",
+    "static/media/atagi-covid-news.jpg": "/static/media/atagi-covid-news.13b322e3.jpg",
     "static/media/avatar.jpg": "/static/media/avatar.ce54dd20.jpg",
     "static/media/bg1.jpg": "/static/media/bg1.6b1983a2.jpg",
     "static/media/bg11.jpg": "/static/media/bg11.e643a6cf.jpg",
@@ -123,8 +124,8 @@
   "entrypoints": [
     "static/js/runtime-main.e2e433b3.js",
     "static/css/2.13c9dd37.chunk.css",
-    "static/js/2.007ce8da.chunk.js",
+    "static/js/2.b09df566.chunk.js",
     "static/css/main.480058d2.chunk.css",
-    "static/js/main.f97093e6.chunk.js"
+    "static/js/main.e16864cb.chunk.js"
   ]
 }
