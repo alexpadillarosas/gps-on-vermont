@@ -97,6 +97,30 @@ const staff = [
     enabled: true
   },
   {
+    titleAbr: "Dr",
+    title: "Doctor",
+    name: "Hooman Pio",
+    image: "dr-hooman.jpg",
+    accreditations: ["Master of Public Health"],
+    descriptions: [
+      "Dr. Hooman Mohammadi is a medical doctor with M.P.H degree, with over 15 years experience in General Family Practice.",
+      "He has special interests in in Mens Health, Communicable and Chronic Disease prevention and management. Mental Health issues, interested in susceptible age groups ( older persons, children, women) with issues related to their quality of life, such as workplace and school safety, related health education and promotion, and long term improvement in all social and medical aspects ."
+    ],
+    availability: [
+      { day: "Mon", desc: "Monday", from: "8:30", to: "5:20", notes: "" },
+      { day: "Tue", desc: "Tuesday", from: "8:30", to: "5:20", notes: "" },
+      { day: "Wed", desc: "Wednesday", from: "8:30", to: "5:20", notes: "" },
+      { day: "Thu", desc: "Thursday", from: "8:30", to: "5:20", notes: "" },
+      { day: "Fri", desc: "Friday", from: "8:30", to: "5:20", notes: "" },
+      { day: "Sat", desc: "Saturday", from: "9:00", to: "4:20", notes: "" }
+    ],
+    speaks: ["English"],
+    booking: false,
+    bookingDoctorId: "dr-joyce-manthi",
+    socialMedia: [],
+    enabled: false
+  },
+  {
     titleAbr: "Pm",
     title: "Practice Manager",
     name: "Annette Baumgarten",
