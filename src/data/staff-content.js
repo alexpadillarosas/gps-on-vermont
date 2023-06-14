@@ -76,7 +76,7 @@ const staff = [
     titleAbr: "Dr",
     title: "Doctor",
     name: "Joyce Manthi",
-    image: "dr-manthi.jpg",
+    image: "avatar.jpg",
     accreditations: ["MBChB (Nairobi) ", "Dip. Emergency Med (Rome, Italy)", "MPH (Liverpool, UK)"],
     descriptions: [
       "Dr. Joyce Manthi graduated with a medical degree from the University of Nairobi, Kenya. Before recently relocating to Australia, Dr. Joyce had been practising as a medical doctor in Kenya for over 8 years.",
