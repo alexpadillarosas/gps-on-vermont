@@ -201,7 +201,7 @@ const staff = [
   {
     titleAbr: "Pm",
     title: "Nursing Manager",
-    name: "Megan Chick",
+    name: "Megan",
     image: "Megan-Chick.jpg",
     accreditations: [
       "Registered nurse Division 1",
@@ -230,7 +230,7 @@ const staff = [
   {
     titleAbr: "Nr",
     title: "Practice Nurse",
-    name: "Lara Hopkins",
+    name: "Lara",
     image: "Lara-Hopkins.jpg",
     accreditations: [
       "Bachelor of Nursing",
@@ -242,9 +242,9 @@ const staff = [
     ],
     speaks: ["English"],
     descriptions: [
-      "Lara shares a high passion for primary health care.  She has worked in this environment for the past five years after successfully completing her studies of ‘Bachelor of Nursing’ in 2015.",
-      "Our nurse Lara is very passionate about general practice and enjoys all aspects of practice nursing. She is a strong advocate for whole patient care, health and wellbeing. Lara also holds a strong interest in Immunisation since becoming a credentialed immunisation provider in 2016.  She also has extensive experience with the skin since having worked in specialised skin clinics for many years.",
-      "Outside of work Lara has three gorgeous children and in her spare time she enjoys trips to the snow, drinking coffee, catching up with friends, walking and spending time with her family."
+      "Lara shares a high passion for primary health care. She has worked in this environment for the past 8 years after successfully completing her studies of ‘Bachelor of Nursing’ in 2015.",
+      "Our nurse Lara is very passionate about general practice and enjoys all aspects of practice nursing. She is a strong advocate for whole patient care, health and wellbeing.",
+      "Lara also holds a strong interest in school nursing and attends currently two schools weekly with the GP to see students. She also has extensive experience with the skin since having worked in specialised skin clinics for many years."
     ],
     booking: false,
     bookingDoctorId: "",
