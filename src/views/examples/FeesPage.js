@@ -32,7 +32,7 @@ const FeesPage = () => {
               feeData={fee}
               index={index}
               headerRightContent={
-                <BookingButton className="btn-weight" size="large" />
+                <BookingButton doctorId={fee.bookingDoctorId} className="btn-weight" size="large" />
               }
             />
           </Container>

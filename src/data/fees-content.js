@@ -1,6 +1,7 @@
 const fees = [
     {
         title: "Dr Padilla: Private Billing Fees",
+        bookingDoctorId: "dr-carmen-padilla-1",
         header: [
             [""],
             ["Amount Payable", "on the day"],
@@ -12,9 +13,9 @@ const fees = [
                 rownum: 1,
                 data: [
                     ["Standard Consult / Telehealth", "(less than 20 minutes)"],
-                    "$74.75",
-                    "$39.75",
-                    "$35.00"
+                    "$79.00",
+                    "$41.20",
+                    "$37.80"
                 ]
 
             },
@@ -22,9 +23,9 @@ const fees = [
                 rownum: 2,
                 data: [
                     ["Long Consult / Telehealth", "(more than 20 minutes)"],
-                    "$111.95",
-                    "$76.95",
-                    "$35.00"
+                    "$120.00",
+                    "$79.70",
+                    "$37.80"
                 ]
 
             },
@@ -32,29 +33,29 @@ const fees = [
                 rownum: 3,
                 data: [
                     ["Extended Consult", " "],
-                    "$148.30",
-                    "$113.30",
-                    "$35.00"
+                    "$154.00",
+                    "$117.40",
+                    "$36.60"
                 ]
 
             },
-            {
-                rownum: 5,
-                data: [
-                    ["Saturday After Hours"],
-                    "$172.25",
-                    "$137.25",
-                    "$35.00"
-                ]
+            // {
+            //     rownum: 5,
+            //     data: [
+            //         ["Saturday After Hours"],
+            //         "$172.25",
+            //         "$137.25",
+            //         "$35.00"
+            //     ]
 
-            },
+            // },
             {
                 rownum: 7,
                 data: [
                     ["Pensioner Standard Consult / Telehealth", "(less than 20 minutes)"],
-                    "$59.75",
-                    "$39.75",
-                    "$20.00"
+                    "$63.00",
+                    "$41.20",
+                    "$22.30"
                 ]
 
             },
@@ -62,9 +63,9 @@ const fees = [
                 rownum: 8,
                 data: [
                     ["Pensioner Long Consult / Telehealth", "(more than 20 minutes)"],
-                    "$96.95",
-                    "$76.95",
-                    "$20.00"
+                    "$102.00",
+                    "$79.70",
+                    "$21.30"
                 ]
 
             },
@@ -72,22 +73,22 @@ const fees = [
                 rownum: 9,
                 data: [
                     ["Pensioner Extended Consult", " "],
-                    "$133.30",
-                    "$113.30",
-                    "$20.00"
+                    "$139.00",
+                    "$117.40",
+                    "$22.60"
                 ]
 
             },
-            {
-                rownum: 11,
-                data: [
-                    ["Pensioner Saturday After Hours"],
-                    "157.25",
-                    "137.25",
-                    "20.00"
-                ]
+            // {
+            //     rownum: 11,
+            //     data: [
+            //         ["Pensioner Saturday After Hours"],
+            //         "157.25",
+            //         "137.25",
+            //         "20.00"
+            //     ]
 
-            },
+            // },
             {
                 rownum: 13,
                 data: [
@@ -102,6 +103,7 @@ const fees = [
     },
     {
         title: "Dr Manthi and Dr Barkas Fees",
+        bookingDoctorId: "",
         header: [
             [""],
             ["Amount Payable", "on the day"],
@@ -163,6 +165,7 @@ const fees = [
     },
     {
         title: "Dr Ramsay: Private Billing Fees",
+        bookingDoctorId: "dr-angela-ramsay",
         header: [
             [""],
             ["Amount Payable", "on the day"],
@@ -174,9 +177,9 @@ const fees = [
                 rownum: 1,
                 data: [
                     ["Standard Consult / Telehealth", "(less than 20 minutes)"],
-                    "$74.75",
-                    "$39.75",
-                    "$35.00"
+                    "$79.00",
+                    "$41.20",
+                    "$37.80"
                 ]
 
             },
@@ -184,9 +187,9 @@ const fees = [
                 rownum: 2,
                 data: [
                     ["Long Consult / Telehealth", "(more than 20 minutes)"],
-                    "$111.95",
-                    "$76.95",
-                    "$35.00"
+                    "$120.00",
+                    "$79.70",
+                    "$37.80"
                 ]
 
             },
@@ -194,9 +197,9 @@ const fees = [
                 rownum: 3,
                 data: [
                     ["Extended Consult", "(more than 20 minutes)"],
-                    "$148.30",
-                    "$113.30",
-                    "$35.00"
+                    "$154.00",
+                    "$117.40",
+                    "$36.60"
                 ]
 
             },
@@ -204,9 +207,9 @@ const fees = [
                 rownum: 3,
                 data: [
                     ["Pensioner Standard Consult / Telehealth", "(less than 20 minutes)"],
-                    "$59.75",
-                    "$39.75",
-                    "$20.00"
+                    "$63.00",
+                    "$41.20",
+                    "$22.30"
                 ]
 
             },
@@ -214,9 +217,9 @@ const fees = [
                 rownum: 4,
                 data: [
                     ["Pensioner Long Consult / Telehealth", "(more than 20 minutes)"],
-                    "$96.95",
-                    "$76.95",
-                    "$20.00"
+                    "$102.00",
+                    "$79.70",
+                    "$21.30"
                 ]
 
             },
@@ -224,9 +227,9 @@ const fees = [
                 rownum: 4,
                 data: [
                     ["Extended Consult"],
-                    "$133.30",
-                    "$113.30",
-                    "$20.00"
+                    "$139.00",
+                    "$117.40",
+                    "$22.60"
                 ]
 
             },
