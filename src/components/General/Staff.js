@@ -8,7 +8,7 @@ const Staff = ({ staffData, isDoctor }) => {
   return (
     <>
       <Row>
-        {staffData.filter(emp => emp.enabled && emp.doctor==isDoctor ).map((employee, index) => (
+        {staffData.filter(emp => emp.enabled && emp.doctor===isDoctor ).map((employee, index) => (
           <Col key={index} md="6" lg="6" xl="6" >
             <BusinessCard emp={employee} headerClassName={"business-card-header"} cardBodyClassName={"business-card-body-with-header"}/>
           </Col>

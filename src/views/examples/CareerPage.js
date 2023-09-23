@@ -4,8 +4,8 @@ import OtherNavbar from "../../components/NavBars/OtherNavbar";
 import DarkFooter from "../../components/Footers/DarkFooter";
 import { Container, Row, Col } from "reactstrap";
 import LandingPageHeader from "../../components/Headers/LandingPageHeader";
-import { RibbonContainer, RightCornerLargeRibbon } from "react-ribbons";
-import jobOffers from "../../data/job-offers";
+// import { RibbonContainer, RightCornerLargeRibbon } from "react-ribbons";
+// import jobOffers from "../../data/job-offers";
 import ReactLinkify from "react-linkify";
 
 const CareerPage = () => {
@@ -14,7 +14,7 @@ const CareerPage = () => {
   });
 
   const messageTitle = "CAREER";
-  const DEFAULT_IMAGE = "gpv-news.png";
+  // const DEFAULT_IMAGE = "gpv-news.png";
 
   return (
     <>
