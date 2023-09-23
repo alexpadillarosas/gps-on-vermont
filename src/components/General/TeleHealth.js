@@ -18,7 +18,7 @@ const TeleHealth = () => {
                     <CardFooter className=" telehealth-footer" >
                         <Row className="text-center">
                             <Col>
-                                <BookingButton className="btn-weight" size="medium" />
+                                <BookingButton className="btn-weight" size="medium" label="Book Appointment with your doctor"/>
                             </Col>
                         </Row>
                     </CardFooter>

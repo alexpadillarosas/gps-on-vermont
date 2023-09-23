@@ -6,9 +6,9 @@ const staff = [
     image: "dr-carmen-padilla.jpg",
     accreditations: ["FRACGP", "MBBS", "Diploma of Child Heath"],
     descriptions: [
-      "Dr Padilla has been a General Practitioner in the Wodonga area for 10 years.",
+      "Dr. Padilla has been a General Practitioner in the Wodonga area for 10 years.",
       "Carmen has a special interest in women’s health, children's health, chronic disease management and men’s health.",
-      "Dr Padilla speaks Spanish as well as English."
+      "Dr. Padilla speaks Spanish as well as English."
     ],
     availability: [
       { day: "Mon", desc: "Monday", from: "8:30", to: "5:20", notes: "" },
@@ -22,7 +22,8 @@ const staff = [
     booking: true,
     bookingDoctorId: "dr-carmen-padilla-1",
     socialMedia: [],
-    enabled: true
+    enabled: true,
+    doctor: true
   },
   {
     titleAbr: "Dr",
@@ -31,8 +32,8 @@ const staff = [
     image: "dr-ramsay.jpg",
     accreditations: ["MBChB(Bristol)", "Diploma of Obstetric", "Diploma Anaesthetic"],
     descriptions: [
-      "Dr Ramsay has been a General Practitioner in the Albury Wodonga area since 1988.",
-      "Dr Ramsay has a special interest in Women Health, Family Planning and Antenatal Care."
+      "Dr. Ramsay has been a General Practitioner in the Albury Wodonga area since 1988.",
+      "Dr. Ramsay has a special interest in Women Health, Family Planning and Antenatal Care."
     ],
     availability: [
       { day: "Mon", desc: "Monday", from: "8:30", to: "5:20", notes: "" },
@@ -46,7 +47,8 @@ const staff = [
     booking: true,
     bookingDoctorId: "dr-angela-ramsay",
     socialMedia: [],
-    enabled: true
+    enabled: true,
+    doctor: true
   },
   {
     titleAbr: "Dr",
@@ -55,8 +57,8 @@ const staff = [
     image: "dr-barkas.jpg",
     accreditations: ["MBBS", "FRACGP", "DRANZCOG(Adv)"],
     descriptions: [
-      "Dr Barkas has been working as a General Practitioner across the border communities for many years.",
-      "Dr Barkas consults at GPs on Vermont on a part-time basis."
+      "Dr. Barkas has been working as a General Practitioner across the border communities for many years.",
+      "Dr. Barkas consults at GPs on Vermont on a part-time basis."
     ],
     availability: [
       { day: "Mon", desc: "Monday", from: "8:30", to: "5:20", notes: "" },
@@ -70,7 +72,8 @@ const staff = [
     booking: true,
     bookingDoctorId: "dr-richard-barkas-5",
     socialMedia: [],
-    enabled: true
+    enabled: true,
+    doctor: true
   },
   {
     titleAbr: "Dr",
@@ -94,7 +97,8 @@ const staff = [
     booking: true,
     bookingDoctorId: "dr-joyce-manthi",
     socialMedia: [],
-    enabled: true
+    enabled: true,
+    doctor: true
   },
   {
     titleAbr: "Dr",
@@ -118,7 +122,8 @@ const staff = [
     booking: false,
     bookingDoctorId: "dr-joyce-manthi",
     socialMedia: [],
-    enabled: false
+    enabled: false,
+    doctor: true
   },
   {
     titleAbr: "Pm",
@@ -159,7 +164,8 @@ const staff = [
         link: "tel: 0477413700"
       }
     ],
-    enabled: false
+    enabled: false,
+    doctor: false
   },
   {
     titleAbr: "Pm",
@@ -196,7 +202,8 @@ const staff = [
         link: "tel: 0260252189"
       }
     ],
-    enabled: true
+    enabled: true,
+    doctor: false
   },
   {
     titleAbr: "Pm",
@@ -225,7 +232,8 @@ const staff = [
     booking: false,
     bookingDoctorId: "",
     socialMedia: [],
-    enabled: true
+    enabled: true,
+    doctor: false
   },
   {
     titleAbr: "Nr",
@@ -249,7 +257,8 @@ const staff = [
     booking: false,
     bookingDoctorId: "",
     socialMedia: [],
-    enabled: true
+    enabled: true,
+    doctor: false
   },
   {
     titleAbr: "Pm",
@@ -276,7 +285,8 @@ const staff = [
         link: "tel: 0260252189"
       }
     ],
-    enabled: false
+    enabled: false,
+    doctor: false
   },
   {
     titleAbr: "Ms",
@@ -302,7 +312,8 @@ const staff = [
         link: "tel: 0260252189"
       }
     ],
-    enabled: false
+    enabled: false,
+    doctor: false
   },
   {
     titleAbr: "Ms",
@@ -328,7 +339,8 @@ const staff = [
         link: "tel: 0260252189"
       }
     ],
-    enabled: false
+    enabled: false,
+    doctor: false
   },
   {
     titleAbr: "Ms",
@@ -354,7 +366,8 @@ const staff = [
         link: "tel: 0260252189"
       }
     ],
-    enabled: false
+    enabled: false,
+    doctor: false
   },
   {
     titleAbr: "Ms",
@@ -380,7 +393,8 @@ const staff = [
         link: "tel: 0260252189"
       }
     ],
-    enabled: false
+    enabled: false,
+    doctor: false
   }
 ];
 

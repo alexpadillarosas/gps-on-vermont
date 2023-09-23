@@ -3,12 +3,12 @@ import staffContent from "../../data/staff-content";
 import Staff from "../../components/General/Staff";
 import OtherNavbar from "../../components/NavBars/OtherNavbar";
 import { headerScrolling } from "./commons";
-import { Container } from "reactstrap";
+import { Col, Container, Row } from "reactstrap";
 import DarkFooter from "../../components/Footers/DarkFooter";
 import LandingPageHeader from "../../components/Headers/LandingPageHeader";
 
 const StaffPage = () => {
-  const message = "Here are the Doctors we support";
+  const message = "Doctors & Support Staff";
 
   useEffect(() => {
     headerScrolling();
@@ -24,10 +24,39 @@ const StaffPage = () => {
           contentClassName={"content-center-other-pages"}
           titleClassName={"title-small-header"}
         />
+        <dir className="new-line"></dir>
+        <div className="text-center">
+          <Container>
+            <Row>
+              <Col sm="12" md="8" lg="6" className="ml-auto mr-auto text-center">
+                <h2 className="title text-muted">Here are the doctors we support</h2>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+
         <div className="section section-team text-center">
           <Container className="text-muted">
             <div className="team">
-              <Staff staffData={staffContent} />
+              <Staff staffData={staffContent} isDoctor={true} />
+            </div>
+          </Container>
+        </div>
+
+        <div className="text-center">
+          <Container>
+            <Row>
+              <Col sm="12" md="8" lg="6" className="ml-auto mr-auto text-center">
+                <h2 className="title text-muted">Here is our support team</h2>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+
+        <div className="section section-team text-center">
+          <Container className="text-muted">
+            <div className="team">
+              <Staff staffData={staffContent} isDoctor={false}/>
             </div>
           </Container>
         </div>

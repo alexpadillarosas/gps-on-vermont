@@ -1,9 +1,10 @@
 import React from "react";
 // import { Button } from "reactstrap";
 
-const BookingButton = ({ doctorId, size, className:passedClasses }) => {
+const BookingButton = ({ doctorId, size, className:passedClasses, label }) => {
 
   if(!passedClasses) passedClasses = "btn-font btn-weight";
+  if(!label) label = "Book Appointment";
   return (
     <>
       {/* <Button
@@ -21,7 +22,7 @@ const BookingButton = ({ doctorId, size, className:passedClasses }) => {
           target="_blank" rel="noopener noreferrer"
           data-hotdoc-widget="lightbox" 
           data-hotdoc-button className={`${size} icon-calendar`}
-          >Book Appointment</a>
+          >{label}</a>
     </>
   );
 };
