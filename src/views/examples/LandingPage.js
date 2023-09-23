@@ -19,7 +19,7 @@ import { headerScrolling } from "./commons";
 // import Announcement from "../../components/General/Announcement";
 import TeleHealth from "../../components/General/TeleHealth";
 import SearchNews from "../../components/General/SearchNews";
-import ModalAnnouncement from "../../components/General/ModalAnnouncement";
+// import ModalAnnouncement from "../../components/General/ModalAnnouncement";
 
 function LandingPage() {
   // const [firstFocus, setFirstFocus] = useState(false);
@@ -156,7 +156,7 @@ function LandingPage() {
           </Container>
 
 
-          <ModalAnnouncement/>
+          {/* <ModalAnnouncement/> */}
         </div>
 
         <div className="section section-team text-center" style={{ padding: 0 }}>
