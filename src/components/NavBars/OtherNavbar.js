@@ -124,12 +124,12 @@ function OtherNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink to="/staff-page" tag={Link}>
-                  Staff
+                  Doctors & Support Staff
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink to="/services-page" tag={Link}>
-                  Our Services
+                  Medical Services
                 </NavLink>
               </NavItem>
               <NavItem>

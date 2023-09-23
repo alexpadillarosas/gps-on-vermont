@@ -5,9 +5,9 @@ const services = [
     icon: "fa fa-stethoscope fa-lg",
     image: "stethoscope.svg",
     shortIntro:
-      "We provide health assessments with the view of preventing or detecting different medical conditions.",
+      "Health assessments with the view of preventing or detecting different medical conditions.",
     introDescriptions: [
-      "Medicare subsides a number of Health Assessments that you can take advantage of at our clinic:"
+      "Medicare subsides a number of Health Assessments that you can take advantage of by booking an appointment with your doctor:"
     ],
     items: [
       "75+ Health Assessments",
@@ -19,7 +19,7 @@ const services = [
     ],
     sections: [
       {
-        title: "Our Health assessments",
+        title: "Health assessments",
         topics: [
           {
             icon: "",
@@ -28,12 +28,12 @@ const services = [
             descriptions: [
               "Annual check-ups are recommended for anyone aged 40 years and over.",
               "This assists in the early detection and prevention of common medical conditions and diseases such as high blood pressure, heart and vascular disease, diabetes and cancers.",
-              "Where appropriate we conduct the Medicare subsidised 40 – 49 years old at risk of type 2 diabetes and 45 – 49 years old health checks.",
+              "Where appropriate your doctors conduct the Medicare subsidised 40 – 49 years old at risk of type 2 diabetes and 45 – 49 years old health checks.",
               "75 + Health Assessment, ASTI Adults and children health assessment as well as disability assessment.",
-              "We recommend health assessments for younger age groups in certain situations, for example a strong family history of cancer, heart disease or diabetes.",
-              "Our Doctors conduct thorough histories and examinations during preventative health checks.",
+              "The doctors we support recommend health assessments for younger age groups in certain situations, for example a strong family history of cancer, heart disease or diabetes.",
+              "The Doctors we support conduct thorough histories and examinations during preventative health checks.",
               "A fasting blood test is often included.  Cholesterol and blood glucose is regularly checked.",
-              "Importantly all assessments are followed by the provision of a management plan tailored to your individual needs. This will include review appointments as necessary.",
+              "Importantly all assessments are followed by the provision of a management plan tailored to your individual needs. This will include review appointments with your doctor as necessary.",
               "If you would like to arrange an appointment for a preventative health check, please contact our reception staff on (02) 6025 2189 Please allow 60 minutes for your appointment."
             ]
           }
@@ -62,7 +62,7 @@ const services = [
             type: "PARAGRAPH",
             title: "",
             descriptions: [
-              "A nurse or doctor can give the injection which is usually given into the upper arm and only takes a few seconds",
+              "A nurse or your doctor can give the injection which is usually given into the upper arm and only takes a few seconds",
               "The vaccines change each year, based on predictions of which flu strains will be most active that coming winter. They are usually given around late autumn to provide protection over the flu season. Your immunity is highest during 3-4 months after getting the flu shot therefore, we highly recommend getting immunised before the start of flu season to stay protected.",
               "Remember it’s important to get re-vaccinated every year to protect yourself against the flu viruses circulating that year. Your doctor will be able to advise you on the most adequate vaccine for you and your family, based on your age, vaccine availability and eligibility to receive vaccination free of charge."
             ]
@@ -78,12 +78,12 @@ const services = [
     icon: "fa fa-plane-departure fa-lg",
     image: "travel.svg",
     shortIntro:
-      "Stay healthy abroad. If you are planning on travelling overseas, we would highly recommend to book in an appointment with a GPs to discuss your travel vaccinations and advice.",
+      "Stay healthy abroad. If you are planning on travelling overseas, we would highly recommend to book in an appointment with your GPs to discuss your travel vaccinations and advice.",
     introDescriptions: [
-      "Here at GPs on Vermont we are available to advise you on any preparations needed for your future trips. It’s important to protect your health when you’re travelling inside and/or outside Australia.",
-      "With appropriate planning and health checks, patients can avoid diseases and other health conditions.",
+      "The doctors we support here at GPs on Vermont are able to advise you on any preparations needed for your future trips. It’s important to protect your health when you’re travelling inside and/or outside Australia.",
+      "With appropriate planning and health checks, you can avoid diseases and other health conditions.",
       "Overseas travel exposes people to various unfamiliar environments.",
-      "Our goal is to provide current travel and health advice and offer vaccinations."
+      "Your doctor's goal is to provide current travel and health advice and offer vaccinations."
     ],
     items: [
       "Cholera (oral)",
@@ -101,14 +101,14 @@ const services = [
     ],
     sections: [
       {
-        title: "Our Travel Health Services",
+        title: "Travel Health Services",
         topics: [
           {
             icon: "",
             type: "PARAGRAPH",
             title: "Fitness to travel certificates",
             descriptions: [
-              "We understand everyone is managing a busy schedule and we are committed to ensuring availability to suit any timetable."
+              "The doctors we support understand everyone is managing a busy schedule and we are committed to ensuring availability to suit any timetable."
             ]
           },
           {
@@ -116,7 +116,7 @@ const services = [
             type: "PARAGRAPH",
             title: "Travel immunisations",
             descriptions: [
-              "We are available to advise on specific immunisation requirements for different regions around the world. Even if you have been immunised in the past, it is still recommended to speak with a doctor just to be on the safe side."
+              "Your doctor is able to advise on specific immunisation requirements for different regions around the world. Even if you have been immunised in the past, it is still recommended to speak with a doctor just to be on the safe side."
             ]
           },
           {
@@ -124,8 +124,8 @@ const services = [
             type: "PARAGRAPH",
             title: "International Health advice",
             descriptions: [
-              "Our Doctors are knowledgeable about specific immunisation requirements for different regions around the world. If you have been immunised in the past it is still recommended you speak with one of our doctors to ensure you are up to date with any travel health information.",
-              "Our doctors are well informed by the Department of Health of seasonal and other outbreaks around the world."
+              "The doctors we support are knowledgeable about specific immunisation requirements for different regions around the world. If you have been immunised in the past it is still recommended you speak with your doctor to ensure you are up to date with any travel health information.",
+              "The doctors we support are well informed by the Department of Health of seasonal and other outbreaks around the world."
             ]
           }
         ]
@@ -136,9 +136,9 @@ const services = [
           {
             icon: "",
             type: "PARAGRAPH",
-            title: "I’m planning on travelling. When should I see a doctor?",
+            title: "I’m planning on travelling. When should I see my doctor?",
             descriptions: [
-              "We recommend you make an appointment to see your GP 6-12 weeks before you travel. Remember the sooner the better! That way you have enough time to do all the checks and apply any advice your GP may recommend to ensure you are healthy and ready before your trip."
+              "The doctors we support recommend you make an appointment to see your GP 6-12 weeks before you travel. Remember the sooner the better! That way you have enough time to do all the checks and apply any advice your GP may recommend to ensure you are healthy and ready before your trip."
             ]
           },
           {
@@ -203,12 +203,12 @@ const services = [
     icon: "fa fa-laptop-medical fa-lg",
     image: "care.svg",
     shortIntro:
-      "We are providing patient care for all types of individuals, couples and families of all ages. We specialise in all aspects including women’s health, men’s health, children’s health, chronic illness and all major or minor injuries.",
+      "Patient care for all types of individuals, couples and families of all ages. The Doctors we support specialise in all aspects including women’s health, men’s health, children’s health, chronic illness and all major or minor injuries.",
     introDescriptions: [
-      "Here in GP’s on Vermont Medical Centre we’re committed to providing continuous long-term patient care for all ages and types of people including individuals, couples and families.",
-      "We specialise in a broad range of health areas including women’s health, men’s health, children’s health, injures, mental health and  chronic illness. For us it is all about our patient’s needs and desired health outcomes.",
-      "This clinic provides equity of access to quality care for all Australians regardless of their race, sex, age, religion, socioeconomic status or location. Good access includes affordability, the availability of appointments, intensive care, and the ability to access the GP of the patient’s choice.",
-      "We are determined to treat every patient equally and with respect. Our General Practice knowledge is extensive, and we are 100% sure that we can provide a solution that best suits each individual’s situation."
+      "The doctors who consult from GP’s on Vermont Medical Centre are committed to providing continuous long-term patient care for all ages and types of people including individuals, couples and families.",
+      "The doctors we support specialise in a broad range of health areas including women’s health, men’s health, children’s health, injures, mental health and  chronic illness. For your doctor it is all about your needs and desired health outcomes.",
+      "This clinic and the doctors we support provide equity of access to quality care for all Australians regardless of their race, sex, age, religion, socioeconomic status or location. Good access includes affordability, the availability of appointments, intensive care, and the ability to access your GP of choice.",
+      "We and the doctors who consult from GPs on Vermont Medical Centre are determined to treat every patient equally and with respect. The General Practicioners we support have knowledge which is extensive, and they are 100% sure that they can provide a solution that best suits each individual’s situation."
     ],
     items: [
       "Women’s health",
@@ -233,7 +233,7 @@ const services = [
     ],
     sections: [
       {
-        title: "Our General Practice Services",
+        title: "General Practice Services",
         topics: [
           {
             icon: "",
@@ -316,15 +316,15 @@ const services = [
           {
             icon: "",
             type: "PARAGRAPH",
-            title: "How do i make a booking?",
+            title: "How do i make a booking with my doctor?",
             descriptions: [
-              "You can book online or call us on (02) 6025 2189 during business hours from Monday to Saturday or clicking on the “Book an Appointment” button on our website. Sometimes we even take same day appointments!"
+              "You can book online or call us on (02) 6025 2189 during business hours from Monday to Saturday or clicking on the “Book an Appointment” button on our website. Sometimes your doctor may even take same day appointments!"
             ]
           },
           {
             icon: "",
             type: "PARAGRAPH",
-            title: "How long before my appointment should I arrive?",
+            title: "How long before my appointment with my doctor should I arrive?",
             descriptions: [
               "To give the doctors the ability to run on time and fill out needed paperwork, we recommend arriving to your appointment about 5-10 mins before your scheduled time."
             ]
@@ -341,9 +341,9 @@ const services = [
           {
             icon: "",
             type: "PARAGRAPH",
-            title: "What if I can’t make it to my appointment?",
+            title: "What if I can’t make it to my appointment with my doctor?",
             descriptions: [
-              "Out of respect to our doctors we highly recommend to inform us of any cancellations within 24/48 hours’ notice. Same day cancellations may impact the chance to book in the future."
+              "Out of respect to your doctors we highly recommend to inform us of any cancellations within 24/48 hours’ notice. Same day cancellations may impact the chance to book in the future with your doctor."
             ]
           }
         ]
@@ -373,10 +373,10 @@ const services = [
     icon: "fa fa-pills fa-lg",
     image: "medication.svg",
     shortIntro:
-      "Sexual health is an important part of wellbeing for all ages. Find out what we’re doing to help prevent and manage sexually transmissible infections in Australia.",
+      "Sexual health is an important part of wellbeing for all ages. Find out what the doctors consulting from GPs on Vermont Medical Centre are doing to help prevent and manage sexually transmissible infections in Australia.",
     introDescriptions: [
-      "Sexually transmitted infection (STI) screening is available for patients. The screening can be conducted during a regular consultation and can inlcude a discussion about safe sex practices. As many STI’s can occur without the patient experiencing symptoms, screening is recommended as part of a patient’s health check.",
-      "We ask that you book a 20-minute appointment for a sexual health check. To arrange an appointment with one of our Doctors, please phone (02) 6025 2189 or book online."
+      "Sexually transmitted infection (STI) screening is offered by the doctors we support for their patients. The screening can be conducted during a regular consultation with your doctor and can include a discussion about safe sex practices. As many STI’s can occur without the patient experiencing symptoms, screening is recommended as part of a patient’s health check.",
+      "Your doctor asks that you book a 20-minute appointment for a sexual health check. To arrange an appointment with your Doctors, please phone (02) 6025 2189 or book online."
     ],
     items: [],
     sections: [],
@@ -388,9 +388,9 @@ const services = [
     icon: "fa fa-hard-hat fa-lg",
     image: "worker.svg",
     shortIntro:
-      "We provide employers occupational health with a full employment  medical services and injury management.",
+      "Full employment  medical services and injury management.",
     introDescriptions: [
-      "GPs on Vermont provides tailored advice for your company based on expert professional opinion, so you are aware of the minimum standards needed when employing staff. This is given by a qualified and trained Practitioner but can be extended to a specialist if needed."
+      "The doctors we support at GPs on Vermont provide tailored advice for your company based on their expert professional opinion, so you are aware of the minimum standards needed when employing staff."
     ],
     items: [
       "Pre Employment Medicals",
@@ -416,8 +416,8 @@ const services = [
             title: "",
             descriptions: [
               "Pre-employment medicals are increasingly an essential task in the recruiting process to identify the most suitable candidates for the specific roles you’re trying to hire for.",
-              "We provide a needs-based assessment for each candidate case. Most HR managers and small to medium business owners are unaware of the dynamic differences that are required from role to role and therefore we can assist you with that advice on what’s expected from you.",
-              "We take everyone candidate through a basic medical assessment and then proceed with role specific testing, followed by any in depth assessment that may arise from any individual risk. These may involve audiometry, spirometry, sleep studies, exercise stress testing or functional capacity testing.",
+              "The doctors we support provide a needs-based assessment for each candidate case. Most HR managers and small to medium business owners are unaware of the dynamic differences that are required from role to role and therefore the doctors we support can assist you with that advice on what’s expected from you.",
+              "Your doctor will take everyone candidate through a basic medical assessment and then proceed with role specific testing, followed by any in depth assessment that may arise from any individual risk. These may involve audiometry, spirometry, sleep studies, exercise stress testing or functional capacity testing.",
               "These can also be performed for employees with role specific requirements such as heavy physical work as a base part of their day-to-day activities"
             ]
           }
@@ -431,9 +431,9 @@ const services = [
             type: "PARAGRAPH",
             title: "",
             descriptions: [
-              "An Executive Health Assessment fits in with our overall Needs-Based style of service provision. We want to leave every stone unturned in evaluating executive health, but we are not in the business of placing individuals at further risk or saying ‘yes’ to all requests and companies in the interest of simply raising earnings.",
-              "We want to help you protect your company, the investment you have in an individual, and the continuity of your dealings long term. Lower your insurance premiums, limit time away from work and increase productivity in the most caring way possible.",
-              "All our examinations are performed with the highest level of due diligence and we hope that this translates to a healthier workforce for your company and its staff. Enquire with us about what we can do for your Executives today."
+              "An Executive Health Assessment fits in with the overall Needs-Based style of service provision. The doctors we support want to leave every stone unturned in evaluating executive health, but they are not in the business of placing individuals at further risk or saying ‘yes’ to all requests and companies in the interest of simply raising earnings.",
+              "The doctors we support want to help you protect your company, the investment you have in an individual, and the continuity of your dealings long term. Lower your insurance premiums, limit time away from work and increase productivity in the most caring way possible.",
+              "All examinations are performed with the highest level of due diligence and the doctors we support hope that this translates to a healthier workforce for your company and its staff. Enquire with us about what the doctors we support can do for your Executives today."
             ]
           }
         ]
@@ -564,7 +564,7 @@ const services = [
     icon: "fa fa-file-medical fa-lg",
     image: "pill.svg",
     shortIntro:
-      "If you have a chronic or terminal medical condition, our GPs can work with the Chronic Disease Management (CDM) program offered by Medicare to plan the appropriate health care for you.",
+      "If you have a chronic or terminal medical condition, your GP can work with the Chronic Disease Management (CDM) program offered by Medicare to plan the appropriate health care for you.",
     introDescriptions: [],
     items: [],
     sections: [
@@ -587,11 +587,11 @@ const services = [
             icon: "",
             type: "CARD",
             title:
-              "If the GP involves other health care professionals as well, the plan may also include:",
+              "If your GP involves other health care professionals as well, the plan may also include:",
             descriptions: [
-              "Collaboration between team members to prepare the plan",
+              "Collaboration between other health care professionals or support staff to prepare the plan",
               "Recording of each party’s goals and the treatment",
-              "Care planned to meet those goals, and regular review of the team arrangements"
+              "Care planned to meet those goals, and regular review of the care arrangements"
             ]
           }
         ]
@@ -634,7 +634,7 @@ const services = [
             type: "PARAGRAPH",
             title: "",
             descriptions: [
-              "GPs on Vermont Medical Centre acknowledges and pays respect to the traditional custodians and original owners of this land, the Wiradjuri people, and recognise the continuing connection to land, waters and culture. We pay respect to those that have passed before us and acknowledge all elders past, present and emerging."
+              "GPs on Vermont Medical Centre and the doctors we support acknowledge and pay respect to the traditional custodians and original owners of this land, the Wiradjuri people, and recognise the continuing connection to land, waters and culture. We pay respect to those that have passed before us and acknowledge all elders past, present and emerging."
             ]
           }
         ]
@@ -648,10 +648,10 @@ const services = [
     icon: "fa fa-rainbow fa-lg",
     image: "rainbow.svg",
     shortIntro:
-      "We are GPs who create an environment where all patients feel welcome and can better meet their patients' often complex health care needs.",
+      "The GPs we support create an environment where all patients feel welcome and can better meet their patients' often complex health care needs.",
     introDescriptions: [
-      "Many healthcare organizations are striving to ensure sensitive and equitable care for individuals who identify as lesbian, gay, bisexual, transgender, or queer (LGBTQ). Yet many doctors and nurses find gaps in knowledge when caring for LGBTQ patients",
-      "Our practice approach patients with open-mindedness and a nonjudgmental attitude. Our job as a healthcare professional is to assist the person in solving a health concern or reducing the risk of future health problems.",
+      "The doctors we support are striving to ensure sensitive and equitable care for individuals who identify as lesbian, gay, bisexual, transgender, or queer (LGBTQ). Yet many doctors and nurses find gaps in knowledge when caring for LGBTQ patients",
+      "The doctors we support approach patients with open-mindedness and a nonjudgmental attitude. Their job as a healthcare professional is to assist the person in solving a health concern or reducing the risk of future health problems.",
       "It’s also important to build your awareness of the specific physical health problems LGBTQ individuals face. Lesbian women are more at risk for certain cancers due to the prevalence of obesity, nulliparity, or later pregnancy.",
       "Lesbian women are susceptible to many of the same sexually transmitted infections as heterosexual people and gay men. Thinking that this population isn’t at risk for these STIs can result in lack of appropriate screening and treatment. In addition to HIV infection, gay men may be at higher risk for anal cancer and can be particularly susceptible to body image issues in the desire to be attractive to other men. They may also experience a variety of cancers resulting from increased obesity and use of tobacco and alcohol."
     ],
@@ -669,7 +669,7 @@ const services = [
     introDescriptions: [
       "Skin cancer is by far the most common cancer in Australia, killing 5 people every day.",
       "Australia has the highest incidence of skin cancer in the world. Not all of them are melanoma’s. In fact nonmelanoma skin cancers in Australia are now nearly seven times more common than all other cancers combined; approximately half of these are removed by general practitioners.",
-      "As part of our patients continuity of care we recommend regular skin checks with us to be able to detect any changes as soon as possible."
+      "As part of their patients' continuity of care, the doctors we support recommend regular skin checks to be able to detect any changes as soon as possible."
     ],
     items: [],
     sections: [],
@@ -696,7 +696,7 @@ const services = [
             title: "",
             descriptions: [
               "The government recommends that people who have had COVID-19 and recovered should still be vaccinated, approximately 3 months after the confirmed infection, whether that’s an initial shot or a booster dose.",
-              "A nurse or doctor can give the injection which is usually given into the upper arm and only takes a few seconds.",
+              "A nurse or your doctor can give the injection which is usually given into the upper arm and only takes a few seconds.",
               "The vaccines will change with time, based on predictions of which strains will be most active. That’s why it’s important to keep your boosters up to date as the virus is still circulating and people can get re-infected or infected with a different strain."  
             ]
           }
@@ -755,8 +755,8 @@ const services = [
               "Q fever is a bacterial infection caused by exposure to the Q fever bacterium Coxiella burnetii. The bacteria is usually passed from animals to humans, especially after exposure to contaminated air, soil or dust.",
               "A Q fever infection causes flu-like symptoms that can be severe and in some people may cause long-term health issues.",
               "The Q fever vaccine though highly effective is unfortunately not suitable for everyone. If you have a known egg proteins allergy, are pregnant or are a child under 15 years of age you should not have the vaccine.",
-              "If you have a weakened immune system, have had Q fever previously or are being treated for another health condition you will need to arrange a pre-vaccination screening as you may not be eligible for the vaccine.",
-              "A pre-vaccination screening can help to identify who can be vaccinated.",
+              "If you have a weakened immune system, have had Q fever previously or are being treated for another health condition you will need to arrange a pre-vaccination screening with your doctor as you may not be eligible for the vaccine.",
+              "A pre-vaccination screening with your doctor can help to identify who can be vaccinated.",
               "If you have any concerns your doctor will be able to advise you on the whether or not the vaccine is right for you."
             ]
           }

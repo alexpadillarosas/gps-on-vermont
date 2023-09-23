@@ -32,7 +32,6 @@ const staff = [
     accreditations: ["MBChB(Bristol)", "Diploma of Obstetric", "Diploma Anaesthetic"],
     descriptions: [
       "Dr Ramsay has been a General Practitioner in the Albury Wodonga area since 1988.",
-      "She is one of our Doctors at GPs on Vermont Medical Centre",
       "Dr Ramsay has a special interest in Women Health, Family Planning and Antenatal Care."
     ],
     availability: [
@@ -56,7 +55,8 @@ const staff = [
     image: "dr-barkas.jpg",
     accreditations: ["MBBS", "FRACGP", "DRANZCOG(Adv)"],
     descriptions: [
-      "Dr Barkas has been working as a General Practitioner across the border communities for many years and will be working at GPs on Vermont on a part-time basis."
+      "Dr Barkas has been working as a General Practitioner across the border communities for many years.",
+      "Dr Barkas consults at GPs on Vermont on a part-time basis."
     ],
     availability: [
       { day: "Mon", desc: "Monday", from: "8:30", to: "5:20", notes: "" },
@@ -173,7 +173,7 @@ const staff = [
     descriptions: [
       "Our administration Team is managed by our Practice Manager Liz.",
       "Liz has extensive experience working in health management, and believes that patient care is a priority of the practice.",
-      "She is very passionate about maintaining a high level of Customer Service for the patients of the practice and will maintain open lines of communication."
+      "She is very passionate about maintaining a high level of Customer Service for the patients of doctos we support and will maintain open lines of communication."
     ],
     availability: [
       { day: "Mon", desc: "Monday", from: "8:30", to: "5:20", notes: "" },
@@ -220,7 +220,7 @@ const staff = [
     speaks: ["English"],
     descriptions: [
       " Megan has been nursing for over 20 years and has extensive experience in clinical care in General Practice",
-      "She looks forward to meeting the new patients to the clinic."
+      "She looks forward to meeting the new patients of the doctors we support."
     ],
     booking: false,
     bookingDoctorId: "",
@@ -244,7 +244,7 @@ const staff = [
     descriptions: [
       "Lara shares a high passion for primary health care. She has worked in this environment for the past 8 years after successfully completing her studies of ‘Bachelor of Nursing’ in 2015.",
       "Our nurse Lara is very passionate about general practice and enjoys all aspects of practice nursing. She is a strong advocate for whole patient care, health and wellbeing.",
-      "Lara also holds a strong interest in school nursing and attends currently two schools weekly with the GP to see students. She also has extensive experience with the skin since having worked in specialised skin clinics for many years."
+      "Lara also holds a strong interest in school nursing and attends currently two schools weekly (alongside a GP) to see students. She also has extensive experience with the skin since having worked in specialised skin clinics for many years."
     ],
     booking: false,
     bookingDoctorId: "",

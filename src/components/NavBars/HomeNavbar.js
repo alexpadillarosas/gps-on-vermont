@@ -124,7 +124,7 @@ function HomeNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink to="/staff-page" tag={Link}>
-                  Staff
+                  Doctors & Support Staff
                 </NavLink>
               </NavItem>
               {/* 
@@ -141,7 +141,7 @@ function HomeNavbar() {
 
               <NavItem>
                 <NavLink to="/services-page" tag={Link}>
-                  Our Services
+                  Medical Services
                 </NavLink>
               </NavItem>
               <NavItem>

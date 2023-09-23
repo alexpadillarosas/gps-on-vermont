@@ -54,7 +54,7 @@ const ContactUsPage = () => {
             <Row>
               <Col sm="12" md="6">
                 <Card className={"card-data"}>
-                  <CardHeader className="card-header ">Call Us</CardHeader>
+                  <CardHeader className="card-header ">Call</CardHeader>
                   <CardBody>
                     <IconSocialMediaItem
                       mediaId={"phone"}
@@ -148,7 +148,7 @@ const ContactUsPage = () => {
               </Col>
               <Col sm="12" md="6">
                 <Card className={"card-data"}>
-                  <CardHeader className="card-header">Email Us</CardHeader>
+                  <CardHeader className="card-header">Email</CardHeader>
                   <CardBody>
                     <IconSocialMediaItem
                       mediaId={"email"}

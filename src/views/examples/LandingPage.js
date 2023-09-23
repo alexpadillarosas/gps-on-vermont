@@ -91,7 +91,7 @@ function LandingPage() {
               <Col sm="12" lg="6" className="">
                 <h5 className="description text-center">
                   At GPs on Vermont Medical Centre we are passionate about
-                  providing high quality primary and preventive health care to
+                  supporting doctors to provide high quality primary and preventive health care to
                   the community. Health is important, but good health is
                   optimal. Having a comprehensive health management plan and a
                   preventative approach to your health is the key to sustaining
@@ -144,7 +144,7 @@ function LandingPage() {
             {/* For other days use this */}
             <Row>
               <Col sm="12" md="8" lg="8" className="ml-auto mr-auto text-center" >
-                <h2 className="title text-muted">Opening Hours</h2>
+                <h2 className="title text-muted">Consultation Hours</h2>
               </Col>
             </Row>
             <Row >
@@ -180,7 +180,7 @@ function LandingPage() {
 
         <div className="section section-team text-center" style={{ padding: 0 }}>
           <Container>
-            <h2 className="title text-muted">Our Services</h2>
+            <h2 className="title text-muted">Medical Services Provided by Doctors Consulting at GPs on Vermont Medical Centre</h2>
             <div className="team">
               <ServiceCardBlock />
             </div>
@@ -189,7 +189,7 @@ function LandingPage() {
 
         <div className="section section-team text-center" style={{ padding: 0 }}>
           <Container>
-            <h2 className="title text-muted">Here is our team</h2>
+            <h2 className="title text-muted">The Doctors and Support Team</h2>
             <OurTeam staffData={staffContent} />
           </Container>
         </div>

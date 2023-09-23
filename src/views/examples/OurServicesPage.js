@@ -8,7 +8,7 @@ import DarkFooter from "../../components/Footers/DarkFooter";
 import LandingPageHeader from "../../components/Headers/LandingPageHeader";
 
 const OurServicesPage = () => {
-  const message = "Our Services";
+  const message = "Medical Services Provided by Your Doctor";
 
 
   const enabledServicesContent = servicesContent.filter( service => service.enabled );

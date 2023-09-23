@@ -153,7 +153,7 @@ function ExamplesNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink href="https://github.com/creativetimofficial/now-ui-kit-react/issues?ref=creativetim">
-                  Apointments
+                  Appointments
                 </NavLink>
               </NavItem>
               <NavItem>

@@ -35,7 +35,7 @@ const ServiceDetailsPage = ({ match }) => {
           />
 
           <div className="section text-center">
-            <BackButton children={"Go Back To Services"} className="btn-round our-services-go-back-button"/>
+            <BackButton children={"Go Back To Medical Services Your Doctor Provides"} className="btn-round our-services-go-back-button"/>
             <Container className=" text-muted">
               <div className="justify-content-center">
                 <img
