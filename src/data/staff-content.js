@@ -53,6 +53,62 @@ const staff = [
   {
     titleAbr: "Dr",
     title: "Doctor",
+    name: "Buddhi Lokuketagoda",
+    image: "dr-lokuketagoda.jpg",
+    accreditations: ["MBBS", "MD"],
+    descriptions: [
+      "Buddhi worked as a Clinician in hospital settings, General Practice and preventive health sector for 20 years in Sri Lanka.",
+      "She came to Australia in March 2021 and has worked in General Practice.",
+      "Dr Lokuketagoda is trained both as a clinician and a researcher in the Medical Field.",
+      "Buddhi has been trained to work in several fields including Antenatal care, Women’s Health, Paediatrics, non-communicable diseases & Mental health.",
+      "Buddhi's special interests are non-communicable diseases, women’s health, and paediatrics."
+    ],
+    availability: [
+      // { day: "Mon", desc: "Monday", from: "8:30", to: "5:20", notes: "" },
+      { day: "Tue", desc: "Tuesday", from: "9:30", to: "11:30", notes: "" },
+      { day: "Wed", desc: "Wednesday", from: "8:00", to: "2:50", notes: "" },
+      { day: "Thu", desc: "Thursday", from: "8:15", to: "3:45", notes: "" },
+      // { day: "Fri", desc: "Friday", from: "8:30", to: "5:20", notes: "" },
+      // { day: "Sat", desc: "Saturday", from: "9:00", to: "4:20", notes: "" }
+    ],
+    speaks: ["English"],
+    booking: true,
+    bookingDoctorId: "dr-buddhi-lokuketagoda",
+    socialMedia: [],
+    enabled: true,
+    doctor: true
+  },
+  {
+    titleAbr: "Dr",
+    title: "Doctor",
+    name: "Elena Douse",
+    image: "dr-douse.jpg",
+    accreditations: ["MBBS, BSc (Hons)", "DRCOG", "FRACGP"],
+    descriptions: [
+      "Dr Elena Douse trained and qualified at Guys, Kings and St Thomas’s Hospital in London, UK.",
+      "She and her husband emigrated to Australia in 2012, working in both rural Victoria as well as the Gold Coast.",
+      "Dr Douse brings a wealth of knowledge and experience in complex chronic disease with interests in Cardiology and Diabetes management.",
+      "She also has extensive experience in medicinal cannabis prescribing - successfully managing a range of chronic pain conditions, anxiety, and other neurological presentations.",
+      "Outside of medicine Dr Douse loves travel, particularly to Greece, as well as participating in winter snow sports with her two young children."
+    ],
+    availability: [
+      { day: "Mon", desc: "Monday", from: "8:30", to: "5:20", notes: "" },
+      { day: "Tue", desc: "Tuesday", from: "8:30", to: "5:20", notes: "" },
+      { day: "Wed", desc: "Wednesday", from: "8:30", to: "5:20", notes: "" },
+      { day: "Thu", desc: "Thursday", from: "8:30", to: "5:20", notes: "" },
+      { day: "Fri", desc: "Friday", from: "8:30", to: "5:20", notes: "" },
+      { day: "Sat", desc: "Saturday", from: "9:00", to: "4:20", notes: "" }
+    ],
+    speaks: ["English"],
+    booking: false,
+    bookingDoctorId: "",
+    socialMedia: [],
+    enabled: true,
+    doctor: true
+  },
+  {
+    titleAbr: "Dr",
+    title: "Doctor",
     name: "Richard Barkas",
     image: "dr-barkas.jpg",
     accreditations: ["MBBS", "FRACGP", "DRANZCOG(Adv)"],

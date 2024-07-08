@@ -1406,6 +1406,60 @@ const news = [
   {
     id: "52",
     type: "img",
+    img: "gps-on-vermont-medical-centre-news.jpg",
+    pageLink: "welcome-dr-elena-douse",
+    title: "Welcome Dr Elena Douse",
+    contents: [
+      "The team are excited to announce that Dr Elena Douse will be joining us at GPS On Vermont Medical Centre Wodonga.",
+      "Dr Elena Douse has made the move from Queensland with her family and will commence at the clinic on Wednesday 24th of July.",
+
+      ".",
+      "Call us today to book your appointment",
+      "02 6025 2189"
+    ],
+    date: "2024-07-08",
+    enabled: true
+  },
+  {
+    id: "53",
+    type: "img",
+    img: "medicare-news.jpg",
+    pageLink: "bulk-billilng-appointments-available-2024-07-08",
+    title: "Bulk Billing Appointments available!",
+    contents: [
+      "GPs on Vermont have increased Bulk Billing appointments available. New Patients are welcome and walk in appointments available.",
+      "DVA and Students appointments with a sub specialty Practitioner.",
+      "Call us at 0260 252189 or Click the Book Appointment button above",
+      " •	"
+    ],
+    date: "2024-07-08",
+    enabled: true
+  },
+  {
+    id: "54",
+    type: "img",
+    img: "book-your-flu-shot-news.jpg",
+    pageLink: "book-your-flu-shot-2024-07-08",
+    title: "Flu season is here!",
+    contents: [
+      "It's that time again, Flu shots are in!. Everyone can benefit from the flu vaccine, but it’s crucial for people in certain groups.",
+      "Getting the flu puts you at risk of secondary infections and serious complications, especially if you’re in a high-risk group. Possible complications include: ",
+      " •	pneumonia •	bronchitis • sinus infections •	ear infections ",
+      "The very young have an increased chance of developing complications from the flu. It’s important for them to stay up to date on their flu vaccinations. It’s also important to make the flu vaccine a priority if you:",
+
+      " •	are 65 or older",
+      " •	live in a nursing home or care facility",
+      " •	have a chronic health condition, such as diabetes, asthma, heart disease, or HIV",
+      " •	have a weakened immune system",
+      " •	are a healthcare worker who may be exposed to people who are sick",
+      "Also remember If you are over 65, you might need your PNEUMONIA Vaccine."
+    ],
+    date: "2024-07-08",
+    enabled: true
+  },
+  {
+    id: "100",
+    type: "img",
     img: "alzheimers-dementia-news.jpg",
     pageLink: "how-much-do-you-understand-about-alzheimers-and-dementia-news",
     title: "",

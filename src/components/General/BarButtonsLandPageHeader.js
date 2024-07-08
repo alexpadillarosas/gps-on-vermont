@@ -109,7 +109,7 @@ const BarButtonsLandPageHeader = () => {
           <i className="fas fa-map-marker-alt fa-2x fa-blink maps-icon "></i>
         </Button>
         <UncontrolledTooltip delay={0} target="tooltip515203355">
-          Visit Us
+          Visit Us (Maps)
         </UncontrolledTooltip>
 
       </div>

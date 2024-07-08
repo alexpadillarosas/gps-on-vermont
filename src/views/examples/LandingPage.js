@@ -174,7 +174,7 @@ function LandingPage() {
               
             </Row>
             
-            <NewsCardsPreview news={landingPagePreviewNews} start={0} quantity={6} bottomComponent={seeMoreComponent} />
+            <NewsCardsPreview news={landingPagePreviewNews} start={0} quantity={3} bottomComponent={seeMoreComponent} />
           </Container>
         </div>
 
