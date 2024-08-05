@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardBody, CardFooter, CardImg, CardText, CardTitle, Col, Row } from 'reactstrap';
 import Iframe from "react-iframe";
+import BookingButton from './BookingButton';
 
 const NewsCardsPreview = ({ news, start, quantity, bottomComponent }) => {
     const TEXT_SIZE = 100;
@@ -65,9 +66,24 @@ const NewsCardsPreview = ({ news, start, quantity, bottomComponent }) => {
                                             .substring(0, TEXT_SIZE)
                                             .concat("...")
                                         : item.contents[0]}
-
+                                    {item.displayBookingButton 
+                                        ?
+                                            <div className="text-center">
+                                                {item.displayBookingButtonDrId?.length > 0 
+                                                    ?
+                                                        <BookingButton doctorId={item.displayBookingButtonDrId} size="large" />
+                                                    :
+                                                        <BookingButton  size="large" />
+                                                }
+                                            </div>
+                                        :
+                                            ""
+                                    }
+                                    
                                 </CardText>
                             </CardBody>
+
+                            {/* <BookingButton className="btn-weight" size="medium" label="Book Appointment with your doctor"/> */}
 
                             <CardFooter className="d-flex pt-5" tag="h6">
                                 {item.contents[0].length > TEXT_SIZE ||
@@ -79,10 +95,16 @@ const NewsCardsPreview = ({ news, start, quantity, bottomComponent }) => {
                                                 {item.date}
                                             </section>
                                             <section className=" read-more mr-3 mb-2">
-                                                <Link to={`/news/id/${item.pageLink}`} >
-                                                    Read more
-                                                    <i className="ml-2 fa fa-angle-double-right"></i>
-                                                </Link>
+                                                {item.disableReadMore 
+                                                    ?
+                                                        ""
+                                                    :
+                                                        <Link to={`/news/id/${item.pageLink}`} >
+                                                            Read more
+                                                            <i className="ml-2 fa fa-angle-double-right"></i>
+                                                        </Link>
+                                                }
+                                                
                                             </section>
                                         </>
                                     ) :

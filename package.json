@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^7.2.1",
     "moment": "2.24.0",
     "nouislider": "^14.7.0",
-    "npm": "^7.17.0",
+    "npm": "^7.16.0",
     "react": "^16.14.0",
     "react-bootstrap-switch": "^15.5.3",
     "react-datetime": "3.0.4",

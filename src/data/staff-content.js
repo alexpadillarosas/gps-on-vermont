@@ -100,8 +100,8 @@ const staff = [
       { day: "Sat", desc: "Saturday", from: "9:00", to: "4:20", notes: "" }
     ],
     speaks: ["English"],
-    booking: false,
-    bookingDoctorId: "",
+    booking: true,
+    bookingDoctorId: "dr-elena-douse-1",
     socialMedia: [],
     enabled: true,
     doctor: true

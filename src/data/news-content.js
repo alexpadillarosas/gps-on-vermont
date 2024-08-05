@@ -393,7 +393,7 @@ const news = [
   },
   {
     id: "20",
-    type: "vid",
+    type: "video",
     img: "https://www.youtube.com/embed/eVJbenwzR1s",
     pageLink: "dos-and-donts-wearing-masks-globes-news",
     title: "Tips and tricks for wearing masks and gloves safely",
@@ -1455,6 +1455,23 @@ const news = [
       "Also remember If you are over 65, you might need your PNEUMONIA Vaccine."
     ],
     date: "2024-07-08",
+    enabled: true
+  },
+  {
+    id: "55",
+    type: "img",
+    img: "appointments-available-news.jpg",
+    pageLink: "book-appointment-dr-elena-douse-2024",
+    title: "Book your appointment with Dr. Elena Douse",
+    contents: [
+     
+      "Click the button below:",
+      " •	 "
+    ],
+    date: "2024-08-05",
+    displayBookingButton: true,
+    displayBookingButtonDrId: "dr-elena-douse-1",
+    disableReadMore : true,
     enabled: true
   },
   {
