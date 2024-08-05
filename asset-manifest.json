@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.ef4e95b7.chunk.css",
-    "main.js": "/static/js/main.760366b2.chunk.js",
-    "main.js.map": "/static/js/main.760366b2.chunk.js.map",
+    "main.css": "/static/css/main.82054f4c.chunk.css",
+    "main.js": "/static/js/main.a8f28ca7.chunk.js",
+    "main.js.map": "/static/js/main.a8f28ca7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e2e433b3.js",
     "runtime-main.js.map": "/static/js/runtime-main.e2e433b3.js.map",
-    "static/css/2.a325614d.chunk.css": "/static/css/2.a325614d.chunk.css",
-    "static/js/2.f77deb32.chunk.js": "/static/js/2.f77deb32.chunk.js",
-    "static/js/2.f77deb32.chunk.js.map": "/static/js/2.f77deb32.chunk.js.map",
+    "static/css/2.3f9027fe.chunk.css": "/static/css/2.3f9027fe.chunk.css",
+    "static/js/2.1e4663e6.chunk.js": "/static/js/2.1e4663e6.chunk.js",
+    "static/js/2.1e4663e6.chunk.js.map": "/static/js/2.1e4663e6.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.8a942ee798350160cc43eb36358c2e25.js": "/precache-manifest.8a942ee798350160cc43eb36358c2e25.js",
+    "precache-manifest.93db2397005fba1b4acac7e4a39c0f18.js": "/precache-manifest.93db2397005fba1b4acac7e4a39c0f18.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.a325614d.chunk.css.map": "/static/css/2.a325614d.chunk.css.map",
-    "static/css/main.ef4e95b7.chunk.css.map": "/static/css/main.ef4e95b7.chunk.css.map",
-    "static/js/2.f77deb32.chunk.js.LICENSE.txt": "/static/js/2.f77deb32.chunk.js.LICENSE.txt",
+    "static/css/2.3f9027fe.chunk.css.map": "/static/css/2.3f9027fe.chunk.css.map",
+    "static/css/main.82054f4c.chunk.css.map": "/static/css/main.82054f4c.chunk.css.map",
+    "static/js/2.1e4663e6.chunk.js.LICENSE.txt": "/static/js/2.1e4663e6.chunk.js.LICENSE.txt",
     "static/media/Annette-Baumgarten.jpg": "/static/media/Annette-Baumgarten.4a291657.jpg",
     "static/media/Bayleigh-Reedy.jpg": "/static/media/Bayleigh-Reedy.666e5f58.jpg",
     "static/media/Evie-Frawley.jpg": "/static/media/Evie-Frawley.60d7a159.jpg",
@@ -26,6 +26,7 @@
     "static/media/aboriginalflag.svg": "/static/media/aboriginalflag.328be05c.svg",
     "static/media/after-hours.jpg": "/static/media/after-hours.ecf46a1e.jpg",
     "static/media/alzheimers-dementia-news.jpg": "/static/media/alzheimers-dementia-news.53f29299.jpg",
+    "static/media/appointments-available-news.jpg": "/static/media/appointments-available-news.1be1bfd3.jpg",
     "static/media/atagi-covid-news.jpg": "/static/media/atagi-covid-news.13b322e3.jpg",
     "static/media/avatar.jpg": "/static/media/avatar.ce54dd20.jpg",
     "static/media/bg1.jpg": "/static/media/bg1.6b1983a2.jpg",
@@ -127,9 +128,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e2e433b3.js",
-    "static/css/2.a325614d.chunk.css",
-    "static/js/2.f77deb32.chunk.js",
-    "static/css/main.ef4e95b7.chunk.css",
-    "static/js/main.760366b2.chunk.js"
+    "static/css/2.3f9027fe.chunk.css",
+    "static/js/2.1e4663e6.chunk.js",
+    "static/css/main.82054f4c.chunk.css",
+    "static/js/main.a8f28ca7.chunk.js"
   ]
 }
