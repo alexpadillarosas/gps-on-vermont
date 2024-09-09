@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.82054f4c.chunk.css",
-    "main.js": "/static/js/main.a8f28ca7.chunk.js",
-    "main.js.map": "/static/js/main.a8f28ca7.chunk.js.map",
+    "main.js": "/static/js/main.b02627bf.chunk.js",
+    "main.js.map": "/static/js/main.b02627bf.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e2e433b3.js",
     "runtime-main.js.map": "/static/js/runtime-main.e2e433b3.js.map",
     "static/css/2.3f9027fe.chunk.css": "/static/css/2.3f9027fe.chunk.css",
-    "static/js/2.1e4663e6.chunk.js": "/static/js/2.1e4663e6.chunk.js",
-    "static/js/2.1e4663e6.chunk.js.map": "/static/js/2.1e4663e6.chunk.js.map",
+    "static/js/2.489bb748.chunk.js": "/static/js/2.489bb748.chunk.js",
+    "static/js/2.489bb748.chunk.js.map": "/static/js/2.489bb748.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.93db2397005fba1b4acac7e4a39c0f18.js": "/precache-manifest.93db2397005fba1b4acac7e4a39c0f18.js",
+    "precache-manifest.f89084b9c7af5310fac7c5679237fd55.js": "/precache-manifest.f89084b9c7af5310fac7c5679237fd55.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.3f9027fe.chunk.css.map": "/static/css/2.3f9027fe.chunk.css.map",
     "static/css/main.82054f4c.chunk.css.map": "/static/css/main.82054f4c.chunk.css.map",
-    "static/js/2.1e4663e6.chunk.js.LICENSE.txt": "/static/js/2.1e4663e6.chunk.js.LICENSE.txt",
+    "static/js/2.489bb748.chunk.js.LICENSE.txt": "/static/js/2.489bb748.chunk.js.LICENSE.txt",
     "static/media/Annette-Baumgarten.jpg": "/static/media/Annette-Baumgarten.4a291657.jpg",
     "static/media/Bayleigh-Reedy.jpg": "/static/media/Bayleigh-Reedy.666e5f58.jpg",
     "static/media/Evie-Frawley.jpg": "/static/media/Evie-Frawley.60d7a159.jpg",
@@ -66,6 +66,7 @@
     "static/media/dr-lokuketagoda.jpg": "/static/media/dr-lokuketagoda.887a2efd.jpg",
     "static/media/dr-manthi.jpg": "/static/media/dr-manthi.3a5ca5d4.jpg",
     "static/media/dr-ramsay.jpg": "/static/media/dr-ramsay.7f25e656.jpg",
+    "static/media/dr-tharuka.jpg": "/static/media/dr-tharuka.d463ec2a.jpg",
     "static/media/endometriosis-concern-news.jpg": "/static/media/endometriosis-concern-news.4c095be4.jpg",
     "static/media/eva.jpg": "/static/media/eva.089c4f4e.jpg",
     "static/media/flu-vaccines-news.jpg": "/static/media/flu-vaccines-news.5ddb23b0.jpg",
@@ -97,6 +98,7 @@
     "static/media/medicare-news.jpg": "/static/media/medicare-news.d9520ef4.jpg",
     "static/media/medication.svg": "/static/media/medication.012b8877.svg",
     "static/media/mental-health-news.jpg": "/static/media/mental-health-news.c005d505.jpg",
+    "static/media/mymedicare-news.jpg": "/static/media/mymedicare-news.985815ce.jpg",
     "static/media/new-patients-welcome2.png": "/static/media/new-patients-welcome2.9e4839fb.png",
     "static/media/not-found.jpg": "/static/media/not-found.6fa76661.jpg",
     "static/media/nsw-vic-border-closure-news.jpg": "/static/media/nsw-vic-border-closure-news.fe5e4277.jpg",
@@ -129,8 +131,8 @@
   "entrypoints": [
     "static/js/runtime-main.e2e433b3.js",
     "static/css/2.3f9027fe.chunk.css",
-    "static/js/2.1e4663e6.chunk.js",
+    "static/js/2.489bb748.chunk.js",
     "static/css/main.82054f4c.chunk.css",
-    "static/js/main.a8f28ca7.chunk.js"
+    "static/js/main.b02627bf.chunk.js"
   ]
 }
