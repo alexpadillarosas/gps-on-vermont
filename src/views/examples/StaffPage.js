@@ -8,7 +8,7 @@ import DarkFooter from "../../components/Footers/DarkFooter";
 import LandingPageHeader from "../../components/Headers/LandingPageHeader";
 
 const StaffPage = () => {
-  const message = "Doctors & Support Staff";
+  const message = "Doctors consulting here & Support Staff";
 
   useEffect(() => {
     headerScrolling();

@@ -1475,6 +1475,54 @@ const news = [
     enabled: true
   },
   {
+    id: "56",
+    type: "img",
+    img: "mymedicare-news.jpg",
+    pageLink: "gps-on-vermont-joined-my-medicare",
+    title: "We have join MyMedicare, You could join too!",
+    contents: [
+     
+      "As you may know, the government has recently introduced a new healthcare initiative called MyMedicare. This initiative, established in response to the Strengthening Medicare Taskforce of July 2022, aims to enhance patient relationships with their healthcare teams through a voluntary patient registration system.",
+      "MyMedicare offers several benefits for both patients and their practices, including:",
+      "🔆 Additional government funding to support your primary care team in providing necessary care.",
+      "🔆 A formalized relationship with your general practice and GP, which has been shown to improve health outcomes.",
+      "🔆 Access to extended telehealth consultations.",
+      "🔆 Future enhancements to patient registration benefits.",
+      "As your trusted family medical practice, we are committed to notifying and registering as many of our valued patients as possible. Participating in this important government initiative will enable us to continue delivering top-quality healthcare and support you and your family in achieving your health goals.",
+      "At GPs on Vermont Medical Centre we are committed to notifying and registering as many of our valued patients as possible. Participating in this important government initiative will enable us to continue delivering top-quality healthcare and support you and your family in achieving your health goals.",
+      "You can register through:",
+      "🔆 myGov or the Express Plus Medicare app",
+      "🔆 Medicare Online Services via your myGov account.",
+      "🔆 Completing a form available at the clinic. Please note that registration with MyMedicare is only possible if you have had at least two consultations with a GP at our practice. Once eligible, you can fill out the form and submit it to our friendly reception staff, who will upload it to MyGov on your behalf.",
+      ".",
+      "For any additional information do not hesitate to call our helpful reception staff on 02 6025 2189.",
+      "We are looking forward to hearing from you soon!"
+    ],
+    date: "2024-09-09",
+    displayBookingButton: false,
+    displayBookingButtonDrId: "dr-elena-douse-1",
+    disableReadMore : false,
+    enabled: true
+  },
+  {
+    id: "52",
+    type: "img",
+    img: "gps-on-vermont-medical-centre-news.jpg",
+    pageLink: "welcome-dr-tharuka-gunasekara",
+    title: "Welcome Dr Tharuka Gunasekara",
+    contents: [
+      "The team are excited to announce that Dr Tharuka Gunasekara will be joining us at GPS On Vermont Medical Centre Wodonga.",
+      "Dr. Tharuka has worked across various medicine subspecialties and emergency units in different hospital environments, developing a comprehensive skill set and a deep understanding of patient care. Her special interest lies in enhancing general practice in regional areas, with a focus on improving primary care and the overall health and wellbeing of communities.",
+      "Her areas of special interest include general medicine, women's health, elderly care, diabetes management, and mental health. ",
+
+      ".",
+      "Call us today to book your appointment",
+      "02 6025 2189"
+    ],
+    date: "2024-09-09",
+    enabled: true
+  },
+  {
     id: "100",
     type: "img",
     img: "alzheimers-dementia-news.jpg",

@@ -159,6 +159,32 @@ const staff = [
   {
     titleAbr: "Dr",
     title: "Doctor",
+    name: "Tharuka Gunasekara",
+    image: "dr-tharuka.jpg",
+    accreditations: [],
+    descriptions: [
+      "Dr. Tharuka is a dedicated General Practitioner with a rich background in medicine, bringing extensive international experience to her role at GPs in Vermont. She graduated from the University of Science and Technology, Bangladesh in 2017, and has since built a diverse career across several medical settings in Bangladesh, Sri Lanka (Army Hospital), as well as Queensland Health.",
+      "Dr. Tharuka has worked across various medicine subspecialties and emergency units in different hospital environments, developing a comprehensive skill set and a deep understanding of patient care. Her special interest lies in enhancing general practice in regional areas, with a focus on improving primary care and the overall health and wellbeing of communities.",
+      "Outside of her professional commitments, Dr. Tharuka enjoys traveling, watching sports, and discovering great cafes, reflecting her enthusiasm for new experiences and cultural exploration. Her diverse background and commitment to community health make her a valuable addition to the team at GPs in Vermont."
+    ],
+    availability: [
+      { day: "Mon", desc: "Monday", from: "8:30", to: "5:20", notes: "" },
+      { day: "Tue", desc: "Tuesday", from: "8:30", to: "5:20", notes: "" },
+      { day: "Wed", desc: "Wednesday", from: "8:30", to: "5:20", notes: "" },
+      { day: "Thu", desc: "Thursday", from: "8:30", to: "5:20", notes: "" },
+      { day: "Fri", desc: "Friday", from: "8:30", to: "5:20", notes: "" },
+      { day: "Sat", desc: "Saturday", from: "9:00", to: "4:20", notes: "" }
+    ],
+    speaks: ["English", "Sinhalese","Hindi","Bengali"],
+    booking: false,
+    bookingDoctorId: "dr-joyce-manthi",
+    socialMedia: [],
+    enabled: true,
+    doctor: true
+  },
+  {
+    titleAbr: "Dr",
+    title: "Doctor",
     name: "Hooman Pio",
     image: "dr-hooman.jpg",
     accreditations: ["Master of Public Health"],
