@@ -261,7 +261,7 @@ const staff = [
     descriptions: [
       "Our administration Team is managed by our Practice Manager Liz.",
       "Liz has extensive experience working in health management, and believes that patient care is a priority of the practice.",
-      "She is very passionate about maintaining a high level of Customer Service for the patients of doctos we support and will maintain open lines of communication."
+      "She is very passionate about maintaining a high level of Customer Service for the patients of doctos consulting here and will maintain open lines of communication."
     ],
     availability: [
       { day: "Mon", desc: "Monday", from: "8:30", to: "5:20", notes: "" },
@@ -309,7 +309,7 @@ const staff = [
     speaks: ["English"],
     descriptions: [
       " Megan has been nursing for over 20 years and has extensive experience in clinical care in General Practice",
-      "She looks forward to meeting the new patients of the doctors we support."
+      "She looks forward to meeting the new patients of the doctors consulting here."
     ],
     booking: false,
     bookingDoctorId: "",

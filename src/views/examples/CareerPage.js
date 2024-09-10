@@ -49,14 +49,14 @@ const CareerPage = () => {
               <Row>
                   <Col sm="12" lg="12" className="">
                       <h5 className="description text-left">
-                      One of the wonderful things about GPs on Vermont Medical Centre is our tight knit professional team. It has really shone this past year, so much so that the Albury Wodonga community has readily embraced us and we are able to expand and hire more staff. We are interested in finding someone who is more than their credentials. Someone who is compatible with the team, the doctors we support and their patients and our medical centres values. As well as being willing to relocate to the area permanently.
+                      One of the wonderful things about GPs on Vermont Medical Centre is our tight knit professional team. It has really shone this past year, so much so that the Albury Wodonga community has readily embraced us and we are able to expand accepting more doctors to consult here and new staff. We are interested in finding someone who is more than their credentials. Someone who is compatible with the team, the doctors consulting here and their patients and our medical centres values. As well as being willing to relocate to the area permanently.
                       </h5>
                   </Col>
               </Row>
               <Row>
                   <Col sm="12" lg="12" className="">
                       <h5 className="description text-left">
-                      We are proud of being able to provide a work environment where our employees make a difference and continue to learn, develop and thrive in their specific career interests.
+                      We are proud of being able to provide a work environment where our employees and the doctors consulting here make a difference and continue to learn, develop and thrive in their specific career interests.
                       </h5>
                   </Col>
               </Row>

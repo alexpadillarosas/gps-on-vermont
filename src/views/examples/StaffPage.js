@@ -29,7 +29,7 @@ const StaffPage = () => {
           <Container>
             <Row>
               <Col sm="12" md="8" lg="6" className="ml-auto mr-auto text-center">
-                <h2 className="title text-muted">Here are the doctors we support</h2>
+                {/* <h2 className="title text-muted">D</h2> */}
               </Col>
             </Row>
           </Container>

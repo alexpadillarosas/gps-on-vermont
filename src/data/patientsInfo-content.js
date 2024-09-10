@@ -3,7 +3,7 @@ const patientsInfo = [
         title: "Appointments",
         descriptions: [
             "If your appointment is other than a standard consultation, please tell the receptionist when you make an appointment with your doctor so that extra time can be allowed. Your doctor may require a longer consultation for e.g. women’s health, pap smear, medical assessment, or an initial visit for a work-related injury or motor vehicle accident, medical report, pre-employment examination or a procedure.",
-            "Your doctor may have “Quick Clinics” for repeat scripts and update referrals from 12 midday to 12.30pm and these appointment are 5 minutes only appointments Monday to Friday.  These appointments can be over the telephone or in person. If you have any other issues to discuss, the doctors we support request that you please book a standard appointment with your GP."
+            "Your doctor may have “Quick Clinics” for repeat scripts and update referrals from 12 midday to 12.30pm and these appointment are 5 minutes only appointments Monday to Friday.  These appointments can be over the telephone or in person. If you have any other issues to discuss, the doctors consulting here request that you please book a standard appointment with your GP."
         ],
         items: [
         ]

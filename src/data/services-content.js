@@ -203,12 +203,12 @@ const services = [
     icon: "fa fa-laptop-medical fa-lg",
     image: "care.svg",
     shortIntro:
-      "Patient care for all types of individuals, couples and families of all ages. The Doctors we support specialise in all aspects including women’s health, men’s health, children’s health, chronic illness and all major or minor injuries.",
+      "Patient care for all types of individuals, couples and families of all ages. The Doctors consulting here specialise in all aspects including women’s health, men’s health, children’s health, chronic illness and all major or minor injuries.",
     introDescriptions: [
       "The doctors who consult from GP’s on Vermont Medical Centre are committed to providing continuous long-term patient care for all ages and types of people including individuals, couples and families.",
       "The doctors we support specialise in a broad range of health areas including women’s health, men’s health, children’s health, injures, mental health and  chronic illness. For your doctor it is all about your needs and desired health outcomes.",
-      "This clinic and the doctors we support provide equity of access to quality care for all Australians regardless of their race, sex, age, religion, socioeconomic status or location. Good access includes affordability, the availability of appointments, intensive care, and the ability to access your GP of choice.",
-      "We and the doctors who consult from GPs on Vermont Medical Centre are determined to treat every patient equally and with respect. The General Practicioners we support have knowledge which is extensive, and they are 100% sure that they can provide a solution that best suits each individual’s situation."
+      "This clinic and the doctors consulting here provide equity of access to quality care for all Australians regardless of their race, sex, age, religion, socioeconomic status or location. Good access includes affordability, the availability of appointments, intensive care, and the ability to access your GP of choice.",
+      "We and the doctors who consult from GPs on Vermont Medical Centre are determined to treat every patient equally and with respect. The General Practicioners consulting here have knowledge which is extensive, and they are 100% sure that they can provide a solution that best suits each individual’s situation."
     ],
     items: [
       "Women’s health",
@@ -375,7 +375,7 @@ const services = [
     shortIntro:
       "Sexual health is an important part of wellbeing for all ages. Find out what the doctors consulting from GPs on Vermont Medical Centre are doing to help prevent and manage sexually transmissible infections in Australia.",
     introDescriptions: [
-      "Sexually transmitted infection (STI) screening is offered by the doctors we support for their patients. The screening can be conducted during a regular consultation with your doctor and can include a discussion about safe sex practices. As many STI’s can occur without the patient experiencing symptoms, screening is recommended as part of a patient’s health check.",
+      "Sexually transmitted infection (STI) screening is offered by the doctors consulting here for their patients. The screening can be conducted during a regular consultation with your doctor and can include a discussion about safe sex practices. As many STI’s can occur without the patient experiencing symptoms, screening is recommended as part of a patient’s health check.",
       "Your doctor asks that you book a 20-minute appointment for a sexual health check. To arrange an appointment with your Doctors, please phone (02) 6025 2189 or book online."
     ],
     items: [],
@@ -416,7 +416,7 @@ const services = [
             title: "",
             descriptions: [
               "Pre-employment medicals are increasingly an essential task in the recruiting process to identify the most suitable candidates for the specific roles you’re trying to hire for.",
-              "The doctors we support provide a needs-based assessment for each candidate case. Most HR managers and small to medium business owners are unaware of the dynamic differences that are required from role to role and therefore the doctors we support can assist you with that advice on what’s expected from you.",
+              "The doctors we support provide a needs-based assessment for each candidate case. Most HR managers and small to medium business owners are unaware of the dynamic differences that are required from role to role and therefore the doctors consulting here can assist you with that advice on what’s expected from you.",
               "Your doctor will take everyone candidate through a basic medical assessment and then proceed with role specific testing, followed by any in depth assessment that may arise from any individual risk. These may involve audiometry, spirometry, sleep studies, exercise stress testing or functional capacity testing.",
               "These can also be performed for employees with role specific requirements such as heavy physical work as a base part of their day-to-day activities"
             ]
@@ -433,7 +433,7 @@ const services = [
             descriptions: [
               "An Executive Health Assessment fits in with the overall Needs-Based style of service provision. The doctors we support want to leave every stone unturned in evaluating executive health, but they are not in the business of placing individuals at further risk or saying ‘yes’ to all requests and companies in the interest of simply raising earnings.",
               "The doctors we support want to help you protect your company, the investment you have in an individual, and the continuity of your dealings long term. Lower your insurance premiums, limit time away from work and increase productivity in the most caring way possible.",
-              "All examinations are performed with the highest level of due diligence and the doctors we support hope that this translates to a healthier workforce for your company and its staff. Enquire with us about what the doctors we support can do for your Executives today."
+              "All examinations are performed with the highest level of due diligence and the doctors consulting here hope that this translates to a healthier workforce for your company and its staff. Enquire with us about what the doctors consulting here can do for your Executives today."
             ]
           }
         ]
@@ -634,7 +634,7 @@ const services = [
             type: "PARAGRAPH",
             title: "",
             descriptions: [
-              "GPs on Vermont Medical Centre and the doctors we support acknowledge and pay respect to the traditional custodians and original owners of this land, the Wiradjuri people, and recognise the continuing connection to land, waters and culture. We pay respect to those that have passed before us and acknowledge all elders past, present and emerging."
+              "GPs on Vermont Medical Centre and the doctors consulting here acknowledge and pay respect to the traditional custodians and original owners of this land, the Wiradjuri people, and recognise the continuing connection to land, waters and culture. We pay respect to those that have passed before us and acknowledge all elders past, present and emerging."
             ]
           }
         ]
@@ -648,7 +648,7 @@ const services = [
     icon: "fa fa-rainbow fa-lg",
     image: "rainbow.svg",
     shortIntro:
-      "The GPs we support create an environment where all patients feel welcome and can better meet their patients' often complex health care needs.",
+      "The GPs consulting here create an environment where all patients feel welcome and can better meet their patients' often complex health care needs.",
     introDescriptions: [
       "The doctors we support are striving to ensure sensitive and equitable care for individuals who identify as lesbian, gay, bisexual, transgender, or queer (LGBTQ). Yet many doctors and nurses find gaps in knowledge when caring for LGBTQ patients",
       "The doctors we support approach patients with open-mindedness and a nonjudgmental attitude. Their job as a healthcare professional is to assist the person in solving a health concern or reducing the risk of future health problems.",
@@ -669,7 +669,7 @@ const services = [
     introDescriptions: [
       "Skin cancer is by far the most common cancer in Australia, killing 5 people every day.",
       "Australia has the highest incidence of skin cancer in the world. Not all of them are melanoma’s. In fact nonmelanoma skin cancers in Australia are now nearly seven times more common than all other cancers combined; approximately half of these are removed by general practitioners.",
-      "As part of their patients' continuity of care, the doctors we support recommend regular skin checks to be able to detect any changes as soon as possible."
+      "As part of their patients' continuity of care, the doctors consulting here recommend regular skin checks to be able to detect any changes as soon as possible."
     ],
     items: [],
     sections: [],
