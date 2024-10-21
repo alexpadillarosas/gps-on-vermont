@@ -1464,7 +1464,6 @@ const news = [
     pageLink: "book-appointment-dr-elena-douse-2024",
     title: "Book your appointment with Dr. Elena Douse",
     contents: [
-     
       "Click the button below:",
       " •	 "
     ],
@@ -1505,7 +1504,7 @@ const news = [
     enabled: true
   },
   {
-    id: "52",
+    id: "57",
     type: "img",
     img: "gps-on-vermont-medical-centre-news.jpg",
     pageLink: "welcome-dr-tharuka-gunasekara",
@@ -1520,6 +1519,46 @@ const news = [
       "02 6025 2189"
     ],
     date: "2024-09-09",
+    enabled: true
+  },
+  {
+    id: "58",
+    type: "img",
+    img: "beyond-blue-news.jpg",
+    pageLink: "beyond-blue-gps-on-vermont",
+    title: "GPs on Vermont Medical Centre is dedicated in supporting high quality health care for the community.",
+    contents: [
+      "This month we have focused on raising the awareness towards mental health and providing ways we can support our community. ",
+      "We have partnered up with Beyond Blue in raising funds towards this cause.",
+      "We have a donation box set up at reception if you wish to donate. ",
+      "Raffle tickets are available to go in the draw to win the amazing hamper. Items proudly donated from by our locally community. ",
+      "https://www.facebook.com/MixxNutritionStudio",
+      "https://www.facebook.com/butcheronrise",
+      "https://www.facebook.com/valentinesbakehouse",
+      "https://www.facebook.com/profile.php?id=100064075750435",
+      "https://www.facebook.com/profile.php?id=100057161991600",
+      "Along with heaps of items to enjoy with your family donated from the team at GPs On Vermont."
+    ],
+    date: "2024-10-20",
+    displayBookingButton: false,
+    displayBookingButtonDrId: "",
+    disableReadMore : false,
+    enabled: true
+  },
+  {
+    id: "59",
+    type: "img",
+    img: "dr-tharuka2-news.jpg",
+    pageLink: "appointments-available-dr-tharuka-gunasekara",
+    title: "Appointments Available with Dr Tharuka Gunasekara",
+    contents: [
+      "✅ Bulk Billing. Call us today to book your appointment 02 6025 2189, Or click the button below:",
+      " •	 "
+    ],
+    date: "2024-10-21",
+    displayBookingButton: true,
+    displayBookingButtonDrId: "dr-tharuka-gunasekara",
+    disableReadMore : true,
     enabled: true
   },
   {

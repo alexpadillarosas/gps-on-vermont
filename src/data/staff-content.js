@@ -128,7 +128,7 @@ const staff = [
     booking: true,
     bookingDoctorId: "dr-richard-barkas-5",
     socialMedia: [],
-    enabled: true,
+    enabled: false,
     doctor: true
   },
   {
@@ -153,7 +153,7 @@ const staff = [
     booking: true,
     bookingDoctorId: "dr-joyce-manthi",
     socialMedia: [],
-    enabled: true,
+    enabled: false,
     doctor: true
   },
   {
@@ -176,8 +176,8 @@ const staff = [
       { day: "Sat", desc: "Saturday", from: "9:00", to: "4:20", notes: "" }
     ],
     speaks: ["English", "Sinhalese","Hindi","Bengali"],
-    booking: false,
-    bookingDoctorId: "dr-joyce-manthi",
+    booking: true,
+    bookingDoctorId: "dr-tharuka-gunasekara",
     socialMedia: [],
     enabled: true,
     doctor: true

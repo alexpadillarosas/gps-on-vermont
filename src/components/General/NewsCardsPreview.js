@@ -90,8 +90,8 @@ const NewsCardsPreview = ({ news, start, quantity, bottomComponent }) => {
                                     item.contents.length > 1 ?
                                     (
                                         <>
-                                            <section className=" mr-auto text-muted">
-                                                <i className=" mr-auto ml-3 pr-1 fa fa-clock"></i>
+                                            <section className=" mr-auto text-muted mb-2">
+                                                <i className=" mr-auto ml-3 pr-1 fa fa-clock "></i>
                                                 {item.date}
                                             </section>
                                             <section className=" read-more mr-3 mb-2">
