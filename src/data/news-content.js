@@ -1562,6 +1562,21 @@ const news = [
     enabled: true
   },
   {
+    id: "60",
+    type: "img",
+    img: "medicare-news.jpg",
+    pageLink: "bulk-billilng-appointments-available-2024-12-19",
+    title: "Bulk Billing Appointments available!",
+    contents: [
+      "We are proud to offer some bulk billing services to all our patients. No out-of-pocket costs for your consultation",
+      "Call us at 0260 252189 or Click the Book Appointment button above",
+      " •	"
+    ],
+    date: "2024-12-19",
+    displayBookingButton: true,
+    enabled: true
+  },
+  {
     id: "100",
     type: "img",
     img: "alzheimers-dementia-news.jpg",
