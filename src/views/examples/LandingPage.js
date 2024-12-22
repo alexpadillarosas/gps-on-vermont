@@ -8,6 +8,7 @@ import DarkFooter from "../../components/Footers/DarkFooter";
 import BarButtonsLandPageHeader from "../../components/General/BarButtonsLandPageHeader";
 import NewsCardsPreview from "../../components/General/NewsCardsPreview";
 import OpeningHours2 from "../../components/General/OpeninHours2";
+// import OpeningHours from "../../components/General/OpeningHours";
 import OurTeam from "../../components/General/OurTeam";
 import ServiceCardBlock from "../../components/General/ServiceCardBlock";
 import LandingPageHeader from "../../components/Headers/LandingPageHeader.js";
@@ -16,7 +17,7 @@ import HomeNavbar from "../../components/NavBars/HomeNavbar";
 import newsContent from "../../data/news-content";
 import staffContent from "../../data/staff-content";
 import { headerScrolling } from "./commons";
-// import Announcement from "../../components/General/Announcement";
+import Announcement from "../../components/General/Announcement";
 import TeleHealth from "../../components/General/TeleHealth";
 import SearchNews from "../../components/General/SearchNews";
 // import ModalAnnouncement from "../../components/General/ModalAnnouncement";
@@ -149,7 +150,8 @@ function LandingPage() {
             </Row>
             <Row >
               <Col sm="12" md="8" lg="8" className={"ml-auto mr-auto"}>
-                <OpeningHours2 />
+                {/* <OpeningHours2/> */}
+                <Announcement/>
               </Col>
             </Row>
             

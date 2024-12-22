@@ -7,7 +7,7 @@ const OpeningHours = () => {
       <Card className="card-data">
         <CardHeader className="card-header">
           <i className="fa fa-clock fa-lg fa-icon-card-header"></i>
-          Opening Hours
+          Opening Hours Christmas holiday season
         </CardHeader>
         <CardBody className="card-body" style={{ height: 300 }}>
           <CardTitle tag="h5" className=" clearfix card-content-title">
