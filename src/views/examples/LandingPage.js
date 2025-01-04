@@ -150,8 +150,8 @@ function LandingPage() {
             </Row>
             <Row >
               <Col sm="12" md="8" lg="8" className={"ml-auto mr-auto"}>
-                {/* <OpeningHours2/> */}
-                <Announcement/>
+                <OpeningHours2/>
+                {/* <Announcement/> */}
               </Col>
             </Row>
             
