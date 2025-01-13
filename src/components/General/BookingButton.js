@@ -18,7 +18,7 @@ const BookingButton = ({ doctorId, size, className:passedClasses, label }) => {
       </Button> */}
       
       <a href={`https://www.hotdoc.com.au/medical-centres/wodonga-VIC-3690/gps-on-vermont/doctors/${doctorId}`}
-          title="Book medical appointments with Dr Carmen Padilla at GPs On Vermont Medical Centre in Wodonga VIC 3690, through HotDoc" 
+          // title="Book medical appointments with Dr Carmen Padilla at GPs On Vermont Medical Centre in Wodonga VIC 3690, through HotDoc" 
           target="_blank" rel="noopener noreferrer"
           data-hotdoc-widget="lightbox" 
           data-hotdoc-button className={`${size} icon-calendar`}

@@ -1,6 +1,6 @@
 const fees = [
     {
-        title: "Dr Padilla: Private Billing Fees",
+        title: "Dr Carmen Padilla, Angela Ramsay, and Elena Douse : Private Billing Fees",
         bookingDoctorId: "dr-carmen-padilla-1",
         header: [
             [""],
@@ -13,9 +13,9 @@ const fees = [
                 rownum: 1,
                 data: [
                     ["Standard Consult / Telehealth", "(less than 20 minutes)"],
-                    "$79.00",
-                    "$41.20",
-                    "$37.80"
+                    "$87.00",
+                    "$42.85",
+                    "$44.15"
                 ]
 
             },
@@ -23,9 +23,9 @@ const fees = [
                 rownum: 2,
                 data: [
                     ["Long Consult / Telehealth", "(more than 20 minutes)"],
-                    "$120.00",
-                    "$79.70",
-                    "$37.80"
+                    "$130.00",
+                    "$82.90",
+                    "$47.10"
                 ]
 
             },
@@ -33,9 +33,9 @@ const fees = [
                 rownum: 3,
                 data: [
                     ["Extended Consult", " "],
-                    "$154.00",
-                    "$117.40",
-                    "$36.60"
+                    "$170.00",
+                    "$122.15",
+                    "$47.85"
                 ]
 
             },
@@ -53,9 +53,9 @@ const fees = [
                 rownum: 7,
                 data: [
                     ["Pensioner Standard Consult / Telehealth", "(less than 20 minutes)"],
-                    "$63.00",
-                    "$41.20",
-                    "$22.30"
+                    "Bulk Billed",
+                    "Bulk Billed",
+                    "Bulk Billed"
                 ]
 
             },
@@ -63,9 +63,9 @@ const fees = [
                 rownum: 8,
                 data: [
                     ["Pensioner Long Consult / Telehealth", "(more than 20 minutes)"],
-                    "$102.00",
-                    "$79.70",
-                    "$21.30"
+                    "Bulk Billed",
+                    "Bulk Billed",
+                    "Bulk Billed"
                 ]
 
             },
@@ -73,9 +73,9 @@ const fees = [
                 rownum: 9,
                 data: [
                     ["Pensioner Extended Consult", " "],
-                    "$139.00",
-                    "$117.40",
-                    "$22.60"
+                    "Bulk Billed",
+                    "Bulk Billed",
+                    "Bulk Billed"
                 ]
 
             },
@@ -102,7 +102,7 @@ const fees = [
         ]
     },
     {
-        title: "Dr Manthi and Dr Barkas Fees",
+        title: "Dr Buddhi and Tharuka Fees",
         bookingDoctorId: "",
         header: [
             [""],
@@ -163,88 +163,88 @@ const fees = [
             }
         ]
     },
-    {
-        title: "Dr Ramsay: Private Billing Fees",
-        bookingDoctorId: "dr-angela-ramsay",
-        header: [
-            [""],
-            ["Amount Payable", "on the day"],
-            ["Medicare Rebate", "on the day"],
-            ["Out of pocket", "cost"]
-        ],
-        row: [
-            {
-                rownum: 1,
-                data: [
-                    ["Standard Consult / Telehealth", "(less than 20 minutes)"],
-                    "$79.00",
-                    "$41.20",
-                    "$37.80"
-                ]
+    // {
+    //     title: "Dr Ramsay: Private Billing Fees",
+    //     bookingDoctorId: "dr-angela-ramsay",
+    //     header: [
+    //         [""],
+    //         ["Amount Payable", "on the day"],
+    //         ["Medicare Rebate", "on the day"],
+    //         ["Out of pocket", "cost"]
+    //     ],
+    //     row: [
+    //         {
+    //             rownum: 1,
+    //             data: [
+    //                 ["Standard Consult / Telehealth", "(less than 20 minutes)"],
+    //                 "$79.00",
+    //                 "$41.20",
+    //                 "$37.80"
+    //             ]
 
-            },
-            {
-                rownum: 2,
-                data: [
-                    ["Long Consult / Telehealth", "(more than 20 minutes)"],
-                    "$120.00",
-                    "$79.70",
-                    "$37.80"
-                ]
+    //         },
+    //         {
+    //             rownum: 2,
+    //             data: [
+    //                 ["Long Consult / Telehealth", "(more than 20 minutes)"],
+    //                 "$120.00",
+    //                 "$79.70",
+    //                 "$37.80"
+    //             ]
 
-            },
-            {
-                rownum: 3,
-                data: [
-                    ["Extended Consult", "(more than 20 minutes)"],
-                    "$154.00",
-                    "$117.40",
-                    "$36.60"
-                ]
+    //         },
+    //         {
+    //             rownum: 3,
+    //             data: [
+    //                 ["Extended Consult", "(more than 20 minutes)"],
+    //                 "$154.00",
+    //                 "$117.40",
+    //                 "$36.60"
+    //             ]
 
-            },
-            {
-                rownum: 3,
-                data: [
-                    ["Pensioner Standard Consult / Telehealth", "(less than 20 minutes)"],
-                    "$63.00",
-                    "$41.20",
-                    "$22.30"
-                ]
+    //         },
+    //         {
+    //             rownum: 3,
+    //             data: [
+    //                 ["Pensioner Standard Consult / Telehealth", "(less than 20 minutes)"],
+    //                 "$63.00",
+    //                 "$41.20",
+    //                 "$22.30"
+    //             ]
 
-            },
-            {
-                rownum: 4,
-                data: [
-                    ["Pensioner Long Consult / Telehealth", "(more than 20 minutes)"],
-                    "$102.00",
-                    "$79.70",
-                    "$21.30"
-                ]
+    //         },
+    //         {
+    //             rownum: 4,
+    //             data: [
+    //                 ["Pensioner Long Consult / Telehealth", "(more than 20 minutes)"],
+    //                 "$102.00",
+    //                 "$79.70",
+    //                 "$21.30"
+    //             ]
 
-            },
-            {
-                rownum: 4,
-                data: [
-                    ["Extended Consult"],
-                    "$139.00",
-                    "$117.40",
-                    "$22.60"
-                ]
+    //         },
+    //         {
+    //             rownum: 4,
+    //             data: [
+    //                 ["Extended Consult"],
+    //                 "$139.00",
+    //                 "$117.40",
+    //                 "$22.60"
+    //             ]
 
-            },
-            {
-                rownum: 5,
-                data: [
-                    ["DVA Patients"],
-                    "Bulk Billed",
-                    "Not Applicable",
-                    "Not Applicable"
-                ]
+    //         },
+    //         {
+    //             rownum: 5,
+    //             data: [
+    //                 ["DVA Patients"],
+    //                 "Bulk Billed",
+    //                 "Not Applicable",
+    //                 "Not Applicable"
+    //             ]
 
-            }
-        ]
-    }
+    //         }
+    //     ]
+    // }
     
 
 ]

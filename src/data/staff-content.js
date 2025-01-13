@@ -185,6 +185,60 @@ const staff = [
   {
     titleAbr: "Dr",
     title: "Doctor",
+    name: "Sampath",
+    image: "dr-sampath.jpg",
+    accreditations: ["MBBS", "MRCGP (Int)"],
+    descriptions: [
+     "Dr. Sampath excels in managing acute and chronic medical conditions, mental health challenges, and surgical issues while working at leading hospitals in Sri Lanka.",
+     "Dr. Sampath graduated from the University of Colombo, Sri Lanka, in 2011. With extensive experience as a General Practitioner.",
+     "Outside his professional commitments, Dr. Sampath enjoys traveling and exploring nature with his family."
+     ],
+    availability: [
+      { day: "Mon", desc: "Monday", from: "8:30", to: "5:20", notes: "" },
+      { day: "Tue", desc: "Tuesday", from: "8:30", to: "5:20", notes: "" },
+      { day: "Wed", desc: "Wednesday", from: "8:30", to: "5:20", notes: "" },
+      { day: "Thu", desc: "Thursday", from: "8:30", to: "5:20", notes: "" },
+      { day: "Fri", desc: "Friday", from: "8:30", to: "5:20", notes: "" },
+      { day: "Sat", desc: "Saturday", from: "9:00", to: "4:20", notes: "" }
+    ],
+    speaks: ["English", "Sinhalese"],
+    booking: false,
+    bookingDoctorId: "",
+    socialMedia: [],
+    enabled: true,
+    doctor: true
+  },
+  {
+    titleAbr: "Dr",
+    title: "Doctor",
+    name: "Virajinee Rathnayake",
+    image: "dr-virajinee.jpg",
+    accreditations: ["MBBS", "MRCGP (Int)", "MSc", "MD-Clinical Nutrition"],
+    descriptions: [
+      "With extensive experience as a General Practitioner, she specializes in preventive medicine, acute and chronic medical conditions, women’s and child health, and surgical care.",
+      "She has also completed postgraduate studies in clinical nutrition, focusing on nutritional care across the life cycle.",
+      "Dr. Virajinee Rathnayake graduated from the University of Sri Jayawardanepura, Sri Lanka, in 2010.",
+      "Dr. Virajinee is committed to delivering quality, patient-centered care and is passionate about promoting preventive medicine.",
+      "In her leisure time, she enjoys traveling and exploring nature with her family."
+    ],
+    availability: [
+      { day: "Mon", desc: "Monday", from: "8:30", to: "5:20", notes: "" },
+      { day: "Tue", desc: "Tuesday", from: "8:30", to: "5:20", notes: "" },
+      { day: "Wed", desc: "Wednesday", from: "8:30", to: "5:20", notes: "" },
+      { day: "Thu", desc: "Thursday", from: "8:30", to: "5:20", notes: "" },
+      { day: "Fri", desc: "Friday", from: "8:30", to: "5:20", notes: "" },
+      { day: "Sat", desc: "Saturday", from: "9:00", to: "4:20", notes: "" }
+    ],
+    speaks: ["English", "Sinhalese","Tamil"],
+    booking: false,
+    bookingDoctorId: "",
+    socialMedia: [],
+    enabled: true,
+    doctor: true
+  },
+  {
+    titleAbr: "Dr",
+    title: "Doctor",
     name: "Hooman Pio",
     image: "dr-hooman.jpg",
     accreditations: ["Master of Public Health"],
