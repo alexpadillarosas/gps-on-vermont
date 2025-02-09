@@ -1597,6 +1597,40 @@ const news = [
     enabled: true
   },
   {
+    id: "62",
+    type: "img",
+    img: "gps-on-vermont-medical-centre-news.jpg",
+    pageLink: "welcome-dr-sampath-aluthge",
+    title: "Welcome Dr Sampath Aluthge",
+    contents: [
+      "The team are excited to announce that Dr Sampath Aluthge will be joining us at GPS On Vermont Medical Centre Wodonga.",
+      "With extensive experience as a General Practitioner, he excels in managing acute and chronic medical conditions, mental health challenges, and surgical issues while working at leading hospitals in Sri Lanka.",
+      "His areas of special interest include general medicine, mental health, minor surgical procedures, and management of non-communicable diseases. ",
+
+      ".",
+      "Call us today to book your appointment",
+      "02 6025 2189"
+    ],
+    date: "2025-02-08",
+    enabled: true
+  },
+  {
+    id: "63",
+    type: "img",
+    img: "gps-on-vermont-medical-centre-news.jpg",
+    pageLink: "appointments-available-dr-sampath-aluthge",
+    title: "Appointments Available with Dr Sampath Aluthge",
+    contents: [
+      "✅ Bulk Billing. Call us today to book your appointment 02 6025 2189, Or click the button below:",
+      " •	 "
+    ],
+    date: "2025-02-09",
+    displayBookingButton: true,
+    displayBookingButtonDrId: "dr-sampath-aluthge",
+    disableReadMore : true,
+    enabled: true
+  },
+  {
     id: "100",
     type: "img",
     img: "alzheimers-dementia-news.jpg",

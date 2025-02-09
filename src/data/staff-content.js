@@ -185,7 +185,7 @@ const staff = [
   {
     titleAbr: "Dr",
     title: "Doctor",
-    name: "Sampath",
+    name: "Sampath Aluthge",
     image: "dr-sampath.jpg",
     accreditations: ["MBBS", "MRCGP (Int)"],
     descriptions: [
@@ -202,8 +202,8 @@ const staff = [
       { day: "Sat", desc: "Saturday", from: "9:00", to: "4:20", notes: "" }
     ],
     speaks: ["English", "Sinhalese"],
-    booking: false,
-    bookingDoctorId: "",
+    booking: true,
+    bookingDoctorId: "dr-sampath-aluthge",
     socialMedia: [],
     enabled: true,
     doctor: true
@@ -230,8 +230,8 @@ const staff = [
       { day: "Sat", desc: "Saturday", from: "9:00", to: "4:20", notes: "" }
     ],
     speaks: ["English", "Sinhalese","Tamil"],
-    booking: false,
-    bookingDoctorId: "",
+    booking: true,
+    bookingDoctorId: "dr-virajinee-rathnayake",
     socialMedia: [],
     enabled: true,
     doctor: true
@@ -368,7 +368,7 @@ const staff = [
     booking: false,
     bookingDoctorId: "",
     socialMedia: [],
-    enabled: true,
+    enabled: false,
     doctor: false
   },
   {

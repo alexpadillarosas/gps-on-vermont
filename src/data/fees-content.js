@@ -102,7 +102,7 @@ const fees = [
         ]
     },
     {
-        title: "Dr Buddhi and Tharuka Fees",
+        title: "Dr Buddhi, Tharuka, Sampath and Virajinee Fees",
         bookingDoctorId: "",
         header: [
             [""],
