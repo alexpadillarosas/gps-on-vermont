@@ -1631,6 +1631,22 @@ const news = [
     enabled: true
   },
   {
+    id: "64",
+    type: "img",
+    img: "gps-on-vermont-medical-centre-news.jpg",
+    pageLink: "appointments-available-dr-virajinee-rathnayake",
+    title: "Appointments Available with Dr Virajinee Rathnayake",
+    contents: [
+      "✅ Bulk Billing. Call us today to book your appointment 02 6025 2189, Or click the button below:",
+      " •	 "
+    ],
+    date: "2025-02-17",
+    displayBookingButton: true,
+    displayBookingButtonDrId: "dr-virajinee-rathnayake",
+    disableReadMore : true,
+    enabled: true
+  },
+  {
     id: "100",
     type: "img",
     img: "alzheimers-dementia-news.jpg",
