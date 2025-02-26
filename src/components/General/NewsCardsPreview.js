@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Card, CardBody, CardFooter, CardImg, CardText, CardTitle, Col, Row } from 'reactstrap';
 import Iframe from "react-iframe";
 import BookingButton from './BookingButton';
+import { Button } from "reactstrap";
 
 const NewsCardsPreview = ({ news, start, quantity, bottomComponent }) => {
     const TEXT_SIZE = 100;
@@ -94,6 +95,7 @@ const NewsCardsPreview = ({ news, start, quantity, bottomComponent }) => {
                                                 <i className=" mr-auto ml-3 pr-1 fa fa-clock "></i>
                                                 {item.date}
                                             </section>
+                                            
                                             <section className=" read-more mr-3 mb-2">
                                                 {item.disableReadMore 
                                                     ?

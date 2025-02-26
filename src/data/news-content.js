@@ -1647,6 +1647,22 @@ const news = [
     enabled: true
   },
   {
+    id: "65",
+    type: "img",
+    img: "vaccine-shot-1-news.jpg",
+    pageLink: "covid-vaccine-boosters-available-2025-2",
+    title: "Covid vaccine boosters available",
+    contents: [
+      "✅ Boosters are now available for patients if six months have passed since their last vaccine.",
+      "✅ Call us if you’re unsure when your last vaccine was administered: 02 6025 2189",
+      "✅ Find more information at: https://www.health.gov.au/our-work/covid-19-vaccines/getting-your-vaccination"
+    ],
+    date: "2025-02-26",
+    displayBookingButton: false,
+    disableReadMore : false,
+    enabled: true
+  },
+  {
     id: "100",
     type: "img",
     img: "alzheimers-dementia-news.jpg",
