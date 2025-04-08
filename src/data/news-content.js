@@ -1663,6 +1663,23 @@ const news = [
     enabled: true
   },
   {
+    id: "66",
+    type: "img",
+    img: "book-your-flu-shot-news.jpg",
+    pageLink: "book-your-flu-shot-2025-news",
+    title: "Flu Shots Have Arrived!",
+    contents: [
+      "It’s that time of year again! Just as Autumn has arrived so have the first batch of Flu Vaccines.",
+      "At this stage we only have vaccines for those 65 years and over.",
+      "So if you are part of this fantastic group of people we have your shot ready and waiting for you.",
+      "If you would like to receive your Flu shot please ring 02 6025 2189 to book an appointment.",
+      "Government stock available for eligible patients",
+      "We are looking forward to seeing you soon!"
+    ],
+    date: "2025-04-08",
+    enabled: true
+  },
+  {
     id: "100",
     type: "img",
     img: "alzheimers-dementia-news.jpg",
