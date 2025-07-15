@@ -1,7 +1,7 @@
 const fees = [
     {
         title: "Dr Carmen Padilla, Angela Ramsay, and Elena Douse : Private Billing Fees",
-        bookingDoctorId: "dr-carmen-padilla-1",
+        bookingDoctorId: "",
         header: [
             [""],
             ["Amount Payable", "on the day"],
