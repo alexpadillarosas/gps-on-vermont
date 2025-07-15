@@ -33,7 +33,7 @@ const OpeningHours2 = () => {
                     </CardTitle>
                     <CardTitle tag="h5" className=" clearfix opening-hours">
                         <div className="float-left">Saturday</div>
-                        <div className="float-right">9:00 am to 4:00 pm</div>
+                        <div className="float-right">closed</div>
                     </CardTitle>
                     <CardTitle tag="h5" className=" clearfix opening-hours">
                         <div className="float-left">Sunday</div>
