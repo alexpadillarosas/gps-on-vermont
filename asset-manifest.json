@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.e2b4a3d2.chunk.css",
-    "main.js": "/static/js/main.d750a406.chunk.js",
-    "main.js.map": "/static/js/main.d750a406.chunk.js.map",
+    "main.js": "/static/js/main.831a142a.chunk.js",
+    "main.js.map": "/static/js/main.831a142a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e2e433b3.js",
     "runtime-main.js.map": "/static/js/runtime-main.e2e433b3.js.map",
     "static/css/2.3f9027fe.chunk.css": "/static/css/2.3f9027fe.chunk.css",
-    "static/js/2.28008d9f.chunk.js": "/static/js/2.28008d9f.chunk.js",
-    "static/js/2.28008d9f.chunk.js.map": "/static/js/2.28008d9f.chunk.js.map",
+    "static/js/2.91ac6eaa.chunk.js": "/static/js/2.91ac6eaa.chunk.js",
+    "static/js/2.91ac6eaa.chunk.js.map": "/static/js/2.91ac6eaa.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.41b1126527c6dd29b41f68973d6efe99.js": "/precache-manifest.41b1126527c6dd29b41f68973d6efe99.js",
+    "precache-manifest.d7360c585284fe291048bb0725579eda.js": "/precache-manifest.d7360c585284fe291048bb0725579eda.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.3f9027fe.chunk.css.map": "/static/css/2.3f9027fe.chunk.css.map",
     "static/css/main.e2b4a3d2.chunk.css.map": "/static/css/main.e2b4a3d2.chunk.css.map",
-    "static/js/2.28008d9f.chunk.js.LICENSE.txt": "/static/js/2.28008d9f.chunk.js.LICENSE.txt",
+    "static/js/2.91ac6eaa.chunk.js.LICENSE.txt": "/static/js/2.91ac6eaa.chunk.js.LICENSE.txt",
     "static/media/Annette-Baumgarten.jpg": "/static/media/Annette-Baumgarten.4a291657.jpg",
     "static/media/Bayleigh-Reedy.jpg": "/static/media/Bayleigh-Reedy.666e5f58.jpg",
     "static/media/Evie-Frawley.jpg": "/static/media/Evie-Frawley.60d7a159.jpg",
@@ -95,6 +95,7 @@
     "static/media/invision-white-slim.png": "/static/media/invision-white-slim.300494e9.png",
     "static/media/julie.jpg": "/static/media/julie.138381e5.jpg",
     "static/media/landing.jpg": "/static/media/landing.f8fba454.jpg",
+    "static/media/life-logo-news.jpg": "/static/media/life-logo-news.a5e97496.jpg",
     "static/media/login.jpg": "/static/media/login.b2101951.jpg",
     "static/media/logo-square.jpg": "/static/media/logo-square.00ac6ca2.jpg",
     "static/media/lung-cancer-screening-news.jpg": "/static/media/lung-cancer-screening-news.2951b2a4.jpg",
@@ -135,8 +136,8 @@
   "entrypoints": [
     "static/js/runtime-main.e2e433b3.js",
     "static/css/2.3f9027fe.chunk.css",
-    "static/js/2.28008d9f.chunk.js",
+    "static/js/2.91ac6eaa.chunk.js",
     "static/css/main.e2b4a3d2.chunk.css",
-    "static/js/main.d750a406.chunk.js"
+    "static/js/main.831a142a.chunk.js"
   ]
 }
