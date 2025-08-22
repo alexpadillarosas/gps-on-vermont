@@ -20,12 +20,12 @@ const OpeningHours2 = () => {
                         <div className="float-right">7:45 am to 5:30 pm</div>
                     </CardTitle>
                     <CardTitle tag="h5" className=" clearfix opening-hours">
-                        <div className="float-left">Wednesday</div>
-                        <div className="float-right">7:45 am to 5:30 pm</div>
+                        <div className="float-left">Wednesday -- Opening Late</div>                   
+                        <div className="float-right">7:45 am to 8:00 pm</div>
                     </CardTitle>
                     <CardTitle tag="h5" className=" clearfix opening-hours">
-                        <div className="float-left">Thursday</div>
-                        <div className="float-right">7:45 am to 5:30 pm</div>
+                        <div className="float-left">Thursday -- Opening Late</div>
+                        <div className="float-right">7:45 am to 8:00 pm</div>
                     </CardTitle>
                     <CardTitle tag="h5" className=" clearfix opening-hours">
                         <div className="float-left">Friday</div>

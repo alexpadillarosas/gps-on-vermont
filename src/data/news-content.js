@@ -1735,6 +1735,53 @@ const news = [
     enabled: true
   },
   {
+    id: "69",
+    type: "img",
+    img: "symptoms-of-menopause-news.jpg",
+    pageLink: "menopause-or-perimenopause-news",
+    title: "🌸 Menopause or Perimenopause Symptoms🌸",
+    contents: [
+      "Are you noticing hot flushes, mood changes, sleep disturbances, or irregular periods?",
+      "These can be signs of menopause or perimenopause – a natural stage of life that every woman experiences.",
+      "At GPs On Vermont, we understand that these changes can feel overwhelming. That’s why we offer comprehensive Menopause & Perimenopause Health Assessments to support your physical, emotional, and mental wellbeing.",
+      ".",
+      "✨ Our caring GPs can help you:",
+      "✅ Manage uncomfortable symptoms",
+      "✅ Explore treatment and lifestyle options",
+      "✅ Support your long-term health, including bone and heart health",
+      "✅ Provide guidance tailored to your unique needs",
+      ".",
+      "You don’t have to go through this transition alone — we’re here to walk beside you every step of the way.",
+      "💕",
+      "Interested? 📞 Call GP’s On Vermont today at 02 6025 2189 or 📅 Book your appointment today and take the first step toward feeling like yourself again.",
+      "Your health journey starts now. Let’s make it a Life! worth living",
+      "More information: https://lifeprogram.org.au/"
+    ],
+    date: "2025-08-22",
+    displayBookingButton: true,
+    enabled: true
+  },
+  {
+    id: "70",
+    type: "img",
+    img: "stop-vaping-news.jpg",
+    pageLink: "do-you-want-to-keep-smoking-or-vaping-2-news",
+    title: "Thinking About Quitting Smoking 🚬 Or Vaping 💨?",
+    contents: [
+      "Let us help you take the first step toward a healthier future - we’re here to help you!",
+      "🎉 Good News! Our 🚭 Quit Smoking and Vaping Clinic is NOW OPEN! 💙",
+      "📝 We will work with you to create a personalised support plan. This may include advice about managing cravings 💭, psychological support 💬, and prescribing suitable medications 💊 if required.",
+      "💡 We understand that you already know smoking is harmful — not only to your health but also to the health of those around you ❤️. It can affect both the quality and quantity of your life. But have you asked yourself: Why do I smoke? 🤔 Do I already have any smoking-related health conditions? Every person is unique, and your journey to quitting should be tailored just for you.",
+      "🤝 Together, we can explore why you smoke, assess any current health impacts 🩺, set realistic and achievable quitting goals, and support you every step of the way toward becoming a healthier, stronger YOU 🌟.",
+      "💪 We are here for you — cheering you on 🎊 and celebrating your progress as you move toward success and freedom. ✨",
+      "📲 Simply call our wonderful receptionists on 📞 02 6025 2189.  or book an appointment with us",
+      "🙌 We can’t wait to see you soon and to be your very own Quit Smoking Cheer Squad 🎉💙!",
+    ],
+    date: "2025-08-21",
+    displayBookingButton: true,
+    enabled: true
+  },
+  {
     id: "100",
     type: "img",
     img: "alzheimers-dementia-news.jpg",
