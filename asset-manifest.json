@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.e2b4a3d2.chunk.css",
-    "main.js": "/static/js/main.831a142a.chunk.js",
-    "main.js.map": "/static/js/main.831a142a.chunk.js.map",
+    "main.css": "/static/css/main.5b2d482c.chunk.css",
+    "main.js": "/static/js/main.2a346365.chunk.js",
+    "main.js.map": "/static/js/main.2a346365.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e2e433b3.js",
     "runtime-main.js.map": "/static/js/runtime-main.e2e433b3.js.map",
-    "static/css/2.3f9027fe.chunk.css": "/static/css/2.3f9027fe.chunk.css",
-    "static/js/2.91ac6eaa.chunk.js": "/static/js/2.91ac6eaa.chunk.js",
-    "static/js/2.91ac6eaa.chunk.js.map": "/static/js/2.91ac6eaa.chunk.js.map",
+    "static/css/2.a325614d.chunk.css": "/static/css/2.a325614d.chunk.css",
+    "static/js/2.a06877c6.chunk.js": "/static/js/2.a06877c6.chunk.js",
+    "static/js/2.a06877c6.chunk.js.map": "/static/js/2.a06877c6.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d7360c585284fe291048bb0725579eda.js": "/precache-manifest.d7360c585284fe291048bb0725579eda.js",
+    "precache-manifest.06a136d0bf93a20aaae780124f19da95.js": "/precache-manifest.06a136d0bf93a20aaae780124f19da95.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.3f9027fe.chunk.css.map": "/static/css/2.3f9027fe.chunk.css.map",
-    "static/css/main.e2b4a3d2.chunk.css.map": "/static/css/main.e2b4a3d2.chunk.css.map",
-    "static/js/2.91ac6eaa.chunk.js.LICENSE.txt": "/static/js/2.91ac6eaa.chunk.js.LICENSE.txt",
+    "static/css/2.a325614d.chunk.css.map": "/static/css/2.a325614d.chunk.css.map",
+    "static/css/main.5b2d482c.chunk.css.map": "/static/css/main.5b2d482c.chunk.css.map",
+    "static/js/2.a06877c6.chunk.js.LICENSE.txt": "/static/js/2.a06877c6.chunk.js.LICENSE.txt",
     "static/media/Annette-Baumgarten.jpg": "/static/media/Annette-Baumgarten.4a291657.jpg",
     "static/media/Bayleigh-Reedy.jpg": "/static/media/Bayleigh-Reedy.666e5f58.jpg",
     "static/media/Evie-Frawley.jpg": "/static/media/Evie-Frawley.60d7a159.jpg",
@@ -124,6 +124,7 @@
     "static/media/sleep-deprivation-news.jpg": "/static/media/sleep-deprivation-news.e25c2db4.jpg",
     "static/media/stethoscope.svg": "/static/media/stethoscope.028c3ab5.svg",
     "static/media/stop-vaping-news.jpg": "/static/media/stop-vaping-news.d43aa608.jpg",
+    "static/media/symptoms-of-menopause-news.jpg": "/static/media/symptoms-of-menopause-news.b3a633e9.jpg",
     "static/media/telehealth-news.jpg": "/static/media/telehealth-news.62a3d1a7.jpg",
     "static/media/travel.svg": "/static/media/travel.7772f83e.svg",
     "static/media/vaccine-shot-1-news.jpg": "/static/media/vaccine-shot-1-news.c6ac0500.jpg",
@@ -135,9 +136,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e2e433b3.js",
-    "static/css/2.3f9027fe.chunk.css",
-    "static/js/2.91ac6eaa.chunk.js",
-    "static/css/main.e2b4a3d2.chunk.css",
-    "static/js/main.831a142a.chunk.js"
+    "static/css/2.a325614d.chunk.css",
+    "static/js/2.a06877c6.chunk.js",
+    "static/css/main.5b2d482c.chunk.css",
+    "static/js/main.2a346365.chunk.js"
   ]
 }
