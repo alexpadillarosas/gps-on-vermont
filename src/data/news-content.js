@@ -1782,6 +1782,34 @@ const news = [
     enabled: true
   },
   {
+    id: "71",
+    type: "img",
+    img: "yellow-fever-news.jpg",
+    pageLink: "yellow-fever-vaccination-news",
+    title: "Cross the most important item off your travel list. Certified vaccinations available here",
+    contents: [
+      "Going to the Amazon? 🦜 Exploring Sub-Saharan Africa? 🦁 Tropical South America 🌴, Central America?",
+      "Yellow Fever is endemic in many tropical regions, and a 'Yellow Card' certificate is mandatory for travel to—and from—these zones.",
+      "🛡️ Protect Yourself with the Yellow Fever Vaccine!",
+      "💉 The Yellow Fever vaccine is a safe and effective way to protect yourself from this potentially severe disease transmitted by infected mosquitoes.",
+      "📍 Where is it required?",
+      "Most of Sub-Saharan Africa. Tropical South America (including Brazil, Colombia, and Peru) and Parts of Central America.",
+      "⚠️ Important: You can only get this vaccine at Approved Yellow Fever Vaccination Clinics. As a registered provider, we have the vaccine in stock and can issue your official international certificate on the spot.\n\nDon't leave it to the last minute! The vaccine takes 10 days to become effective.",
+      "📞 Call us at (02) 6025 2189 to schedule your appointment today! one of our receptionists will be happy to assist you.",
+      "Our services include:",
+      "✅ Comprehensive travel health consultations.",
+      "✅ Yellow Fever vaccination and certification.",
+      "✅ Advice on malaria prevention, travel medications, and other necessary vaccines.",
+      "✅ Personalized health tips for your destination.",
+      "",
+      "✈️ Travel with confidence, knowing you're protected against Yellow Fever and other travel-related health risks.",
+      "More information: https://www.health.gov.au/diseases/yellow-fever"
+    ],
+    date: "2026-01-08",
+    displayBookingButton: false,
+    enabled: true
+  },
+  {
     id: "100",
     type: "img",
     img: "alzheimers-dementia-news.jpg",

@@ -29,6 +29,12 @@ function LandingPage() {
   const messageTitle = "GPs On Vermont Medical Centre";
   const bulkBilled = "gpv-bulk-billed-medical-centre.png";
   const privateBilled = "gpv-private-billed-medical-centre.png"
+
+  const imageTest1 = "yellow-fever-badge.png";
+  const imageTest2 = "q-fever-badge.png";
+  const imageTest3 = "travel-immunisation-badge.png";
+  const imageTest4 = "flu-vaccines-badge.png";
+  
   // const telehealth = "gpv-telehealth.png"
   const landingPagePreviewNews = newsContent.filter( news => news.enabled );
   //const enabledNews = newsContent.filter( emp => emp.enabled );
@@ -104,6 +110,45 @@ function LandingPage() {
                 <img className="img-fluid pb-2 " width={"80%"} src={require(`../../assets/img/${privateBilled}`)} alt={privateBilled} />
               </Col>
             </Row>
+            
+            <Row>
+              <Col className="ml-auto mr-auto text-center align-content-center" md="12" >
+                <h2 className="title text-muted ml-auto">GPs on Vermont is an Accredited Vaccination Centre</h2>
+                <br></br>
+                {/* <hr className="line-segment" /> */}
+              </Col>
+            </Row>
+            <Row >
+              {/* <Col sm="12" md="6" lg="3" className="ml-auto mr-auto text-center align-self-center telehealth-shield" >
+                <Link style={{ fontSize: 18 }} className="text-info font-weight-bolder" to="/news/gpv-telehealth-news">
+                  <img className="rounded-circle img-raised img-fluid " width={"70%"} height={"70%"} src={require(`../../assets/img/${telehealth}`)} alt={telehealth} />
+                </Link>
+              </Col> */}
+              <Col sm="12" md="6" lg="3" className="ml-auto mr-auto text-center bulk-billed-image align-self-center" >
+                <Link to={`/service-details/17`}>
+                  <img className="img-fluid pb-2 " width={"80%"} src={require(`../../assets/img/${imageTest1}`)} alt={bulkBilled} />
+                </Link>
+              </Col>
+              <Col sm="12" md="6" lg="3" className="ml-auto mr-auto text-center bulk-billed-image align-self-center" >
+                <Link to={`/service-details/2`}>
+                  <img className="img-fluid pb-2 " width={"80%"} src={require(`../../assets/img/${imageTest3}`)} alt={bulkBilled} />
+                </Link>
+              </Col>
+              <Col sm="12" md="6" lg="3" className="ml-auto mr-auto text-center bulk-billed-image align-self-center" >
+                <Link to={`/service-details/3`}>
+                  <img className="img-fluid pb-2 " width={"80%"} src={require(`../../assets/img/${imageTest4}`)} alt={bulkBilled} />
+                </Link>
+              </Col>
+              <Col sm="12" md="6" lg="3" className="ml-auto mr-auto text-center bulk-billed-image align-self-center" >
+                <Link to={`/service-details/16`}>
+                  <img className="img-fluid pb-2 " width={"80%"} src={require(`../../assets/img/${imageTest2}`)} alt={privateBilled} />
+                </Link>
+              </Col>
+            </Row>
+
+
+
+
             <Row>
               <Col sm="12" md="8" lg="6" className="ml-auto mr-auto text-center" >
                 <h2 className="title text-muted">TeleHEALTH</h2>

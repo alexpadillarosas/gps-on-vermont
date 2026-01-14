@@ -40,6 +40,8 @@ const services = [
         ]
       }
     ],
+    displayGeneralBookingButton: true,
+    displayCallUsButton: true,
     enabled: true
   },
   {
@@ -70,6 +72,8 @@ const services = [
         ]
       }
     ],
+    displayGeneralBookingButton: false,
+    displayCallUsButton: true,
     enabled: true
   },
   {
@@ -179,6 +183,8 @@ const services = [
         ]
       }
     ],
+    displayGeneralBookingButton: true,
+    displayCallUsButton: true,
     enabled: true
   },
   {
@@ -349,6 +355,8 @@ const services = [
         ]
       }
     ],
+    displayGeneralBookingButton: true,
+    displayCallUsButton: true,
     enabled: true
   },
   {
@@ -365,6 +373,8 @@ const services = [
     ],
     items: [],
     sections: [],
+    displayGeneralBookingButton: true,
+    displayCallUsButton: true,
     enabled: true
   },
   {
@@ -380,6 +390,8 @@ const services = [
     ],
     items: [],
     sections: [],
+    displayGeneralBookingButton: true,
+    displayCallUsButton: true,
     enabled: true
   },
   {
@@ -454,6 +466,8 @@ const services = [
         ]
       }
     ],
+    displayGeneralBookingButton: true,
+    displayCallUsButton: true,
     enabled: true
   },
   {
@@ -556,6 +570,8 @@ const services = [
         ]
       }
     ],
+    displayGeneralBookingButton: false,
+    displayCallUsButton: true,
     enabled: true
   },
   {
@@ -597,6 +613,8 @@ const services = [
         ]
       }
     ],
+    displayGeneralBookingButton: true,
+    displayCallUsButton: true,
     enabled: true
   },
   {
@@ -640,6 +658,8 @@ const services = [
         ]
       }
     ],
+    displayGeneralBookingButton: false,
+    displayCallUsButton: true,
     enabled: true
   },
   {
@@ -657,6 +677,8 @@ const services = [
     ],
     items: [],
     sections: [],
+    displayGeneralBookingButton: true,
+    displayCallUsButton: true,
     enabled: true
   },
   {
@@ -673,6 +695,26 @@ const services = [
     ],
     items: [],
     sections: [],
+    displayGeneralBookingButton: false,
+    displayBookingButtonFor: [
+      {
+        id: "dr-angela-ramsay",
+        name: "Dr Angela Ramsay"
+      },
+      {
+        id: "dr-virajinee-rathnayake",
+        name: "Dr Virajinee Rathnayake"
+      },
+      {
+        id: "dr-sheena-mistry",
+        name: "Dr Sheena Mistry"
+      },
+      {
+        id: "dr-james-mcdonald",
+        name: "Dr James McDonald"
+      }
+    ],
+    displayCallUsButton: true,
     enabled: true
   },
   {
@@ -714,6 +756,8 @@ const services = [
         ]
       }
     ],
+    displayGeneralBookingButton: false,
+    displayCallUsButton: true,
     enabled: true
   },
   {
@@ -730,7 +774,15 @@ const services = [
     ],
     items: [],
     sections: [],
-    enabled: false
+    displayGeneralBookingButton: false,
+    displayBookingButtonFor: [
+      {
+        id: "dr-virajinee-rathnayake",
+        name: "Dr Virajinee Rathnayake"
+      }
+    ],
+    displayCallUsButton: true,
+    enabled: true
   },
   {
     id: "16",
@@ -763,6 +815,41 @@ const services = [
         ]
       }
     ],
+    displayGeneralBookingButton: false,
+    displayCallUsButton: true,
+    enabled: true
+  },
+  {
+    id: "17",
+    title: "Yellow Fever Vaccine",
+    icon: "fa fa-syringe fa-lg",
+    image: "vaccine.svg",
+    shortIntro:
+      "Yellow fever is a serious mosquito-borne viral disease found in parts of Africa and South America. While it doesn’t occur in Australia, vaccination is required for travellers entering or returning from affected regions.",
+    introDescriptions: [
+      "The yellow fever vaccine is a live attenuated virus given as a single injection. It provides long-lasting protection and is highly effective in preventing the disease. In Australia, it’s only available through accredited yellow fever vaccination centres, and cannot be purchased at pharmacies."
+    ],
+    items: [],
+    sections: [
+      {
+        title: "Yellow Fever Vaccines",
+        topics: [
+          {
+            icon: "",
+            type: "PARAGRAPH",
+            title: "",
+            descriptions: [
+              "Who should get it: Anyone aged 9 months or older travelling to or through yellow fever endemic areas.",
+              "Dosage: A single dose is sufficient for lifelong protection in most cases.",
+              "Timing: You must receive the vaccine at least 10 days before travel to meet international entry requirements.",
+              "Documentation: After vaccination, you’ll receive an International Certificate of Vaccination or Prophylaxis, which may be required for border entry."
+            ]
+          }
+        ]
+      }
+    ],
+    displayGeneralBookingButton: false,
+    displayCallUsButton: true,
     enabled: true
   }
 

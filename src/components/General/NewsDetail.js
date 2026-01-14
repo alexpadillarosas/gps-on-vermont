@@ -1,6 +1,6 @@
 import React from 'react'
 import { Row, Col } from 'reactstrap';
-import ReactLinkify from "react-linkify";
+import SmartLinkifier from './SmartLinkifier';
 import SocialMediaShareBar from './SocialMediaShareBar';
 import Iframe from "react-iframe";
 
@@ -8,12 +8,6 @@ const NewsDetail = ({ article }) => {
     
     let link = "id/" + article.pageLink;
     const mediaList = ["facebook","twitter","whatsapp","reddit","linkedin","email"];
-
-    const componentDecorator = (href, text, key) => (
-        <a href={href} key={key} target="_blank" rel="noopener noreferrer">
-          {text}
-        </a>
-      );
 
     return (
         <>
@@ -49,9 +43,7 @@ const NewsDetail = ({ article }) => {
                 </Row>
                 <h1>{""}</h1>
                 {article.contents.map((paragraph, index) => index > 0 ? (<h5 key={index} className="description text-left">
-                    <ReactLinkify componentDecorator={componentDecorator}>
-                        {paragraph}
-                    </ReactLinkify>
+                    <SmartLinkifier text={paragraph} />
                 </h5>) : null)}
                 <SocialMediaShareBar shareUrl={link} title={article.title} description={article.contents[0]} media={mediaList} />
             </div>
