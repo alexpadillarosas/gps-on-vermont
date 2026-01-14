@@ -700,18 +700,6 @@ const services = [
       {
         id: "dr-angela-ramsay",
         name: "Dr Angela Ramsay"
-      },
-      {
-        id: "dr-virajinee-rathnayake",
-        name: "Dr Virajinee Rathnayake"
-      },
-      {
-        id: "dr-sheena-mistry",
-        name: "Dr Sheena Mistry"
-      },
-      {
-        id: "dr-james-mcdonald",
-        name: "Dr James McDonald"
       }
     ],
     displayCallUsButton: true,
