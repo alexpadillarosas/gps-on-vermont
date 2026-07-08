@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.5b2d482c.chunk.css",
-    "main.js": "/static/js/main.e2a9c732.chunk.js",
-    "main.js.map": "/static/js/main.e2a9c732.chunk.js.map",
+    "main.js": "/static/js/main.8936e07d.chunk.js",
+    "main.js.map": "/static/js/main.8936e07d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e2e433b3.js",
     "runtime-main.js.map": "/static/js/runtime-main.e2e433b3.js.map",
     "static/css/2.a325614d.chunk.css": "/static/css/2.a325614d.chunk.css",
-    "static/js/2.a84950a8.chunk.js": "/static/js/2.a84950a8.chunk.js",
-    "static/js/2.a84950a8.chunk.js.map": "/static/js/2.a84950a8.chunk.js.map",
+    "static/js/2.ca8a30ff.chunk.js": "/static/js/2.ca8a30ff.chunk.js",
+    "static/js/2.ca8a30ff.chunk.js.map": "/static/js/2.ca8a30ff.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.706365a3e63eafb6dd00cd2e52d99105.js": "/precache-manifest.706365a3e63eafb6dd00cd2e52d99105.js",
+    "precache-manifest.5999820e538127de268867f2e58bffb6.js": "/precache-manifest.5999820e538127de268867f2e58bffb6.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.a325614d.chunk.css.map": "/static/css/2.a325614d.chunk.css.map",
     "static/css/main.5b2d482c.chunk.css.map": "/static/css/main.5b2d482c.chunk.css.map",
-    "static/js/2.a84950a8.chunk.js.LICENSE.txt": "/static/js/2.a84950a8.chunk.js.LICENSE.txt",
+    "static/js/2.ca8a30ff.chunk.js.LICENSE.txt": "/static/js/2.ca8a30ff.chunk.js.LICENSE.txt",
     "static/media/Annette-Baumgarten.jpg": "/static/media/Annette-Baumgarten.4a291657.jpg",
     "static/media/Bayleigh-Reedy.jpg": "/static/media/Bayleigh-Reedy.666e5f58.jpg",
     "static/media/Evie-Frawley.jpg": "/static/media/Evie-Frawley.60d7a159.jpg",
@@ -103,6 +103,7 @@
     "static/media/medal.svg": "/static/media/medal.668a22e5.svg",
     "static/media/medicare-news.jpg": "/static/media/medicare-news.d9520ef4.jpg",
     "static/media/medication.svg": "/static/media/medication.012b8877.svg",
+    "static/media/menopause-perimenopause-assessments-news.jpg": "/static/media/menopause-perimenopause-assessments-news.985ef23a.jpg",
     "static/media/mental-health-news.jpg": "/static/media/mental-health-news.c005d505.jpg",
     "static/media/mosquito-template.png": "/static/media/mosquito-template.a74fda48.png",
     "static/media/mymedicare-news.jpg": "/static/media/mymedicare-news.985815ce.jpg",
@@ -134,6 +135,7 @@
     "static/media/vaccine-shot-1-news.jpg": "/static/media/vaccine-shot-1-news.c6ac0500.jpg",
     "static/media/vaccine.svg": "/static/media/vaccine.cb55a561.svg",
     "static/media/weight-loss-doctor-news.jpg": "/static/media/weight-loss-doctor-news.ffb5e599.jpg",
+    "static/media/winter-vaccines-news.jpg": "/static/media/winter-vaccines-news.a8510dbf.jpg",
     "static/media/worker.svg": "/static/media/worker.a75c2391.svg",
     "static/media/xmas-tree-news.jpg": "/static/media/xmas-tree-news.6950c4d4.jpg",
     "static/media/yellow-fever-badge.png": "/static/media/yellow-fever-badge.5697b11a.png",
@@ -143,8 +145,8 @@
   "entrypoints": [
     "static/js/runtime-main.e2e433b3.js",
     "static/css/2.a325614d.chunk.css",
-    "static/js/2.a84950a8.chunk.js",
+    "static/js/2.ca8a30ff.chunk.js",
     "static/css/main.5b2d482c.chunk.css",
-    "static/js/main.e2a9c732.chunk.js"
+    "static/js/main.8936e07d.chunk.js"
   ]
 }
