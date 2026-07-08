@@ -13,9 +13,9 @@ const fees = [
                 rownum: 1,
                 data: [
                     ["Standard Consult / Telehealth", "(less than 20 minutes)"],
-                    "$87.00",
-                    "$42.85",
-                    "$44.15"
+                    "$91.00",
+                    "$45.05",
+                    "$42.85"
                 ]
 
             },
@@ -23,9 +23,9 @@ const fees = [
                 rownum: 2,
                 data: [
                     ["Long Consult / Telehealth", "(more than 20 minutes)"],
-                    "$130.00",
-                    "$82.90",
-                    "$47.10"
+                    "$140.00",
+                    "$87.10",
+                    "$52.90"
                 ]
 
             },
@@ -33,9 +33,9 @@ const fees = [
                 rownum: 3,
                 data: [
                     ["Extended Consult", " "],
-                    "$170.00",
-                    "$122.15",
-                    "$47.85"
+                    "$180.00",
+                    "$128.35",                   
+                    "$51.65"
                 ]
 
             },

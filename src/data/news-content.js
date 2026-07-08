@@ -1810,6 +1810,55 @@ const news = [
     enabled: true
   },
   {
+    id: "72",
+    type: "img",
+    img: "winter-vaccines-news.jpg",
+    pageLink: "winter-vaccines-news",
+    title: "📞 Book Your Appointment Today, contact our reception team at (02) 6025 2189 ",
+    contents: [
+      "Your health is our priority at GPs on Vermont in Wodonga. As the colder months are now upon us, it is vital to keep yourself and your family protected against seasonal respiratory illnesses.",
+      "We are now offering vaccinations for:",
+      "Flu (Influenza)",
+      "COVID-19",
+      "RSV (Respiratory Syncytial Virus)",
+      "Protect your physical and social wellbeing this season with a preventative approach to your health.",
+      ".",
+      "📞 Book Your Appointment Today",
+      "Please contact our friendly reception team directly at (02) 6025 2189 to secure your booking or to find out more information.",
+      "📍 Visit Us: 80 Vermont Street, Wodonga VIC 3690",
+      "🕒 Clinic Hours: Monday to Friday, 8:30 AM - 5:00 PM",
+    ],
+    date: "2026-07-08",
+    displayBookingButton: true,
+    enabled: true
+  },
+  {
+    id: "73",
+    type: "img",
+    img: "menopause-perimenopause-assessments-news.jpg",
+    pageLink: "menopause-perimenopause-assessments-news",
+    title: "You do not have to navigate physical and hormonal changes alone.",
+    contents: [
+      "Our Menopause & Perimenopause Health Assessments are designed to support your physical, emotional, and mental wellbeing during this natural stage of life.",
+      "At GPs on Vermont in Wodonga, we provide dedicated, supportive women’s healthcare close to home.",
+      "Are you experiencing:",
+      "• Hot flushes or night sweats",
+      "• Trouble sleeping",
+      "• Mood changes or anxiety",
+      "• Brain fog or fatigue",
+      "• Irregular periods",
+      "• Weight or hormonal changes",
+      "Our GPs offer compassionate menopause and perimenopause assessments to help you better understand your symptoms and treatment options.",
+      ".",
+      "Call Now! to book 02 6025 2189"
+
+
+    ],
+    date: "2026-07-06",
+    displayBookingButton: true,
+    enabled: true
+  },
+  {
     id: "100",
     type: "img",
     img: "alzheimers-dementia-news.jpg",
