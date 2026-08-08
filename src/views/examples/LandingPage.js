@@ -853,9 +853,9 @@ function LandingPage() {
                     <Container>
                         <Row className="align-items-start g-4">
                             <Col lg="6" className="landing-hero-left">
-                                <span className="landing-hero-eyebrow">
+                                {/* <span className="landing-hero-eyebrow">
                                     Bookings and information first
-                                </span>
+                                </span> */}
 
                                 <h1 className="landing-hero-title">
                                     Find the right care quickly and book with confidence.
