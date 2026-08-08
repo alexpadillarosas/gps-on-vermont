@@ -4,26 +4,22 @@ const SIZE_STYLES = {
     tiny: {
         fontSize: "10px",
         padding: "4px 10px",
-        minHeight: "22px",
-        lineHeight: "1"
+        minHeight: "22px"
     },
     small: {
         fontSize: "11px",
         padding: "6px 12px",
-        minHeight: "28px",
-        lineHeight: "1"
+        minHeight: "28px"
     },
     medium: {
         fontSize: "13px",
         padding: "9px 16px",
-        minHeight: "36px",
-        lineHeight: "1"
+        minHeight: "36px"
     },
     large: {
         fontSize: "15px",
         padding: "12px 28px",
-        minHeight: "44px",
-        lineHeight: "1"
+        minHeight: "44px"
     }
 };
 
@@ -50,10 +46,10 @@ const BookingButton = ({
             href={bookingUrl}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={label}
+            className={className}
             data-hotdoc-widget="lightbox"
             data-hotdoc-button
-            className={className}
-            aria-label={label}
             style={{
                 display: "inline-flex",
                 alignItems: "center",

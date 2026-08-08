@@ -23,15 +23,23 @@ const FeesPage = () => {
     }
   };
 
-  // Badges array updated with structural target IDs
+  // Badges array updated with structural target IDs and accessible emoji elements
   const consultationBadges = [
     { label: "Standard Consult", targetId: "fee-section-0", type: "standard" },
     { label: "Short Consult", targetId: "fee-section-0", type: "standard" },
     { label: "Long Consult", targetId: "fee-section-0", type: "standard" },
     { label: "Extended Consult", targetId: "fee-section-0", type: "standard" },
     { label: "Telehealth", targetId: "fee-section-0", type: "standard" },
-    // Dedicated Bulk Billing tag configured to snap straight down to your second data index card row
-    { label: "✨ Bulk Billing / Pensioner", targetId: "fee-section-1", type: "promo" },
+    { 
+      label: (
+        <>
+          <span role="img" aria-label="sparkles" className="mr-1">✨</span>
+          Bulk Billing / Pensioner
+        </>
+      ), 
+      targetId: "fee-section-1", 
+      type: "promo" 
+    },
   ];
 
   return (
@@ -122,7 +130,14 @@ const FeesPage = () => {
                     className="d-flex align-items-center pt-3 mt-3" 
                     style={{ borderTop: "1px solid rgba(44, 123, 229, 0.15)" }}
                   >
-                    <span className="mr-2" style={{ fontSize: "1.2rem" }}>👇</span>
+                    <span 
+                      role="img" 
+                      aria-label="backhand index pointing down" 
+                      className="mr-2" 
+                      style={{ fontSize: "1.2rem" }}
+                    >
+                      👇
+                    </span>
                     <span 
                       className="text-muted font-weight-bold" 
                       style={{ fontSize: "0.95rem", textTransform: "none" }}

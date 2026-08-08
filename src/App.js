@@ -33,6 +33,8 @@ import NewsNavigationPage from "./views/examples/NewsNavigationPage";
 import PrivacyPolicyPage from "./views/examples/PrivacyPolicyPage";
 import NewsSearchNavigationPage from  "./views/examples/NewsSearchNavigationPage";
 import DisclaimerPage from "./views/examples/DisclaimerPage";
+import DoctorDetailsPage from "./views/examples/DoctorDetailsPage";
+import staffContent from "./data/staff-content";
 
 // This is to avoid the refresh problems when refreshing the page on github
 // https://github.com/rafrex/spa-github-pages
@@ -66,6 +68,16 @@ const App = () => {
         <Route path="/policy-page" component={PrivacyPolicyPage} />
         <Route path="/disclaimer-page" component={DisclaimerPage} />
         
+        <Route
+          path="/doctor-details/:doctorId"
+          render={props => (
+            <DoctorDetailsPage
+              {...props}
+              staffData={staffContent}
+            />
+          )}
+        />
+
         <Route component={NotFoundPage} />      </Switch>
     </Router>
   );

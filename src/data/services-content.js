@@ -50,7 +50,7 @@ const services = [
     icon: "fa fa-syringe fa-lg",
     image: "vaccine.svg",
     shortIntro:
-      "Flu vaccination, involves having an injection given into the upper arm by a nurse or doctor and only takes a few seconds.",
+      "Quick and simple flu vaccination administered in the upper arm by a nurse or doctor.",
     introDescriptions: [
       "The Majority of Australians benefit from having a yearly flu vaccination. Whilst groups such as 65+ years old, children and those who are pregnant are those most at risk"
     ],
@@ -82,7 +82,7 @@ const services = [
     icon: "fa fa-plane-departure fa-lg",
     image: "travel.svg",
     shortIntro:
-      "Stay healthy abroad. If you are planning on travelling overseas, we would highly recommend to book in an appointment with your GPs to discuss your travel vaccinations and advice.",
+      "Stay healthy overseas with personalised travel vaccination advice and recommendations from your GP.",
     introDescriptions: [
       "The doctors we support here at GPs on Vermont are able to advise you on any preparations needed for your future trips. It’s important to protect your health when you’re travelling inside and/or outside Australia.",
       "With appropriate planning and health checks, you can avoid diseases and other health conditions.",
@@ -209,7 +209,7 @@ const services = [
     icon: "fa fa-laptop-medical fa-lg",
     image: "care.svg",
     shortIntro:
-      "Patient care for all types of individuals, couples and families of all ages. The Doctors consulting here specialise in all aspects including women’s health, men’s health, children’s health, chronic illness and all major or minor injuries.",
+      "Care for all ages, including women’s, men’s and children’s health, chronic conditions and injuries.",
     introDescriptions: [
       "The doctors who consult from GP’s on Vermont Medical Centre are committed to providing continuous long-term patient care for all ages and types of people including individuals, couples and families.",
       "The doctors we support specialise in a broad range of health areas including women’s health, men’s health, children’s health, injures, mental health and  chronic illness. For your doctor it is all about your needs and desired health outcomes.",
@@ -365,7 +365,7 @@ const services = [
     icon: "fa fa-user-nurse fa-lg",
     image: "medal.svg",
     shortIntro:
-      "The department of Veteran’s Affairs delivers government programs for war veterans, members of the Australian Defence Force, members of the Australian Federal Police and their dependants.",
+      "Support and services for war veterans, Defence Force members, Federal Police members and their dependants.",
     introDescriptions: [
       "The main objective is to maintain and enhance the physical and mental wellbeing and quality of life of eligible persons and their dependants through health and other care services that promote early intervention, prevention and treatment including advice and information about health services entitlements.",
       "The Department of Veterans' Affairs (DVA) is a primary service delivery agency responsible for developing and implementing programs that assist the veteran and defence force communities.",
@@ -383,7 +383,7 @@ const services = [
     icon: "fa fa-pills fa-lg",
     image: "medication.svg",
     shortIntro:
-      "Sexual health is an important part of wellbeing for all ages. Find out what the doctors consulting from GPs on Vermont Medical Centre are doing to help prevent and manage sexually transmissible infections in Australia.",
+      "Support for preventing and managing sexually transmissible infections for people of all ages.",
     introDescriptions: [
       "Sexually transmitted infection (STI) screening is offered by the doctors consulting here for their patients. The screening can be conducted during a regular consultation with your doctor and can include a discussion about safe sex practices. As many STI’s can occur without the patient experiencing symptoms, screening is recommended as part of a patient’s health check.",
       "Your doctor asks that you book a 20-minute appointment for a sexual health check. To arrange an appointment with your Doctors, please phone (02) 6025 2189 or book online."
@@ -476,7 +476,7 @@ const services = [
     icon: "fa fa-baby fa-lg",
     image: "child.svg",
     shortIntro:
-      "The National Immunisation Program (NIP) Recommends And Funds Immunisation Against 13 Diseases For Australian Children Aged 0-4 Years. Some Diseases Require Your Child To Be Immunised 2-4 Times At Various Ages.",
+      "The National Immunisation Program funds vaccinations against 13 diseases for Australian children aged 0–4 year",
     introDescriptions: [
       "Under the National Immunisation Program, vaccination is free for Australian children.",
       "Immunisation from an early age helps protect your child against serious childhood infections.",
@@ -580,7 +580,7 @@ const services = [
     icon: "fa fa-file-medical fa-lg",
     image: "pill.svg",
     shortIntro:
-      "If you have a chronic or terminal medical condition, your GP can work with the Chronic Disease Management (CDM) program offered by Medicare to plan the appropriate health care for you.",
+      "Your GP can help plan and coordinate appropriate ongoing healthcare through Medicare programs.",
     introDescriptions: [],
     items: [],
     sections: [
@@ -623,7 +623,7 @@ const services = [
     icon: "fa fa-flag fa-lg",
     image: "aboriginalflag.svg",
     shortIntro:
-      "'Aboriginal Health' Entails Not Just The Physical Well-Being Of An Individual But Also The Social, Emotional And Cultural Well-Being Of The Whole Community.",
+      "Supporting physical, social, emotional and cultural wellbeing for individuals and the wider community.",
     introDescriptions: [],
     items: [],
     sections: [
@@ -668,7 +668,7 @@ const services = [
     icon: "fa fa-rainbow fa-lg",
     image: "rainbow.svg",
     shortIntro:
-      "The GPs consulting here create an environment where all patients feel welcome and can better meet their patients' often complex health care needs.",
+      "Welcoming, inclusive care that supports the diverse healthcare needs of LGBTQI+ patients.",
     introDescriptions: [
       "The doctors we support are striving to ensure sensitive and equitable care for individuals who identify as lesbian, gay, bisexual, transgender, or queer (LGBTQ). Yet many doctors and nurses find gaps in knowledge when caring for LGBTQ patients",
       "The doctors we support approach patients with open-mindedness and a nonjudgmental attitude. Their job as a healthcare professional is to assist the person in solving a health concern or reducing the risk of future health problems.",
@@ -687,7 +687,7 @@ const services = [
     icon: "fa fa-search fa-lg",
     image: "skincheck.svg",
     shortIntro:
-      "Early detection and regular skin examinations are your best chances at preventing, identifying and treating skin cancers.",
+      "Regular skin checks and early detection help identify and treat skin cancer.",
     introDescriptions: [
       "Skin cancer is by far the most common cancer in Australia, killing 5 people every day.",
       "Australia has the highest incidence of skin cancer in the world. Not all of them are melanoma’s. In fact nonmelanoma skin cancers in Australia are now nearly seven times more common than all other cancers combined; approximately half of these are removed by general practitioners.",
@@ -778,7 +778,7 @@ const services = [
     icon: "fa fa-syringe fa-lg",
     image: "vaccine.svg",
     shortIntro:
-      "The Q Fever Vaccine (Q-VAX®) is recommended for those aged 15 years or over who are in contact with high-risk animals or their products.",
+      "Q-VAX® is recommended for people aged 15+ who have contact with high-risk animals or animal products.",
     introDescriptions: [
       "People may also require the vaccine if they do activities in regional and rural areas where there is exposure to high-risk animals such as cattle, sheep or goats."
     ],
@@ -813,7 +813,7 @@ const services = [
     icon: "fa fa-syringe fa-lg",
     image: "vaccine.svg",
     shortIntro:
-      "Yellow fever is a serious mosquito-borne viral disease found in parts of Africa and South America. While it doesn’t occur in Australia, vaccination is required for travellers entering or returning from affected regions.",
+      "Serious mosquito-borne disease affecting Africa and South America, with vaccination requirements for travellers.",
     introDescriptions: [
       "The yellow fever vaccine is a live attenuated virus given as a single injection. It provides long-lasting protection and is highly effective in preventing the disease. In Australia, it’s only available through accredited yellow fever vaccination centres, and cannot be purchased at pharmacies."
     ],

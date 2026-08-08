@@ -1,6 +1,6 @@
 const staff = [
   {
-    titleAbr: "Dr",
+    titleAbr: "Dr.",
     title: "Doctor",
     name: "Carmen Padilla",
     image: "dr-carmen-padilla.jpg",
@@ -26,7 +26,7 @@ const staff = [
     doctor: true
   },
   {
-    titleAbr: "Dr",
+    titleAbr: "Dr.",
     title: "Doctor",
     name: "Angela Ramsay",
     image: "dr-ramsay.jpg",
@@ -51,7 +51,7 @@ const staff = [
     doctor: true
   },
   {
-    titleAbr: "Dr",
+    titleAbr: "Dr.",
     title: "Doctor",
     name: "Buddhi Lokuketagoda",
     image: "dr-lokuketagoda.jpg",
@@ -79,7 +79,7 @@ const staff = [
     doctor: true
   },
   {
-    titleAbr: "Dr",
+    titleAbr: "Dr.",
     title: "Doctor",
     name: "Elena Douse",
     image: "dr-douse.jpg",
@@ -107,7 +107,7 @@ const staff = [
     doctor: true
   },
   {
-    titleAbr: "Dr",
+    titleAbr: "Dr.",
     title: "Doctor",
     name: "Richard Barkas",
     image: "dr-barkas.jpg",
@@ -132,7 +132,7 @@ const staff = [
     doctor: true
   },
   {
-    titleAbr: "Dr",
+    titleAbr: "Dr.",
     title: "Doctor",
     name: "Joyce Manthi",
     image: "avatar.jpg",
@@ -157,7 +157,7 @@ const staff = [
     doctor: true
   },
   {
-    titleAbr: "Dr",
+    titleAbr: "Dr.",
     title: "Doctor",
     name: "Tharuka Gunasekara",
     image: "dr-tharuka.jpg",
@@ -183,7 +183,7 @@ const staff = [
     doctor: true
   },
   {
-    titleAbr: "Dr",
+    titleAbr: "Dr.",
     title: "Doctor",
     name: "Sampath Aluthge",
     image: "dr-sampath.jpg",
@@ -209,7 +209,7 @@ const staff = [
     doctor: true
   },
   {
-    titleAbr: "Dr",
+    titleAbr: "Dr.",
     title: "Doctor",
     name: "Virajinee Rathnayake",
     image: "dr-virajinee.jpg",
@@ -237,7 +237,7 @@ const staff = [
     doctor: true
   },
   {
-    titleAbr: "Dr",
+    titleAbr: "Dr.",
     title: "Doctor",
     name: "Hooman Pio",
     image: "dr-hooman.jpg",
@@ -262,7 +262,7 @@ const staff = [
     doctor: true
   },
   {
-    titleAbr: "Pm",
+    titleAbr: "Pm.",
     title: "Practice Manager",
     name: "Annette Baumgarten",
     image: "Annette-Baumgarten.jpg",
@@ -304,7 +304,7 @@ const staff = [
     doctor: false
   },
   {
-    titleAbr: "Pm",
+    titleAbr: "Pm.",
     title: "Practice Manager",
     name: "Liz Caunt",
     image: "Liz-Caunt.jpg",
@@ -372,7 +372,7 @@ const staff = [
     doctor: false
   },
   {
-    titleAbr: "Nr",
+    titleAbr: "Pn.",
     title: "Practice Nurse",
     name: "Lara",
     image: "Lara-Hopkins.jpg",
