@@ -28,7 +28,7 @@ function LandingPage() {
 
   const messageTitle = "GPs On Vermont Medical Centre";
   const bulkBilled = "gpv-bulk-billed-medical-centre.png";
-  const privateBilled = "gpv-private-billed-medical-centre.png"
+  const privateBilled = "gpv-private-billed-medical-centre.png";
 
   const imageTest1 = "yellow-fever-badge.png";
   const imageTest2 = "q-fever-badge.png";
@@ -39,7 +39,6 @@ function LandingPage() {
   const landingPagePreviewNews = newsContent.filter( news => news.enabled );
   //const enabledNews = newsContent.filter( emp => emp.enabled );
 
-
   useEffect(() => {
     headerScrolling();
   });
@@ -48,7 +47,7 @@ function LandingPage() {
     <Row>
       <Col className="d-flex justify-content-center">
         <Link className="text-info" to="/news-nav">
-          <Button color="info" className=" font-paragraph" >See More News</Button>
+          <Button color="info" className="font-paragraph">See More News</Button>
         </Link>
       </Col>
     </Row>
@@ -65,37 +64,24 @@ function LandingPage() {
           imageClassName={"page-header page-header-small"}
           contentClassName={"content-center"}
           titleClassName={"title-landing-page"}
-          
         />
-{/* <a href={`https://www.hotdoc.com.au/medical-centres/wodonga-VIC-3690/gps-on-vermont/doctors/`}
-          title="Book medical appointments with Dr Carmen Padilla at GPs On Vermont Medical Centre in Wodonga VIC 3690, through HotDoc" 
-          target="_blank" 
-          data-hotdoc-widget="lightbox" 
-          data-hotdoc-button class={` icon-calendar`}
-          // data-hotdoc-button class={`large icon-calendar`}
-          >Book Appointment</a> */}
-        <div className="section section-about-us" >
-          <Container >
-          {/* ${doctorId}   ${size}*/}
-          
 
+        <div className="section section-about-us">
+          <Container>
             <BarButtonsLandPageHeader />
+            
+            {/* Welcome Section */}
             <Row>
-              <Col className="ml-auto mr-auto text-center align-content-center" md="12" >
-                <h2 className="title text-muted ml-auto">Welcome!</h2>
-                {/* <hr className="line-segment" /> */}
+              <Col className="mx-auto text-center align-content-center" md="12">
+                <h2 className="title text-muted" style={{ textTransform: "none" }}>Welcome!</h2>
               </Col>
             </Row>
-            <Row >
-              {/* <Col sm="12" md="6" lg="3" className="ml-auto mr-auto text-center align-self-center telehealth-shield" >
-                <Link style={{ fontSize: 18 }} className="text-info font-weight-bolder" to="/news/gpv-telehealth-news">
-                  <img className="rounded-circle img-raised img-fluid " width={"70%"} height={"70%"} src={require(`../../assets/img/${telehealth}`)} alt={telehealth} />
-                </Link>
-              </Col> */}
-              <Col sm="12" md="6" lg="3" className="ml-auto mr-auto text-center bulk-billed-image align-self-center" >
-                <img className="img-fluid pb-2 " width={"80%"} src={require(`../../assets/img/${bulkBilled}`)} alt={bulkBilled} />
+            
+            <Row className="align-items-center">
+              <Col sm="12" md="6" lg="3" className="mx-auto text-center bulk-billed-image align-self-center">
+                <img className="img-fluid pb-2" width={"80%"} src={require(`../../assets/img/${bulkBilled}`)} alt={bulkBilled} />
               </Col>
-              <Col sm="12" lg="6" className="">
+              <Col sm="12" lg="6">
                 <h5 className="description text-center">
                   At GPs on Vermont Medical Centre we are passionate about
                   supporting doctors to provide high quality primary and preventive health care to
@@ -104,139 +90,115 @@ function LandingPage() {
                   preventative approach to your health is the key to sustaining
                   a long and fulfilling life of physical, emotional and social
                   wellbeing.
-                  </h5>
+                </h5>
               </Col>
-              <Col sm="12" md="6" lg="3" className="ml-auto mr-auto text-center bulk-billed-image align-self-center" >
-                <img className="img-fluid pb-2 " width={"80%"} src={require(`../../assets/img/${privateBilled}`)} alt={privateBilled} />
+              <Col sm="12" md="6" lg="3" className="mx-auto text-center bulk-billed-image align-self-center">
+                <img className="img-fluid pb-2" width={"80%"} src={require(`../../assets/img/${privateBilled}`)} alt={privateBilled} />
+              </Col>
+            </Row>
+            
+            {/* Accreditation Badges Section */}
+            <Row className="mt-4">
+              <Col className="mx-auto text-center align-content-center" md="12">
+                <h2 className="title text-muted" style={{ textTransform: "none" }}>GPs on Vermont is an Accredited Vaccination Centre</h2>
+                <br />
               </Col>
             </Row>
             
             <Row>
-              <Col className="ml-auto mr-auto text-center align-content-center" md="12" >
-                <h2 className="title text-muted ml-auto">GPs on Vermont is an Accredited Vaccination Centre</h2>
-                <br></br>
-                {/* <hr className="line-segment" /> */}
-              </Col>
-            </Row>
-            <Row >
-              {/* <Col sm="12" md="6" lg="3" className="ml-auto mr-auto text-center align-self-center telehealth-shield" >
-                <Link style={{ fontSize: 18 }} className="text-info font-weight-bolder" to="/news/gpv-telehealth-news">
-                  <img className="rounded-circle img-raised img-fluid " width={"70%"} height={"70%"} src={require(`../../assets/img/${telehealth}`)} alt={telehealth} />
-                </Link>
-              </Col> */}
-              <Col sm="12" md="6" lg="3" className="ml-auto mr-auto text-center bulk-billed-image align-self-center" >
+              <Col sm="12" md="6" lg="3" className="mx-auto text-center bulk-billed-image align-self-center">
                 <Link to={`/service-details/17`}>
-                  <img className="img-fluid pb-2 " width={"80%"} src={require(`../../assets/img/${imageTest1}`)} alt={bulkBilled} />
+                  <img className="img-fluid pb-2" width={"80%"} src={require(`../../assets/img/${imageTest1}`)} alt={bulkBilled} />
                 </Link>
               </Col>
-              <Col sm="12" md="6" lg="3" className="ml-auto mr-auto text-center bulk-billed-image align-self-center" >
+              <Col sm="12" md="6" lg="3" className="mx-auto text-center bulk-billed-image align-self-center">
                 <Link to={`/service-details/2`}>
-                  <img className="img-fluid pb-2 " width={"80%"} src={require(`../../assets/img/${imageTest3}`)} alt={bulkBilled} />
+                  <img className="img-fluid pb-2" width={"80%"} src={require(`../../assets/img/${imageTest3}`)} alt={bulkBilled} />
                 </Link>
               </Col>
-              <Col sm="12" md="6" lg="3" className="ml-auto mr-auto text-center bulk-billed-image align-self-center" >
+              <Col sm="12" md="6" lg="3" className="mx-auto text-center bulk-billed-image align-self-center">
                 <Link to={`/service-details/3`}>
-                  <img className="img-fluid pb-2 " width={"80%"} src={require(`../../assets/img/${imageTest4}`)} alt={bulkBilled} />
+                  <img className="img-fluid pb-2" width={"80%"} src={require(`../../assets/img/${imageTest4}`)} alt={bulkBilled} />
                 </Link>
               </Col>
-              <Col sm="12" md="6" lg="3" className="ml-auto mr-auto text-center bulk-billed-image align-self-center" >
+              <Col sm="12" md="6" lg="3" className="mx-auto text-center bulk-billed-image align-self-center">
                 <Link to={`/service-details/16`}>
-                  <img className="img-fluid pb-2 " width={"80%"} src={require(`../../assets/img/${imageTest2}`)} alt={privateBilled} />
+                  <img className="img-fluid pb-2" width={"80%"} src={require(`../../assets/img/${imageTest2}`)} alt={privateBilled} />
                 </Link>
               </Col>
             </Row>
 
-
-
-
-            <Row>
-              <Col sm="12" md="8" lg="6" className="ml-auto mr-auto text-center" >
-                <h2 className="title text-muted">TeleHEALTH</h2>
+            {/* Telehealth Layout Block */}
+            <Row className="mt-5">
+              <Col sm="12" md="8" lg="6" className="mx-auto text-center">
+                <h2 className="title text-muted" style={{ textTransform: "none" }}>TeleHEALTH</h2>
               </Col>
             </Row>
-            <Row >
-              <Col sm="12" md="8" lg="8" className={"ml-auto mr-auto"}>
+            <Row>
+              <Col sm="12" md="10" lg="8" className="mx-auto">
                 <TeleHealth />
               </Col>
             </Row>
-            {/* For Anouncements use this */}
-            {/* <Row>
-              <Col sm="12" md="8" lg="6" className="ml-auto mr-auto text-center" >
-                <h2 className="title text-muted">Opening Hours</h2>
-              </Col>
-              <Col sm="12" md="8" lg="6" className="ml-auto mr-auto text-center" >
-                <h2 className="title text-muted">Holiday Hours</h2>
-              </Col>
-            </Row>
-            <Row >
-              <Col sm="12" md="6" lg="6" >
-                <OpeningHours2 />
-              </Col>
-              <Col sm="12" md="6" lg="6" >
-                <Announcement />
-              </Col>
-            </Row> 
-            <Row >
-              <Col sm="12" md="8" lg="8" className={"ml-auto mr-auto"}>
-              <h5 className="description text-center">
-                  <b>Christmas Opening Hours GPs on Vermont</b> will be operating at reduced hours over the holiday period.
-                  We recommend checking your prescriptions and certificates etc. to ensure you are adequately covered for this time.
-                  If there is an emergency during this time please dial 000 or go to the emergency department across the road.
-                  On behalf of the GPs on Vermont team, we thank you for your support, patience and understanding throughout 2022, and we wish you a healthy, safe and merry festive season and a happy new year!
-              </h5>
-              </Col>
-            </Row> */}
 
-            {/* For other days use this */}
-            <Row>
-              <Col sm="12" md="8" lg="8" className="ml-auto mr-auto text-center" >
-                <h2 className="title text-muted">Consultation Hours</h2>
+            {/* Consultation Hours Section */}
+            <Row className="mt-5">
+              <Col sm="12" md="8" lg="8" className="mx-auto text-center">
+                <h2 className="title text-muted" style={{ textTransform: "none" }}>Consultation Hours</h2>
               </Col>
             </Row>
-            <Row >
-              <Col sm="12" md="8" lg="8" className={"ml-auto mr-auto"}>
-                <OpeningHours2/>
+            <Row>
+              {/* Expanded width to md="10" to prevent tabular schedule content from compressing on smaller views */}
+              <Col sm="12" md="10" lg="8" className="mx-auto">
+                <OpeningHours2 />
                 {/* <Announcement/> */}
               </Col>
             </Row>
-            
           </Container>
-
-
           {/* <ModalAnnouncement/> */}
         </div>
 
-        <div className="section section-team text-center" style={{ padding: 0 }}>
+        {/* Latest News Layout Block */}
+        <div className="section section-team text-center" style={{ padding: "40px 0 0 0" }}>
           <Container>
-            <Row>
-              <Col sm="12" md="6" lg="3" className="ml-auto mr-auto text-center align-self-center" >
-                {/* <img className="img-fluid pb-2 " width={"80%"} src={require(`../../assets/img/${bulkBilled}`)} alt={bulkBilled} /> */}
+            <Row className="align-items-center mb-4">
+              <Col sm="12" md="3" className="d-none d-md-block text-center align-self-center">
+                {/* Image placeholder node left clean */}
               </Col>
-              <Col sm="12" lg="6" className="">
-                <h2 className="title text-muted">Latest News</h2>
+              <Col sm="12" md="6" className="text-center">
+                <h2 className="title text-muted my-0" style={{ textTransform: "none" }}>Latest News</h2>
               </Col>
-              <Col sm="12" md="6" lg="3" className="ml-auto mr-auto text-center align-self-center" >
+              <Col sm="12" md="3" className="text-center text-md-right mt-3 mt-md-0">
                 <SearchNews />
               </Col>
-              
             </Row>
-            
             <NewsCardsPreview news={landingPagePreviewNews} start={0} quantity={3} bottomComponent={seeMoreComponent} />
           </Container>
         </div>
 
-        <div className="section section-team text-center" style={{ padding: 0 }}>
+        {/* Medical Services Layout Block */}
+        <div className="section section-team text-center" style={{ padding: "60px 0 0 0" }}>
           <Container>
-            <h2 className="title text-muted">Medical Services Provided by Doctors Consulting at GPs on Vermont Medical Centre</h2>
-            <div className="team">
+            <Row>
+              <Col sm="12" lg="10" className="mx-auto">
+                <h2 className="title text-muted mb-4" style={{ textTransform: "none", lineHeight: "1.4" }}>
+                  Medical Services Provided by Doctors Consulting at GPs on Vermont Medical Centre
+                </h2>
+              </Col>
+            </Row>
+            <div className="team mt-3">
               <ServiceCardBlock />
             </div>
           </Container>
         </div>
 
-        <div className="section section-team text-center" style={{ padding: 0 }}>
+        {/* Team Layout Block */}
+        <div className="section section-team text-center" style={{ padding: "60px 0" }}>
           <Container>
-            <h2 className="title text-muted">The Doctors and Support Team</h2>
+            <Row>
+              <Col sm="12" className="mx-auto">
+                <h2 className="title text-muted mb-4" style={{ textTransform: "none" }}>The Doctors and Support Team</h2>
+              </Col>
+            </Row>
             <OurTeam staffData={staffContent} />
           </Container>
         </div>
