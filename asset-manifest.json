@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.5b2d482c.chunk.css",
-    "main.js": "/static/js/main.95ee7968.chunk.js",
-    "main.js.map": "/static/js/main.95ee7968.chunk.js.map",
+    "main.js": "/static/js/main.d6c1d369.chunk.js",
+    "main.js.map": "/static/js/main.d6c1d369.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e2e433b3.js",
     "runtime-main.js.map": "/static/js/runtime-main.e2e433b3.js.map",
     "static/css/2.a325614d.chunk.css": "/static/css/2.a325614d.chunk.css",
-    "static/js/2.ca8a30ff.chunk.js": "/static/js/2.ca8a30ff.chunk.js",
-    "static/js/2.ca8a30ff.chunk.js.map": "/static/js/2.ca8a30ff.chunk.js.map",
+    "static/js/2.8e2f31fc.chunk.js": "/static/js/2.8e2f31fc.chunk.js",
+    "static/js/2.8e2f31fc.chunk.js.map": "/static/js/2.8e2f31fc.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.f074a7a5c9123e84b146e1f21272a4a1.js": "/precache-manifest.f074a7a5c9123e84b146e1f21272a4a1.js",
+    "precache-manifest.3b2e51f024d050007ab1567bb607e0e8.js": "/precache-manifest.3b2e51f024d050007ab1567bb607e0e8.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.a325614d.chunk.css.map": "/static/css/2.a325614d.chunk.css.map",
     "static/css/main.5b2d482c.chunk.css.map": "/static/css/main.5b2d482c.chunk.css.map",
-    "static/js/2.ca8a30ff.chunk.js.LICENSE.txt": "/static/js/2.ca8a30ff.chunk.js.LICENSE.txt",
+    "static/js/2.8e2f31fc.chunk.js.LICENSE.txt": "/static/js/2.8e2f31fc.chunk.js.LICENSE.txt",
     "static/media/Annette-Baumgarten.jpg": "/static/media/Annette-Baumgarten.4a291657.jpg",
     "static/media/Bayleigh-Reedy.jpg": "/static/media/Bayleigh-Reedy.666e5f58.jpg",
     "static/media/Evie-Frawley.jpg": "/static/media/Evie-Frawley.60d7a159.jpg",
@@ -79,7 +79,8 @@
     "static/media/gpv-news.jpg": "/static/media/gpv-news.fd536e3e.jpg",
     "static/media/gpv-opening-hours.jpg": "/static/media/gpv-opening-hours.98c51ef6.jpg",
     "static/media/gpv-private-billed-medical-centre.png": "/static/media/gpv-private-billed-medical-centre.3f998dcd.png",
-    "static/media/gpv-telehealth-service.jpg": "/static/media/gpv-telehealth-service.9d2c7c2e.jpg",
+    "static/media/gpv-telehealth-service.jpg": "/static/media/gpv-telehealth-service.20f0c48c.jpg",
+    "static/media/gpv-telehealth-service2.jpg": "/static/media/gpv-telehealth-service2.9d2c7c2e.jpg",
     "static/media/gpv-telehealth.png": "/static/media/gpv-telehealth.2be9ba8d.png",
     "static/media/gpv.png": "/static/media/gpv.d7142055.png",
     "static/media/happy-Anniversary-news.jpg": "/static/media/happy-Anniversary-news.2df1bf24.jpg",
@@ -145,8 +146,8 @@
   "entrypoints": [
     "static/js/runtime-main.e2e433b3.js",
     "static/css/2.a325614d.chunk.css",
-    "static/js/2.ca8a30ff.chunk.js",
+    "static/js/2.8e2f31fc.chunk.js",
     "static/css/main.5b2d482c.chunk.css",
-    "static/js/main.95ee7968.chunk.js"
+    "static/js/main.d6c1d369.chunk.js"
   ]
 }
