@@ -1089,7 +1089,8 @@ function LandingPage() {
                     <Container>
                         <div className="landing-section-heading">
                             <h2 className="landing-section-title">
-                                The Doctors and Support Team
+                              The Doctors
+                                {/* The Doctors and Support Team */}
                             </h2>
 
                             <p className="landing-section-description">

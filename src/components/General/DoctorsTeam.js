@@ -5,6 +5,33 @@ import BookingButton from "./BookingButton";
 const DEFAULT_COLUMNS = 4;
 const MAX_VISIBLE_LANGUAGES = 2;
 
+// SVG Text Wrapper component to dynamically compress text to 1 line
+const SingleLineName = ({ text }) => {
+    const targetWidth = Math.max(text.length * 10, 160);
+    
+    return (
+        <svg
+            viewBox={`0 0 ${targetWidth} 24`}
+            className="doctor-team-name-svg"
+            aria-label={text}
+            role="img"
+        >
+            <text
+                x="0"
+                y="18"
+                textLength={targetWidth}
+                lengthAdjust="spacingAndGlyphs"
+                fill="#2f3136"
+                fontSize="18"
+                fontWeight="700"
+                fontFamily="inherit"
+            >
+                {text}
+            </text>
+        </svg>
+    );
+};
+
 const DoctorsTeam = ({
     staffData = [],
     columns = DEFAULT_COLUMNS,
@@ -60,9 +87,9 @@ const DoctorsTeam = ({
                 }
 
                 .doctor-team-item {
-                    min-height: 166px;
+                    min-height: 165px;
                     height: 100%;
-                    padding: 20px 0 14px;
+                    padding: 16px 0 12px;
                     border-bottom: 1px solid #ececec;
                     display: flex;
                     align-items: stretch;
@@ -70,20 +97,22 @@ const DoctorsTeam = ({
 
                 .doctor-team-row {
                     width: 100%;
+                    height: 100%;
                     display: grid;
-                    grid-template-columns: 94px minmax(0, 1fr) 24px;
-                    gap: 12px;
-                    align-items: start;
+                    grid-template-columns: 104px minmax(0, 1fr) 24px;
+                    gap: 14px;
+                    align-items: stretch;
                 }
 
                 .doctor-team-avatar {
-                    width: 94px;
-                    height: 94px;
+                    width: 104px;
+                    height: 104px;
                     border-radius: 50%;
                     overflow: hidden;
                     background: #7d73d8;
                     box-shadow: 0 0 0 2px rgba(125, 115, 216, 0.12);
                     flex-shrink: 0;
+                    align-self: start;
                 }
 
                 .doctor-team-avatar img {
@@ -100,7 +129,7 @@ const DoctorsTeam = ({
                     align-items: center;
                     justify-content: center;
                     color: #ffffff;
-                    font-size: 24px;
+                    font-size: 28px;
                     font-weight: 800;
                 }
 
@@ -109,15 +138,18 @@ const DoctorsTeam = ({
                     height: 100%;
                     display: flex;
                     flex-direction: column;
+                    padding-top: 2px;
                 }
 
                 .doctor-team-name {
-                    margin: 0 0 9px;
-                    color: #2f3136;
-                    font-size: 16px;
-                    font-weight: 700;
+                    margin: 0 0 6px;
                     line-height: 1.18;
-                    letter-spacing: -0.01em;
+                }
+
+                .doctor-team-name-svg {
+                    width: 100%;
+                    height: 24px;
+                    display: block;
                 }
 
                 .doctor-team-languages {
@@ -167,24 +199,26 @@ const DoctorsTeam = ({
                     color: #267747;
                 }
 
+                /* Reduced gap between languages and booking button */
                 .doctor-team-booking {
                     display: flex;
                     align-items: center;
                     margin-top: 10px;
+                    padding-top: 0;
                 }
 
                 .doctor-team-booking-button {
-                    min-width: 132px !important;
+                    min-width: 140px !important;
                     width: auto !important;
-                    min-height: 31px !important;
-                    height: 31px !important;
-                    padding: 0 14px !important;
+                    min-height: 33px !important;
+                    height: 33px !important;
+                    padding: 0 16px !important;
                     margin: 0 !important;
                     border-radius: 999px !important;
                     display: inline-flex !important;
                     align-items: center !important;
                     justify-content: center !important;
-                    font-size: 11px !important;
+                    font-size: 12px !important;
                     font-weight: 700 !important;
                     line-height: 1 !important;
                     white-space: nowrap !important;
@@ -217,14 +251,6 @@ const DoctorsTeam = ({
                     line-height: 1;
                 }
 
-                .doctor-team-empty {
-                    padding: 18px 20px;
-                    color: #64748b;
-                    border: 1px dashed rgba(148, 163, 184, 0.35);
-                    border-radius: 18px;
-                    background: rgba(248, 250, 252, 0.9);
-                }
-
                 @media (max-width: 1199px) {
                     .doctors-team-grid {
                         grid-template-columns: repeat(min(3, var(--doctor-team-columns, 4)), minmax(0, 1fr));
@@ -243,36 +269,30 @@ const DoctorsTeam = ({
                     }
 
                     .doctor-team-item {
-                        min-height: 156px;
-                        padding: 18px 0 14px;
+                        min-height: 150px;
+                        padding: 14px 0 12px;
                     }
 
                     .doctor-team-row {
-                        grid-template-columns: 78px minmax(0, 1fr) 24px;
-                        gap: 11px;
+                        grid-template-columns: 88px minmax(0, 1fr) 24px;
+                        gap: 12px;
                     }
 
                     .doctor-team-avatar {
-                        width: 78px;
-                        height: 78px;
+                        width: 88px;
+                        height: 88px;
                     }
 
-                    .doctor-team-name {
-                        font-size: 16px;
-                    }
-
-                    .doctor-team-language-pill {
-                        height: 21px;
-                        padding: 0 7px;
-                        font-size: 10px;
+                    .doctor-team-meta {
+                        padding-top: 2px;
                     }
 
                     .doctor-team-booking-button {
-                        min-width: 124px !important;
-                        min-height: 29px !important;
-                        height: 29px !important;
-                        padding: 0 12px !important;
-                        font-size: 10.5px !important;
+                        min-width: 130px !important;
+                        min-height: 30px !important;
+                        height: 30px !important;
+                        padding: 0 14px !important;
+                        font-size: 11px !important;
                     }
                 }
             `}</style>
@@ -281,6 +301,7 @@ const DoctorsTeam = ({
                 {visibleStaff.map((person, index) => {
                     const name = getName(person);
                     const titleAbr = getTitleAbr(person);
+                    const fullName = `${titleAbr ? `${titleAbr} ` : ""}${name}`;
                     const image = getImage(person);
                     const languages = getLanguages(person);
                     const visibleLanguages = languages.slice(0, MAX_VISIBLE_LANGUAGES);
@@ -307,8 +328,7 @@ const DoctorsTeam = ({
 
                                 <div className="doctor-team-meta">
                                     <h3 className="doctor-team-name">
-                                        {titleAbr ? `${titleAbr} ` : ""}
-                                        {name}
+                                        <SingleLineName text={fullName} />
                                     </h3>
 
                                     {languages.length > 0 ? (
@@ -361,14 +381,6 @@ const DoctorsTeam = ({
                                             <i className="fa fa-angle-right" aria-hidden="true" />
                                         </a>
                                     ) : (
-                                        // <Link
-                                        //     className="doctor-team-arrow"
-                                        //     to={{
-                                        //         pathname: detailsHref,
-                                        //         state: { doctor: person }
-                                        //     }}
-                                        //     aria-label={`View details for ${name}`}
-                                        // >
                                         <Link
                                             className="doctor-team-arrow"
                                             to={`/doctor-details/${index}`}
