@@ -866,11 +866,16 @@ function LandingPage() {
                                     explore services, or connect with the clinic through telehealth.
                                 </p>
 
-                                <div className="landing-hero-actions">
-                                    <BookingButton
+                                <div className="landing-hero-actions"> 
+                                    <a href="#doctorsSection">
+                                        <Button color="info" size="lg">
+                                            Find a Doctor
+                                        </Button>
+                                    </a>
+                                    {/* <BookingButton
                                         size="large"
                                         label="Book Appointment"
-                                    />
+                                    /> */}
 
                                     <a href="#services">
                                         <Button color="info" outline size="lg">
@@ -973,7 +978,7 @@ function LandingPage() {
 
                             </Col>
 
-                            <Col lg="6">
+                            <Col lg="6" id="openingHoursSection">
                                 {/* <div className="landing-hero-panel"> */}
                                     {/* <div className="landing-billing-summary"> */}
                                         <OpeningHours2 />
@@ -1085,7 +1090,7 @@ function LandingPage() {
                     </Container>
                 </section>
 
-                <section className="landing-section">
+                <section className="landing-section" id="doctorsSection">
                     <Container>
                         <div className="landing-section-heading">
                             <h2 className="landing-section-title">
@@ -1110,17 +1115,17 @@ function LandingPage() {
                 </section>
 
                 <div className="landing-mobile-sticky d-md-none">
-                    <Link to="/booking" className="w-100">
-                        <Button color="info" className="w-100">
-                            Book
+                    <a href="#doctorsSection"  className="w-100">
+                        <Button color="info"  className="w-100">
+                            Doctors
                         </Button>
-                    </Link>
+                    </a>
                     <a href="#services" className="w-100">
                         <Button color="info" outline className="w-100">
                             Services
                         </Button>
                     </a>
-                    <a href="#hours" className="w-100">
+                    <a href="#openingHoursSection" className="w-100">
                         <Button color="info" outline className="w-100">
                             Hours
                         </Button>
