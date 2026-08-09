@@ -35,6 +35,60 @@ function HomeNavbar() {
   });
   return (
     <>
+      <style>{`
+        @media screen and (max-width: 991px) {
+          /* Stop the background body/wrapper from sliding left and creating white space */
+          html.nav-open body,
+          html.nav-open .wrapper,
+          html.nav-open .main,
+          html.nav-open .fixed-top {
+            transform: none !important;
+            -webkit-transform: none !important;
+            left: 0 !important;
+          }
+
+          /* Make the blue sidebar expand to fill the screen space */
+          .navbar-collapse {
+            position: fixed !important;
+            display: block !important;
+            top: 0 !important;
+            right: 0 !important;
+            height: 100vh !important;
+            /* Drastically widen the menu drawer to eliminate white space */
+            width: 80vw !important; 
+            max-height: 100vh !important;
+            overflow-y: auto !important;
+            padding: 80px 30px 20px 40px !important;
+            /* Start hidden completely off-screen to the right */
+            transform: translate3d(80vw, 0, 0) !important;
+            -webkit-transform: translate3d(80vw, 0, 0) !important;
+            transition: all 0.4s cubic-bezier(0.685, 0.0473, 0.346, 1) !important;
+            z-index: 1050 !important;
+          }
+
+          /* Slide the expanded blue menu in smoothly over the page */
+          html.nav-open .navbar-collapse {
+            transform: translate3d(0px, 0, 0) !important;
+            -webkit-transform: translate3d(0px, 0, 0) !important;
+          }
+
+          .navbar-collapse .navbar-nav {
+            padding-left: 0 !important;
+            margin-left: 0 !important;
+          }
+
+          .navbar-collapse .nav-item {
+            width: 100% !important;
+          }
+
+          .navbar-collapse .nav-link {
+            padding: 14px 0 !important;
+            text-align: left !important;
+            font-size: 16px !important;
+          }
+        }
+      `}</style>
+
       {collapseOpen ? (
         <div
           id="bodyClick"
@@ -46,57 +100,14 @@ function HomeNavbar() {
       ) : null}
       <Navbar className={"fixed-top " + navbarColor} color="info" expand="lg">
         <Container>
-          {/* <UncontrolledDropdown className="button-dropdown">
-            <DropdownToggle
-              caret
-              data-toggle="dropdown"
-              href="#pablo"
-              id="navbarDropdown"
-              tag="a"
-              onClick={e => e.preventDefault()}
-            >
-              <span className="button-bar"></span>
-              <span className="button-bar"></span>
-              <span className="button-bar"></span>
-            </DropdownToggle>
-            <DropdownMenu aria-labelledby="navbarDropdown">
-              <DropdownItem header tag="a">
-                Dropdown header
-              </DropdownItem>
-              <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
-                Action
-              </DropdownItem>
-              <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
-                Another action
-              </DropdownItem>
-              <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
-                Something else here
-              </DropdownItem>
-              <DropdownItem divider></DropdownItem>
-              <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
-                Separated link
-              </DropdownItem>
-              <DropdownItem divider></DropdownItem>
-              <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
-                One more separated link
-              </DropdownItem>
-            </DropdownMenu>
-          </UncontrolledDropdown> */}
-
           <div className="navbar-translate">
             <NavbarBrand
-              // href="https://demos.creative-tim.com/now-ui-kit-react/index?ref=nukr-examples-navbar"
-              // href="#navbar-brand"
-              // target="_blank"
               to="/"
               id="navbar-brand"
               tag={Link}
             >
               Home
             </NavbarBrand>
-            {/* <UncontrolledTooltip target="#navbar-brand">
-              Gps on Vermont
-            </UncontrolledTooltip> */}
             <button
               className="navbar-toggler navbar-toggler"
               onClick={() => {
@@ -127,18 +138,6 @@ function HomeNavbar() {
                   Doctors & Support Staff
                 </NavLink>
               </NavItem>
-              {/* 
-              <NavItem>
-                <NavLink href="#teamA">
-                  <img
-                    alt="..."
-                    // className="rounded-circle img-fluid img-raised "
-                    className="logo-menu"
-                    src={require("../../assets/img/GPV.png")}
-                  ></img>
-                </NavLink>
-              </NavItem> */}
-
               <NavItem>
                 <NavLink to="/services-page" tag={Link}>
                   Medical Services
@@ -149,11 +148,6 @@ function HomeNavbar() {
                   Patient Info
                 </NavLink>
               </NavItem>
-              {/* <NavItem>
-                <NavLink to="/formlinks-page" tag={Link}>
-                  Forms/Links
-                </NavLink>
-              </NavItem> */}
               <NavItem>
                 <NavLink to="/fees-page" tag={Link} >
                   Fees
@@ -174,51 +168,6 @@ function HomeNavbar() {
                   Career
                 </NavLink>
               </NavItem>
-              {/* 
-              <NavItem>
-                <NavLink to="/policy-page" tag={Link}>
-                  Privacy Policy
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href="https://twitter.com/CreativeTim?ref=creativetim"
-                  target="_blank"
-                  id="twitter-tooltip"
-                >
-                  <i className="fab fa-twitter"></i>
-                  <p className="d-lg-none d-xl-none">Twitter</p>
-                </NavLink>
-                <UncontrolledTooltip target="#twitter-tooltip">
-                  Follow us on Twitter
-                </UncontrolledTooltip>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href="https://www.facebook.com/CreativeTim?ref=creativetim"
-                  target="_blank"
-                  id="facebook-tooltip"
-                >
-                  <i className="fab fa-facebook-square"></i>
-                  <p className="d-lg-none d-xl-none">Facebook</p>
-                </NavLink>
-                <UncontrolledTooltip target="#facebook-tooltip">
-                  Like us on Facebook
-                </UncontrolledTooltip>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
-                  target="_blank"
-                  id="instagram-tooltip"
-                >
-                  <i className="fab fa-instagram"></i>
-                  <p className="d-lg-none d-xl-none">Instagram</p>
-                </NavLink>
-                <UncontrolledTooltip target="#instagram-tooltip">
-                  Follow us on Instagram
-                </UncontrolledTooltip>
-              </NavItem> */}
             </Nav>
           </Collapse>
         </Container>

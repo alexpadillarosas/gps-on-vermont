@@ -1,5 +1,3 @@
-// Generated: 2026-08-09 15:28 AEST
-
 import React from "react";
 import { Table, Card, CardHeader, CardBody } from "reactstrap";
 
@@ -18,6 +16,43 @@ const TableData = ({
     headers?.[2]?.[0] || "",
     headers?.[3]?.[0] || "",
   ];
+
+  const renderValueContent = (value) => {
+    if (React.isValidElement(value)) return value;
+
+    if (value === null || value === undefined || value === "") {
+      return <span className="fee-value-empty">—</span>;
+    }
+
+    if (typeof value !== "string") {
+      return <span className="fee-value-text">{String(value)}</span>;
+    }
+
+    const trimmed = value.trim();
+    const lower = trimmed.toLowerCase();
+
+    if (lower === "bulk billed") {
+      return (
+        <span className="fee-value-badge fee-value-badge--bulk">
+          Bulk Billed
+        </span>
+      );
+    }
+
+    if (lower === "not applicable") {
+      return (
+        <span className="fee-value-badge fee-value-badge--na">
+          Not Applicable
+        </span>
+      );
+    }
+
+    if (trimmed.startsWith("$")) {
+      return <span className="fee-value-money">{trimmed}</span>;
+    }
+
+    return <span className="fee-value-text">{trimmed}</span>;
+  };
 
   return (
     <>
@@ -92,42 +127,160 @@ const TableData = ({
           background: #ffffff;
         }
 
+        /* DESKTOP TABLE */
         .fee-table-desktop {
+          width: 100%;
           margin-bottom: 0;
+          border-collapse: collapse !important;
+          border-spacing: 0 !important;
         }
 
         .fee-table-desktop thead th {
-          background: #f8fbff;
-          color: #2f3136;
-          font-size: 1rem;
-          font-weight: 700;
-          border-color: #d9e2ec;
+          padding: 16px 18px;
+
+          background: #f4f8ff;
+          color: #334155;
+
+          border-top: 1px solid #dbe6f3 !important;
+          border-bottom: 1px solid #dbe6f3 !important;
+          border-right: 1px solid #dbe6f3 !important;
+          border-left: 0 !important;
+
+          font-size: 0.88rem;
+          font-weight: 800;
+          letter-spacing: 0.02em;
+          line-height: 1.4;
+
           vertical-align: middle;
-        }
-
-        .fee-table-desktop tbody th {
-          font-weight: 700;
-          color: #2f3136;
-          vertical-align: middle;
-        }
-
-        .fee-table-desktop tbody td {
-          color: #4b5563;
-          vertical-align: middle;
-        }
-
-        .fee-table-desktop tbody tr:nth-of-type(odd) {
-          background-color: #fcfdff;
-        }
-
-        .fee-table-desktop tbody tr:hover {
-          background-color: #f5f9ff;
+          text-transform: uppercase;
+          text-align: center;
         }
 
         .fee-table-desktop thead th:first-child {
           width: 42%;
+          text-align: left;
+          border-left: 1px solid #dbe6f3 !important;
         }
 
+        .fee-table-desktop thead th:last-child {
+          border-top-right-radius: 0 !important;
+        }
+
+        .fee-table-desktop tbody th,
+        .fee-table-desktop tbody td {
+          padding: 16px 18px;
+
+          background: #ffffff;
+
+          border: 0 !important;
+          border-right: 1px solid #e2e8f0 !important;
+          border-bottom: 1px solid #e2e8f0 !important;
+
+          vertical-align: middle;
+
+          transition: background-color 0.15s ease;
+        }
+
+        .fee-table-desktop tbody th:first-child {
+          border-left: 1px solid #e2e8f0 !important;
+          text-align: left;
+        }
+
+        .fee-table-desktop tbody th,
+        .fee-table-desktop tbody td,
+        .fee-table-desktop tbody tr th:first-child,
+        .fee-table-desktop tbody tr td:last-child {
+          border-radius: 0 !important;
+        }
+
+        .fee-table-desktop tbody tr:nth-child(even) th,
+        .fee-table-desktop tbody tr:nth-child(even) td {
+          background: #fbfdff;
+        }
+
+        .fee-table-desktop tbody tr:hover th,
+        .fee-table-desktop tbody tr:hover td {
+          background: #f5f9ff;
+        }
+
+        .fee-table-desktop tbody th {
+          color: #1f2937;
+          font-weight: 800;
+        }
+
+        .fee-row-main {
+          font-size: 1rem;
+          font-weight: 800;
+          line-height: 1.35;
+          color: #1f2937;
+        }
+
+        .fee-row-sub {
+          margin-top: 3px;
+          color: #64748b;
+          font-size: 0.86rem;
+          font-weight: 600;
+          line-height: 1.3;
+        }
+
+        .fee-value-text {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          line-height: 1.35;
+          color: #334155;
+          font-weight: 600;
+          text-align: center;
+          width: 100%;
+        }
+
+        .fee-value-money {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          color: #1f2937;
+          font-size: 1.03rem;
+          font-weight: 800;
+          line-height: 1.2;
+          text-align: center;
+        }
+
+        .fee-value-empty {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          color: #94a3b8;
+          font-weight: 700;
+          text-align: center;
+        }
+
+        .fee-value-badge {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 7px 11px;
+          border-radius: 999px;
+          font-size: 0.8rem;
+          font-weight: 800;
+          line-height: 1;
+          white-space: nowrap;
+        }
+
+        .fee-value-badge--bulk {
+          background: #eaf7ef;
+          color: #137333;
+          border: 1px solid #cfead7;
+        }
+
+        .fee-value-badge--na {
+          background: #f3f4f6;
+          color: #475569;
+          border: 1px solid #e5e7eb;
+        }
+
+        /* MOBILE TABLE */
         .fee-table-mobile {
           display: none;
           padding: 14px;
@@ -135,20 +288,20 @@ const TableData = ({
         }
 
         .fee-mobile-row {
-          border: 1px solid #d9e2ec;
-          border-radius: 14px;
+          border: 1px solid #e5edf5;
+          border-radius: 18px;
           overflow: hidden;
-          margin-bottom: 12px;
+          margin-bottom: 14px;
           background: #ffffff;
-          box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+          box-shadow: 0 6px 16px rgba(15, 23, 42, 0.05);
         }
 
         .fee-mobile-row-label {
-          padding: 12px 14px;
-          background: #f8fbff;
+          padding: 14px 16px;
+          background: linear-gradient(180deg, #f8fbff 0%, #f4f8ff 100%);
           border-bottom: 1px solid #e5edf5;
-          font-weight: 700;
-          color: #2f3136;
+          font-weight: 800;
+          color: #1f2937;
           line-height: 1.35;
         }
 
@@ -158,7 +311,7 @@ const TableData = ({
         }
 
         .fee-mobile-value-item {
-          padding: 12px 14px;
+          padding: 12px 16px;
           border-top: 1px solid #eef2f7;
         }
 
@@ -167,16 +320,19 @@ const TableData = ({
         }
 
         .fee-mobile-value-label {
-          font-size: 0.82rem;
-          font-weight: 700;
-          color: #1e3a8a;
+          font-size: 0.74rem;
+          font-weight: 800;
+          color: #2563eb;
           margin-bottom: 4px;
+          letter-spacing: 0.03em;
+          text-transform: uppercase;
         }
 
         .fee-mobile-value {
           font-size: 0.98rem;
-          color: #374151;
-          line-height: 1.4;
+          color: #334155;
+          line-height: 1.45;
+          font-weight: 600;
         }
 
         @media (max-width: 767px) {
@@ -248,7 +404,7 @@ const TableData = ({
         </CardHeader>
 
         <CardBody className="fee-table-body">
-          <Table striped bordered responsive className="fee-table-desktop">
+          <Table responsive className="fee-table-desktop">
             <thead className="fees-table-row">
               <tr>
                 <th>{headers?.[0]?.[0] || ""}</th>
@@ -273,12 +429,12 @@ const TableData = ({
                   {(record.data || []).map((rec, i) =>
                     i === 0 ? (
                       <th key={i} scope="row" className="text-left">
-                        <div>{rec?.[0] || ""}</div>
-                        {rec?.[1] ? <div>{rec[1]}</div> : null}
+                        <div className="fee-row-main">{rec?.[0] || ""}</div>
+                        {rec?.[1] ? <div className="fee-row-sub">{rec[1]}</div> : null}
                       </th>
                     ) : (
-                      <td key={i} style={{ verticalAlign: "middle" }}>
-                        {rec}
+                      <td key={i} style={{ verticalAlign: "middle", textAlign: "center" }}>
+                        {renderValueContent(rec)}
                       </td>
                     )
                   )}
@@ -296,7 +452,7 @@ const TableData = ({
                 <div key={record.rownum} className="fee-mobile-row">
                   <div className="fee-mobile-row-label">
                     <div>{rowLabel?.[0] || ""}</div>
-                    {rowLabel?.[1] ? <div>{rowLabel[1]}</div> : null}
+                    {rowLabel?.[1] ? <div className="fee-row-sub">{rowLabel[1]}</div> : null}
                   </div>
 
                   <div className="fee-mobile-row-values">
@@ -305,7 +461,9 @@ const TableData = ({
                         <div className="fee-mobile-value-label">
                           {mobileColumnHeaders[idx]}
                         </div>
-                        <div className="fee-mobile-value">{value}</div>
+                        <div className="fee-mobile-value">
+                          {renderValueContent(value)}
+                        </div>
                       </div>
                     ))}
                   </div>

@@ -147,12 +147,23 @@ function LandingPage() {
         headerScrolling();
     }, []);
 
+    // const seeMoreComponent = (
+    //     <div className="landing-see-more">
+    //         <Link to="/news">
+    //             <Button color="info" className="landing-see-more-button">
+    //                 See More News
+    //             </Button>
+    //         </Link>
+    //     </div>
+    // );
     const seeMoreComponent = (
         <div className="landing-see-more">
-            <Link to="/news">
-                <Button color="info" className="landing-see-more-button">
-                    See More News
-                </Button>
+            <Link
+                to="/news"
+                className="btn btn-info landing-see-more-button"
+                role="button"
+            >
+                See More News
             </Link>
         </div>
     );
@@ -694,6 +705,8 @@ function LandingPage() {
                     display: flex;
                     justify-content: center;
                     margin-top: 14px;
+                    position: relative;
+                    z-index: 2;
                 }
 
                 .landing-see-more-button {

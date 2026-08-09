@@ -1,57 +1,70 @@
 import React, { useState } from "react";
-import { 
-    Input,
-    InputGroupAddon,
-    InputGroupText,
-    InputGroup } from "reactstrap";
-import { Link } from "react-router-dom";
-
+import {
+  Input,
+  InputGroup,
+  InputGroupAddon,
+  InputGroupText,
+} from "reactstrap";
+import { useHistory } from "react-router-dom";
 
 const SearchNews = () => {
-    // const idFound = keyword.params.pageLink;
+  const history = useHistory();
 
+  const [rightFocus, setRightFocus] = useState(false);
+  const [searchKeyword, setSearchKeyword] = useState("");
 
-    const [rightFocus, setRightFocus] = React.useState(false);
-    const [searchKeyword, setSearchKeyword] = useState("");
+  const handleSearch = () => {
+    const keyword = searchKeyword.trim();
 
-    return (
-        <>
-            <InputGroup className={rightFocus ? "input-group-focus" : ""}>
-                <Input
-                    className="h5 description"
-                    placeholder="Search News"
-                    type="text"
-                    onFocus={() => setRightFocus(true)}
-                    onBlur={() => setRightFocus(false)}
-                    onChange={(event) => { setSearchKeyword(event.target.value)}} />
+    if (!keyword) {
+      return;
+    }
 
-                <InputGroupAddon addonType="append">
-                    <InputGroupText >
-                         {/* onClick={(e) => {console.log('funciono!!!!')} }> */}
-                        {searchKeyword.length > 0 ?
-                        (
-                            <>
-                                <Link to={`/news-search/${searchKeyword}`}>
-                                    <i className=" mr-auto ml-3 pr-1 fa fa-search"></i>
-                                </Link>
-                            </>
-                        ) :
-                        (
-                            <>
-                                <Link to="/#" onClick ={(e)=> {e.preventDefault()}}>
-                                <i className=" mr-auto ml-3 pr-1 fa fa-search"></i>
-                                </Link>
-                            </>
-                        )
-                        }
+    history.push(
+      `/news-search/${encodeURIComponent(keyword)}`
+    );
+  };
 
-                    </InputGroupText>
-                </InputGroupAddon>
-                
-            </InputGroup>
-        </>
-    )
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      handleSearch();
+    }
+  };
+
+  return (
+    <InputGroup
+      className={rightFocus ? "input-group-focus" : ""}
+    >
+      <Input
+        className="h5 description"
+        placeholder="Search News"
+        type="text"
+        value={searchKeyword}
+        onFocus={() => setRightFocus(true)}
+        onBlur={() => setRightFocus(false)}
+        onChange={(event) =>
+          setSearchKeyword(event.target.value)
+        }
+        onKeyDown={handleKeyDown}
+      />
+
+      <InputGroupAddon addonType="append">
+        <InputGroupText
+          onClick={handleSearch}
+          style={{
+            cursor: searchKeyword.trim()
+              ? "pointer"
+              : "default",
+          }}
+          role="button"
+          aria-label="Search news"
+        >
+          <i className="mr-auto ml-3 pr-1 fa fa-search" />
+        </InputGroupText>
+      </InputGroupAddon>
+    </InputGroup>
+  );
 };
-
 
 export default SearchNews;

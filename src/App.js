@@ -69,6 +69,23 @@ const App = () => {
         <Route path="/disclaimer-page" component={DisclaimerPage} />
         
         <Route
+            exact
+            path="/news"
+            render={props => <NewsNavigationPage {...props} />}
+          />
+
+          <Route
+            exact
+            path="/news/all"
+            render={props => <NewsSearchNavigationPage {...props} />}
+          />
+
+          <Route
+            path="/news/id/:pageLink"
+            render={props => <NewsDetailsPage {...props} />}
+          />
+
+        <Route
           path="/doctor-details/:doctorId"
           render={props => (
             <DoctorDetailsPage

@@ -1,18 +1,13 @@
-// Generated: 2026-08-09 15:28 AEST
-
 import React, { useEffect } from "react";
 import { Container } from "reactstrap";
 import { headerScrolling } from "./commons";
 import TableData from "../../components/General/TableData";
 import fees, { doctors } from "../../data/fees-content";
 import DarkFooter from "../../components/Footers/DarkFooter";
-import LandingPageHeader from "../../components/Headers/LandingPageHeader";
 import Doctor from "../../components/General/Doctor";
 import OtherNavbar from "../../components/NavBars/OtherNavbar";
 
 const FeesPage = () => {
-  const message = "";
-
   useEffect(() => {
     headerScrolling();
   }, []);
@@ -20,24 +15,48 @@ const FeesPage = () => {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
     }
   };
 
-  const consultationBadges = [
-    { label: "Standard Consult", targetId: "fee-section-0", type: "standard" },
-    { label: "Short Consult", targetId: "fee-section-0", type: "standard" },
-    { label: "Long Consult", targetId: "fee-section-0", type: "standard" },
-    { label: "Extended Consult", targetId: "fee-section-0", type: "standard" },
-    { label: "Walk In Consultation", targetId: "fee-section-0", type: "standard" },
-    { label: "Telehealth", targetId: "fee-section-0", type: "telehealth" },
-    { label: "Private Billing", targetId: "fee-section-0", type: "private" },
-    { label: "Bulk Billing", targetId: "fee-section-1", type: "promo" },
-    { label: "Pensioners", targetId: "fee-section-1", type: "pensioner" },
+  const quickJumps = [
+    {
+      label: "Private billing",
+      targetId: "fee-section-0",
+      type: "private",
+    },
+    {
+      label: "Bulk billing",
+      targetId: "fee-section-1",
+      type: "bulk",
+    },
+    {
+      label: "Telehealth",
+      targetId: "fee-section-0",
+      type: "telehealth",
+    },
+    {
+      label: "Pensioners",
+      targetId: "fee-section-1",
+      type: "pensioner",
+    },
+  ];
+
+  const consultationTypes = [
+    "Standard consult",
+    "Short consult",
+    "Long consult",
+    "Extended consult",
+    "Walk-in consultation",
   ];
 
   const getDoctorById = (doctorId) =>
-    (Array.isArray(doctors) ? doctors : []).find((doctor) => doctor?.id === doctorId);
+    (Array.isArray(doctors) ? doctors : []).find(
+      (doctor) => doctor?.id === doctorId
+    );
 
   const getDoctorsForFee = (fee) =>
     (Array.isArray(fee?.doctorIds) ? fee.doctorIds : [])
@@ -76,215 +95,500 @@ const FeesPage = () => {
       <OtherNavbar />
 
       <style>{`
-        .fees-page-intro {
+        .fees-page {
+          background: #ffffff;
+          min-height: 100vh;
+        }
+
+        .fees-page-top-space {
+          height: 105px;
+        }
+
+        .fees-page-shell {
           width: 100%;
         }
 
-        .fees-page-intro-banner {
-          background-color: #f0f7ff;
-          border-left: 6px solid #2c7be5;
+        .fees-hero-wrap {
+          width: 100%;
+          margin: 0;
         }
 
-        .fees-page-intro-banner h4 {
-          color: #1e3a8a;
+        .fees-hero-card {
+          position: relative;
+          overflow: hidden;
+          padding: 30px;
+          background:
+            radial-gradient(circle at top right, rgba(59, 130, 246, 0.09), transparent 34%),
+            linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+          border: 1px solid rgba(44, 123, 229, 0.10);
+          border-radius: 26px;
+          box-shadow: 0 12px 34px rgba(15, 23, 42, 0.06);
+        }
+
+        .fees-hero-grid {
+          position: relative;
+          z-index: 1;
+          display: grid;
+          grid-template-columns: minmax(0, 1.6fr) minmax(270px, 0.8fr);
+          gap: 32px;
+          align-items: start;
+        }
+
+        .fees-hero-eyebrow {
+          display: inline-flex;
+          align-items: center;
+          margin-bottom: 14px;
+          padding: 6px 12px;
+          background: #eef5ff;
+          color: #2563eb;
+          border-radius: 999px;
+          font-size: 12px;
+          font-weight: 800;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
+        }
+
+        .fees-hero-title {
+          margin: 0 0 12px;
+          color: #1f2937;
+          font-size: 1.75rem;
+          font-weight: 800;
+          line-height: 1.2;
+          letter-spacing: -0.035em;
+          text-transform: none;
+        }
+
+        .fees-hero-copy {
+          max-width: 680px;
+          margin: 0;
+          color: #64748b;
+          font-size: 1rem;
+          line-height: 1.75;
+          text-transform: none;
+        }
+
+        .fees-consultation-types {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 9px;
+          margin-top: 20px;
+        }
+
+        .fees-type-pill {
+          display: inline-flex;
+          align-items: center;
+          padding: 9px 14px;
+          background: #ffffff;
+          color: #475569;
+          border: 1px solid #e2e8f0;
+          border-radius: 999px;
+          box-shadow: 0 2px 7px rgba(15, 23, 42, 0.035);
+          font-size: 0.9rem;
+          font-weight: 650;
+          white-space: nowrap;
+        }
+
+        .fees-quick-panel {
+          padding: 18px;
+          background: rgba(255, 255, 255, 0.82);
+          border: 1px solid rgba(148, 163, 184, 0.16);
+          border-radius: 20px;
+          box-shadow: 0 8px 22px rgba(15, 23, 42, 0.05);
+        }
+
+        .fees-quick-label {
+          display: block;
+          margin-bottom: 5px;
+          color: #334155;
+          font-size: 0.9rem;
+          font-weight: 800;
+          text-transform: none;
+        }
+
+        .fees-quick-description {
+          margin: 0 0 14px;
+          color: #8491a3;
+          font-size: 0.82rem;
+          line-height: 1.5;
+        }
+
+        .fees-quick-actions {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 9px;
+        }
+
+        .fees-quick-button {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          min-height: 46px;
+          padding: 10px 12px;
+          background: #f8fafc;
+          color: #334155;
+          border: 1px solid #e2e8f0;
+          border-radius: 13px;
+          font-family: inherit;
+          font-size: 0.88rem;
+          font-weight: 700;
+          text-align: left;
+          cursor: pointer;
+          transition:
+            transform 0.18s ease,
+            border-color 0.18s ease,
+            background 0.18s ease,
+            box-shadow 0.18s ease;
+        }
+
+        .fees-quick-button::after {
+          content: "↓";
+          margin-left: 8px;
+          color: #94a3b8;
+          font-size: 0.9rem;
+          font-weight: 700;
+        }
+
+        .fees-quick-button:hover {
+          transform: translateY(-1px);
+          background: #ffffff;
+          border-color: #bfdbfe;
+          box-shadow: 0 6px 15px rgba(15, 23, 42, 0.07);
+        }
+
+        .fees-quick-button:hover::after {
+          color: #2563eb;
+        }
+
+        .fees-quick-button.private:hover {
+          color: #a15c00;
+        }
+
+        .fees-quick-button.bulk:hover {
+          color: #137333;
+        }
+
+        .fees-quick-button.telehealth:hover {
+          color: #4338ca;
+        }
+
+        .fees-quick-button.pensioner:hover {
+          color: #6b21a8;
+        }
+
+        .fees-phone-booking {
+          display: grid;
+          grid-template-columns: auto minmax(0, 1fr);
+          gap: 10px 12px;
+          align-items: center;
+          margin-top: 16px;
+          padding: 15px;
+          background:
+            linear-gradient(
+              135deg,
+              rgba(239, 246, 255, 0.95) 0%,
+              rgba(248, 250, 252, 0.95) 100%
+            );
+          border: 1px solid #dbeafe;
+          border-radius: 16px;
+        }
+
+        .fees-phone-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 38px;
+          height: 38px;
+          grid-row: 1;
+          background: #2563eb;
+          color: #ffffff;
+          border-radius: 12px;
+          font-size: 15px;
+          box-shadow: 0 5px 12px rgba(37, 99, 235, 0.18);
+        }
+
+        .fees-phone-content {
+          display: flex;
+          flex-direction: column;
+          min-width: 0;
+        }
+
+        .fees-phone-label {
+          color: #334155;
+          font-size: 0.88rem;
+          font-weight: 800;
+          line-height: 1.35;
+        }
+
+        .fees-phone-help {
+          margin-top: 2px;
+          color: #7c8a9d;
+          font-size: 0.78rem;
+          line-height: 1.4;
+        }
+
+        .fees-phone-number {
+          grid-column: 1 / -1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          min-height: 44px;
+          margin-top: 2px;
+          padding: 10px 14px;
+          background: #2563eb;
+          color: #ffffff !important;
+          border-radius: 12px;
+          font-size: 0.95rem;
+          font-weight: 800;
+          letter-spacing: 0.01em;
+          text-decoration: none !important;
+          transition:
+            transform 0.18s ease,
+            background 0.18s ease,
+            box-shadow 0.18s ease;
+        }
+
+        .fees-phone-number:hover,
+        .fees-phone-number:focus {
+          background: #1d4ed8;
+          color: #ffffff !important;
+          text-decoration: none !important;
+          transform: translateY(-1px);
+          box-shadow: 0 7px 16px rgba(37, 99, 235, 0.20);
+        }
+
+        .fees-phone-number:active {
+          transform: translateY(0);
+        }
+
+        .fees-hero-note {
+          display: flex;
+          align-items: flex-start;
+          gap: 8px;
+          margin-top: 20px;
+          padding-top: 17px;
+          border-top: 1px solid #edf1f5;
+          color: #64748b;
+          font-size: 0.9rem;
+          line-height: 1.6;
+        }
+
+        .fees-note-icon {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          flex: 0 0 auto;
+          width: 20px;
+          height: 20px;
+          margin-top: 1px;
+          background: #eef5ff;
+          color: #2563eb;
+          border-radius: 50%;
+          font-size: 12px;
+          font-weight: 800;
+        }
+
+        .fees-tables-wrap {
+          margin-top: 26px;
+        }
+
+        .fees-table-section {
+          scroll-margin-top: 95px;
+        }
+
+        @media (max-width: 991px) {
+          .fees-page-top-space {
+            height: 90px;
+          }
+
+          .fees-hero-grid {
+            grid-template-columns: 1fr;
+            gap: 22px;
+          }
+
+          .fees-quick-panel {
+            max-width: none;
+          }
+
+          .fees-quick-actions {
+            grid-template-columns: repeat(4, 1fr);
+          }
         }
 
         @media (max-width: 767px) {
-          .fees-page-intro-banner {
-            padding: 16px !important;
+          .fees-page-top-space {
+            height: 78px;
           }
 
-          .fees-page-intro-banner h4 {
-            font-size: 1.2rem !important;
+          .fees-hero-card {
+            padding: 20px 18px;
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.055);
           }
 
-          .fees-page-intro-banner p {
-            font-size: 0.98rem !important;
+          .fees-hero-title {
+            font-size: 1.35rem;
+            line-height: 1.3;
           }
 
-          .fees-page-intro-banner .btn {
-            font-size: 0.82rem !important;
-            padding: 0.45rem 0.8rem !important;
+          .fees-hero-copy {
+            font-size: 0.95rem;
+            line-height: 1.65;
+          }
+
+          .fees-consultation-types {
+            gap: 7px;
+            margin-top: 17px;
+          }
+
+          .fees-type-pill {
+            padding: 8px 11px;
+            font-size: 0.82rem;
+          }
+
+          .fees-quick-panel {
+            padding: 15px;
+            border-radius: 17px;
+          }
+
+          .fees-quick-actions {
+            grid-template-columns: 1fr 1fr;
+          }
+
+          .fees-quick-button {
+            font-size: 0.82rem;
+          }
+
+          .fees-hero-note {
+            font-size: 0.84rem;
+          }
+
+          .fees-tables-wrap {
+            margin-top: 20px;
+          }
+        }
+
+        @media (max-width: 400px) {
+          .fees-quick-actions {
+            grid-template-columns: 1fr;
+          }
+
+          .fees-type-pill {
+            width: 100%;
           }
         }
       `}</style>
 
-      <LandingPageHeader
-        title={message}
-        imageClassName={"page-header page-header-xsmall"}
-        contentClassName={"content-center-other-pages"}
-        titleClassName={"title-small-header"}
-      />
+      <main className="fees-page">
+        <div className="fees-page-top-space" />
 
-      <Container className="mb-4">
-        <div className="row mx-0">
-          <div className="col-12 px-0">
-            <div
-              className="fees-page-intro fees-page-intro-banner p-4 border-0 rounded text-left shadow-sm"
-              style={{
-                width: "100%",
-                textTransform: "none",
-              }}
-            >
-              <h4
-                className="font-weight-bold mb-2"
-                style={{
-                  fontSize: "1.45rem",
-                  textTransform: "none",
-                  letterSpacing: "-0.3px",
-                }}
-              >
-                Available Consultation Types & Fees
-              </h4>
+        <Container className="fees-page-shell mb-4">
+          <div className="fees-hero-wrap">
+            <div className="fees-hero-card">
+              <div className="fees-hero-grid">
+                <div className="fees-hero-content">
+                  <span className="fees-hero-eyebrow">Fees at a glance</span>
 
-              <p
-                className="text-dark mb-3"
-                style={{
-                  fontSize: "1.05rem",
-                  fontWeight: "500",
-                  textTransform: "none",
-                }}
-              >
-                Select a consultation type or choose a doctor below to view the relevant fee structure.
-              </p>
+                  <h1 className="fees-hero-title">
+                    Available Consultation Types &amp; Fees
+                  </h1>
 
-              <div
-                className="d-flex flex-wrap align-items-center my-3"
-                style={{ gap: "12px" }}
-              >
-                {consultationBadges.map((badge, idx) => {
-                  const isPromo = badge.type === "promo";
-                  const isPrivate = badge.type === "private";
-                  const isTelehealth = badge.type === "telehealth";
-                  const isPensioner = badge.type === "pensioner";
+                  <p className="fees-hero-copy">
+                    Review the consultation options available, then choose the
+                    relevant billing section to see doctors, fees and
+                    out-of-pocket costs.
+                  </p>
 
-                  return (
-                    <button
-                      key={idx}
-                      onClick={() => scrollToSection(badge.targetId)}
-                      className="btn font-weight-bold px-3 py-2 border-0 shadow-sm"
-                      style={{
-                        background: isPromo
-                          ? "linear-gradient(135deg, #e6f4ea 0%, #d8f0df 100%)"
-                          : isTelehealth
-                          ? "linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%)"
-                          : isPrivate
-                          ? "linear-gradient(135deg, #fff7e6 0%, #ffe9c2 100%)"
-                          : isPensioner
-                          ? "linear-gradient(135deg, #f3f0ff 0%, #e8e1ff 100%)"
-                          : "#ffffff",
-                        color: isPromo
-                          ? "#137333"
-                          : isTelehealth
-                          ? "#4338ca"
-                          : isPrivate
-                          ? "#a15c00"
-                          : isPensioner
-                          ? "#6b21a8"
-                          : "#2c7be5",
-                        border: isPromo
-                          ? "1px solid #bfe3c7"
-                          : isTelehealth
-                          ? "1px solid #c7d2fe"
-                          : isPrivate
-                          ? "1px solid #ffd08a"
-                          : isPensioner
-                          ? "1px solid #d8c7ff"
-                          : "1px solid rgba(44, 123, 229, 0.12)",
-                        borderRadius: "999px",
-                        fontSize: "0.92rem",
-                        textTransform: "none",
-                        cursor: "pointer",
-                        transition: "all 0.18s ease",
-                        boxShadow: isPromo
-                          ? "0 8px 18px rgba(19, 115, 51, 0.14)"
-                          : isTelehealth
-                          ? "0 8px 18px rgba(67, 56, 202, 0.14)"
-                          : isPrivate
-                          ? "0 8px 18px rgba(161, 92, 0, 0.12)"
-                          : isPensioner
-                          ? "0 8px 18px rgba(107, 33, 168, 0.12)"
-                          : "0 4px 10px rgba(44, 123, 229, 0.08)",
-                        letterSpacing: "0.1px",
-                      }}
-                      onMouseEnter={(e) => {
-                        e.currentTarget.style.transform = "translateY(-1px)";
-                        e.currentTarget.style.background = isPromo
-                          ? "#137333"
-                          : isTelehealth
-                          ? "#4338ca"
-                          : isPrivate
-                          ? "#a15c00"
-                          : isPensioner
-                          ? "#6b21a8"
-                          : "#2c7be5";
-                        e.currentTarget.style.color = "#ffffff";
-                      }}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.style.transform = "translateY(0)";
-                        e.currentTarget.style.background = isPromo
-                          ? "linear-gradient(135deg, #e6f4ea 0%, #d8f0df 100%)"
-                          : isTelehealth
-                          ? "linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%)"
-                          : isPrivate
-                          ? "linear-gradient(135deg, #fff7e6 0%, #ffe9c2 100%)"
-                          : isPensioner
-                          ? "linear-gradient(135deg, #f3f0ff 0%, #e8e1ff 100%)"
-                          : "#ffffff";
-                        e.currentTarget.style.color = isPromo
-                          ? "#137333"
-                          : isTelehealth
-                          ? "#4338ca"
-                          : isPrivate
-                          ? "#a15c00"
-                          : isPensioner
-                          ? "#6b21a8"
-                          : "#2c7be5";
-                      }}
+                  <div className="fees-consultation-types">
+                    {consultationTypes.map((type) => (
+                      <span key={type} className="fees-type-pill">
+                        {type}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="fees-hero-note">
+                    <span className="fees-note-icon">i</span>
+                    <span>
+                      Fees can vary depending on the doctor and consultation.
+                      Please review the complete fee tables below.
+                    </span>
+                  </div>
+                </div>
+
+                <aside className="fees-quick-panel">
+                  <span className="fees-quick-label">Find your fees</span>
+
+                  <p className="fees-quick-description">
+                    Jump directly to the relevant billing section.
+                  </p>
+
+                  <div className="fees-quick-actions">
+                    {quickJumps.map((item) => (
+                      <button
+                        key={item.label}
+                        className={`fees-quick-button ${item.type}`}
+                        type="button"
+                        onClick={() => scrollToSection(item.targetId)}
+                      >
+                        <span>{item.label}</span>
+                      </button>
+                    ))}
+                  </div>
+
+                  <div className="fees-phone-booking">
+                    <div className="fees-phone-icon">
+                      <i className="fa fa-phone" aria-hidden="true" />
+                    </div>
+
+                    <div className="fees-phone-content">
+                      <span className="fees-phone-label">
+                        Prefer booking by phone?
+                      </span>
+
+                      <span className="fees-phone-help">
+                        Our reception team is happy to help.
+                      </span>
+                    </div>
+
+                    <a
+                      href="tel:+61260252189"
+                      className="fees-phone-number"
+                      aria-label="Call GPs on Vermont on 02 6025 2189"
                     >
-                      {badge.label}
-                    </button>
-                  );
-                })}
-              </div>
-
-              <div
-                className="d-flex align-items-center pt-3 mt-3"
-                style={{ borderTop: "1px solid rgba(44, 123, 229, 0.15)" }}
-              >
-                <span
-                  className="text-muted font-weight-bold"
-                  style={{ fontSize: "0.95rem", textTransform: "none" }}
-                >
-                  Please review the complete fee structures and out-of-pocket costs below:
-                </span>
+                      02 6025 2189
+                    </a>
+                  </div>
+                </aside>
               </div>
             </div>
           </div>
+        </Container>
+
+        <div className="fees-tables-wrap">
+          {fees.map((fee, index) => {
+            const doctorList = getDoctorsForFee(fee);
+
+            return (
+              <section
+                id={`fee-section-${index}`}
+                key={index}
+                className="fees-table-section"
+              >
+                <Container className="text-muted mb-4">
+                  <TableData
+                    feeData={fee}
+                    index={index}
+                    headerRightContent={renderHeaderDoctors(doctorList)}
+                    headerTitle={tableTitles[index] || fee.title}
+                    showDoctorLabel={false}
+                  />
+                </Container>
+              </section>
+            );
+          })}
         </div>
-      </Container>
-
-      {fees.map((fee, index) => {
-        const doctorList = getDoctorsForFee(fee);
-
-        return (
-          <div
-            id={`fee-section-${index}`}
-            key={index}
-            style={{ scrollMarginTop: "100px" }}
-          >
-            <Container className="text-muted mb-4">
-              <TableData
-                feeData={fee}
-                index={index}
-                headerRightContent={renderHeaderDoctors(doctorList)}
-                headerTitle={tableTitles[index] || fee.title}
-                showDoctorLabel={false}
-              />
-            </Container>
-          </div>
-        );
-      })}
+      </main>
 
       <DarkFooter />
     </>

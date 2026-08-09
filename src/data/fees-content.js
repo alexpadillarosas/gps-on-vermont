@@ -64,7 +64,7 @@ export const doctors = [
   {
     id: 7,
     titleAbr: "Dr",
-    name: "Virajinee",
+    name: "Virajinee Rathnayake",
     bookingDoctorId: "dr-virajinee-rathnayake",
     image: "dr-virajinee.jpg",
     profileLink: "/doctor-details/virajinee-rathnayake",
