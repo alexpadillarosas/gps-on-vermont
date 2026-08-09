@@ -1,5 +1,6 @@
 const staff = [
   {
+    id: 1,
     titleAbr: "Dr.",
     title: "Doctor",
     name: "Carmen Padilla",
@@ -26,6 +27,7 @@ const staff = [
     doctor: true
   },
   {
+    id: 2,
     titleAbr: "Dr.",
     title: "Doctor",
     name: "Angela Ramsay",
@@ -51,6 +53,7 @@ const staff = [
     doctor: true
   },
   {
+    id: 4,
     titleAbr: "Dr.",
     title: "Doctor",
     name: "Buddhi Lokuketagoda",
@@ -79,6 +82,7 @@ const staff = [
     doctor: true
   },
   {
+    id: 3,
     titleAbr: "Dr.",
     title: "Doctor",
     name: "Elena Douse",
@@ -107,6 +111,7 @@ const staff = [
     doctor: true
   },
   {
+    id: 8,
     titleAbr: "Dr.",
     title: "Doctor",
     name: "Richard Barkas",
@@ -132,6 +137,7 @@ const staff = [
     doctor: true
   },
   {
+    id: 9,
     titleAbr: "Dr.",
     title: "Doctor",
     name: "Joyce Manthi",
@@ -157,6 +163,7 @@ const staff = [
     doctor: true
   },
   {
+    id: 5,
     titleAbr: "Dr.",
     title: "Doctor",
     name: "Tharuka Gunasekara",
@@ -183,6 +190,7 @@ const staff = [
     doctor: true
   },
   {
+    id: 6,
     titleAbr: "Dr.",
     title: "Doctor",
     name: "Sampath Aluthge",
@@ -209,6 +217,7 @@ const staff = [
     doctor: true
   },
   {
+    id: 7,
     titleAbr: "Dr.",
     title: "Doctor",
     name: "Virajinee Rathnayake",
@@ -237,6 +246,7 @@ const staff = [
     doctor: true
   },
   {
+    id: 10,
     titleAbr: "Dr.",
     title: "Doctor",
     name: "Hooman Pio",
@@ -262,6 +272,7 @@ const staff = [
     doctor: true
   },
   {
+    id: 11,
     titleAbr: "Pm.",
     title: "Practice Manager",
     name: "Annette Baumgarten",
@@ -304,6 +315,7 @@ const staff = [
     doctor: false
   },
   {
+    id: 12,
     titleAbr: "Pm.",
     title: "Practice Manager",
     name: "Liz Caunt",
@@ -342,6 +354,7 @@ const staff = [
     doctor: false
   },
   {
+    id: 13,
     titleAbr: "Pm",
     title: "Nursing Manager",
     name: "Megan",
@@ -372,6 +385,7 @@ const staff = [
     doctor: false
   },
   {
+    id: 14,
     titleAbr: "Pn.",
     title: "Practice Nurse",
     name: "Lara",
@@ -397,6 +411,7 @@ const staff = [
     doctor: false
   },
   {
+    id: 15,
     titleAbr: "Pm",
     title: "Mental Health Social Worker",
     name: "Jen Walker",
@@ -425,6 +440,7 @@ const staff = [
     doctor: false
   },
   {
+    id: 16,
     titleAbr: "Ms",
     title: "Receptionist",
     name: "Evie Frawley",
@@ -452,6 +468,7 @@ const staff = [
     doctor: false
   },
   {
+    id: 17,
     titleAbr: "Ms",
     title: "Receptionist",
     name: "Rebecca Smith",
@@ -479,6 +496,7 @@ const staff = [
     doctor: false
   },
   {
+    id: 18,
     titleAbr: "Ms",
     title: "Receptionist",
     name: "Bayleigh Reedy",
@@ -506,6 +524,7 @@ const staff = [
     doctor: false
   },
   {
+    id: 19,
     titleAbr: "Ms",
     title: "Receptionist",
     name: "Summer Matthews",

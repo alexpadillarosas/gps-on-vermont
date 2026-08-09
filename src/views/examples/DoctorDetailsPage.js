@@ -1,5 +1,7 @@
+// Generated: 2026-08-09 15:28 AEST
+
 import React, { useMemo } from "react";
-import { Link, useLocation, useParams } from "react-router-dom";
+import { useHistory, useLocation, useParams } from "react-router-dom";
 import BookingButton from "../../components/General/BookingButton";
 
 const slugify = (value = "") =>
@@ -13,8 +15,8 @@ const slugify = (value = "") =>
 const DoctorDetailsPage = ({ staffData = [] }) => {
     const { doctorId } = useParams();
     const location = useLocation();
+    const history = useHistory();
 
-    // Extract state doctor to a separate variable for static check validation
     const stateDoctor = location?.state?.doctor;
 
     /*
@@ -60,8 +62,7 @@ const DoctorDetailsPage = ({ staffData = [] }) => {
         }
 
         /*
-         * Also support bookingDoctorId/name slugs if you decide
-         * to use them in the URL later.
+         * Also support bookingDoctorId/name/profileLink slugs.
          */
         const key = String(doctorId || "").toLowerCase();
 
@@ -85,10 +86,18 @@ const DoctorDetailsPage = ({ staffData = [] }) => {
                             : person?.name || ""
                     );
 
+                    const profileSlug = slugify(
+                        String(person?.profileLink || "")
+                            .split("/")
+                            .filter(Boolean)
+                            .pop() || ""
+                    );
+
                     return (
                         bookingId === key ||
                         nameSlug === key ||
-                        titleSlug === key
+                        titleSlug === key ||
+                        profileSlug === key
                     );
                 }) || null
             );
@@ -96,6 +105,10 @@ const DoctorDetailsPage = ({ staffData = [] }) => {
 
         return null;
     }, [doctorId, doctors, stateDoctor]);
+
+    const handleBack = () => {
+        history.goBack();
+    };
 
     /*
      * Doctor not found
@@ -127,27 +140,51 @@ const DoctorDetailsPage = ({ staffData = [] }) => {
                         color: #6b7280;
                     }
 
-                    .doctor-details-not-found a {
+                    .doctor-details-back {
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 8px;
+                        margin-bottom: 44px;
                         color: #5c18b4;
+                        font-size: 14px;
                         font-weight: 700;
                         text-decoration: none;
+
+                        /* Button reset */
+                        padding: 0;
+                        border: 0;
+                        background: transparent;
+                        font-family: inherit;
+                        cursor: pointer;
+                    }
+
+                    .doctor-details-back:hover {
+                        color: #44108a;
+                        text-decoration: none;
+                    }
+
+                    .doctor-details-back i {
+                        color: #ff4f61;
+                        font-size: 20px;
                     }
                 `}</style>
 
                 <div className="doctor-details-not-found">
                     <h1>Doctor not found</h1>
 
-                    <p>
-                        The requested doctor could not be found.
-                    </p>
+                    <p>The requested doctor could not be found.</p>
 
-                    <Link to="/">
+                    <button
+                        type="button"
+                        className="doctor-details-back"
+                        onClick={handleBack}
+                    >
                         <i
                             className="fa fa-angle-left"
                             aria-hidden="true"
                         />{" "}
                         Back
-                    </Link>
+                    </button>
                 </div>
             </>
         );
@@ -182,7 +219,6 @@ const DoctorDetailsPage = ({ staffData = [] }) => {
     return (
         <>
             <style>{`
-
                 /* ==========================================
                    PAGE
                 ========================================== */
@@ -205,10 +241,6 @@ const DoctorDetailsPage = ({ staffData = [] }) => {
                     background: #f7f9fb;
                 }
 
-
-                /*
-                 * Subtle decorative background shape
-                 */
                 .doctor-details-header::before {
                     content: "";
                     position: absolute;
@@ -239,7 +271,7 @@ const DoctorDetailsPage = ({ staffData = [] }) => {
 
 
                 /* ==========================================
-                   BACK LINK
+                   BACK LINK / BUTTON
                 ========================================== */
 
                 .doctor-details-back {
@@ -256,6 +288,13 @@ const DoctorDetailsPage = ({ staffData = [] }) => {
                     font-weight: 700;
 
                     text-decoration: none;
+
+                    /* Button reset */
+                    padding: 0;
+                    border: 0;
+                    background: transparent;
+                    font-family: inherit;
+                    cursor: pointer;
                 }
 
                 .doctor-details-back:hover {
@@ -448,7 +487,6 @@ const DoctorDetailsPage = ({ staffData = [] }) => {
                 ========================================== */
 
                 @media (max-width: 991px) {
-
                     .doctor-details-name {
                         font-size: 38px;
                     }
@@ -464,7 +502,6 @@ const DoctorDetailsPage = ({ staffData = [] }) => {
                 ========================================== */
 
                 @media (max-width: 767px) {
-
                     .doctor-details-container {
                         width: calc(100% - 28px);
                     }
@@ -493,32 +530,23 @@ const DoctorDetailsPage = ({ staffData = [] }) => {
             `}</style>
 
             <div className="doctor-details-page">
-
                 <section className="doctor-details-header">
-
                     <div className="doctor-details-container">
-
-                        {/* Back */}
-                        <Link
-                            to="/"
+                        <button
+                            type="button"
                             className="doctor-details-back"
+                            onClick={handleBack}
                         >
                             <i
                                 className="fa fa-angle-left"
                                 aria-hidden="true"
                             />
-
-                            Back to all clinicians
-                        </Link>
-
+                            Back
+                        </button>
 
                         <div className="doctor-details-layout">
-
                             <main className="doctor-details-profile">
-
-                                {/* Doctor image */}
                                 <div className="doctor-details-avatar">
-
                                     {image ? (
                                         <img
                                             src={require(
@@ -531,39 +559,21 @@ const DoctorDetailsPage = ({ staffData = [] }) => {
                                             {name.charAt(0)}
                                         </span>
                                     )}
-
                                 </div>
 
-
-                                {/* Name */}
                                 <h1 className="doctor-details-name">
-
-                                    {titleAbr
-                                        ? `${titleAbr} `
-                                        : ""}
-
+                                    {titleAbr ? `${titleAbr} ` : ""}
                                     {name}
-
                                 </h1>
 
-
-                                {/* Qualifications */}
                                 {qualifications.length > 0 ? (
-
                                     <div className="doctor-details-accreditations">
-
                                         {qualifications.join(", ")}
-
                                     </div>
-
                                 ) : null}
 
-
-                                {/* Languages */}
                                 {languages.length > 0 ? (
-
                                     <div className="doctor-details-languages">
-
                                         <span
                                             className="doctor-details-language-icon"
                                             aria-hidden="true"
@@ -572,26 +582,18 @@ const DoctorDetailsPage = ({ staffData = [] }) => {
                                         </span>
 
                                         {languages.map((language) => (
-
                                             <span
                                                 key={`${name}-${language}`}
                                                 className="doctor-details-language-pill"
                                             >
                                                 {language}
                                             </span>
-
                                         ))}
-
                                     </div>
-
                                 ) : null}
 
-
-                                {/* Booking */}
                                 {booking && bookingDoctorId ? (
-
                                     <div className="doctor-details-booking">
-
                                         <BookingButton
                                             doctorId={bookingDoctorId}
                                             size="medium"
@@ -599,47 +601,24 @@ const DoctorDetailsPage = ({ staffData = [] }) => {
                                             className="doctor-details-booking-button"
                                             mode="doctor"
                                         />
-
                                     </div>
-
                                 ) : null}
 
-
-                                {/* Biography */}
                                 <div className="doctor-details-biography">
-
                                     {biography.length > 0 ? (
-
-                                        biography.map(
-                                            (paragraph, index) => (
-
-                                                <p
-                                                    key={`${name}-bio-${index}`}
-                                                >
-                                                    {paragraph}
-                                                </p>
-
-                                            )
-                                        )
-
+                                        biography.map((paragraph, index) => (
+                                            <p key={`${name}-bio-${index}`}>
+                                                {paragraph}
+                                            </p>
+                                        ))
                                     ) : (
-
-                                        <p>
-                                            No biography is currently available.
-                                        </p>
-
+                                        <p>No biography is currently available.</p>
                                     )}
-
                                 </div>
-
                             </main>
-
                         </div>
-
                     </div>
-
                 </section>
-
             </div>
         </>
     );

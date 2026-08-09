@@ -1,272 +1,211 @@
-const fees = [
-    {
-        title: "Dr Carmen Padilla, Angela Ramsay, and Elena Douse : Private Billing Fees",
-        bookingDoctorId: "",
-        header: [
-            [""],
-            ["Amount Payable", "on the day"],
-            ["Medicare Rebate", "on the day"],
-            ["Out of pocket", "cost"]
+// Generated: 2026-08-09 15:28 AEST
+
+export const doctors = [
+  {
+    id: 1,
+    titleAbr: "Dr",
+    name: "Carmen Padilla",
+    bookingDoctorId: "dr-carmen-padilla-1",
+    image: "dr-carmen-padilla.jpg",
+    profileLink: "/doctor-details/carmen-padilla",
+    speaks: ["English", "Spanish"],
+    accreditations: ["MBBS", "FRACGP"],
+  },
+  {
+    id: 2,
+    titleAbr: "Dr",
+    name: "Angela Ramsay",
+    bookingDoctorId: "dr-angela-ramsay",
+    image: "dr-ramsay.jpg",
+    profileLink: "/doctor-details/angela-ramsay",
+    speaks: ["English"],
+    accreditations: ["MBBS", "FRACGP"],
+  },
+  {
+    id: 3,
+    titleAbr: "Dr",
+    name: "Elena Douse",
+    bookingDoctorId: "dr-elena-douse-1",
+    image: "dr-douse.jpg",
+    profileLink: "/doctor-details/elena-douse",
+    speaks: ["English"],
+    accreditations: ["MBBS", "FRACGP"],
+  },
+  {
+    id: 4,
+    titleAbr: "Dr",
+    name: "Buddhi Lokuketagoda",
+    bookingDoctorId: "dr-buddhi-lokuketagoda",
+    image: "dr-lokuketagoda.jpg",
+    profileLink: "/doctor-details/buddhi-lokuketagoda",
+    speaks: ["English"],
+    accreditations: ["MBBS"],
+  },
+  {
+    id: 5,
+    titleAbr: "Dr",
+    name: "Tharuka Gunasekara",
+    bookingDoctorId: "dr-tharuka-gunasekara",
+    image: "dr-tharuka.jpg",
+    profileLink: "/doctor-details/tharuka-gunasekara",
+    speaks: ["English", "Sinhalese"],
+    accreditations: ["MBBS"],
+  },
+  {
+    id: 6,
+    titleAbr: "Dr",
+    name: "Sampath Aluthge",
+    bookingDoctorId: "dr-sampath-aluthge",
+    image: "dr-sampath.jpg",
+    profileLink: "/doctor-details/sampath-aluthge",
+    speaks: ["English", "Sinhalese"],
+    accreditations: ["MBBS"],
+  },
+  {
+    id: 7,
+    titleAbr: "Dr",
+    name: "Virajinee",
+    bookingDoctorId: "dr-virajinee-rathnayake",
+    image: "dr-virajinee.jpg",
+    profileLink: "/doctor-details/virajinee-rathnayake",
+    speaks: ["English"],
+    accreditations: ["MBBS"],
+  },
+];
+
+export const fees = [
+  {
+    title: "Dr Carmen Padilla, Angela Ramsay, and Elena Douse: Private Billing Fees",
+    doctorIds: [1, 2, 3],
+    header: [
+      [""],
+      ["Amount Payable", "on the day"],
+      ["Medicare Rebate", "on the day"],
+      ["Out of pocket", "cost"],
+    ],
+    row: [
+      {
+        rownum: 1,
+        data: [
+          ["Standard Consult / Telehealth", "(less than 20 minutes)"],
+          "$91.00",
+          "$45.05",
+          "$42.85",
         ],
-        row: [
-            {
-                rownum: 1,
-                data: [
-                    ["Standard Consult / Telehealth", "(less than 20 minutes)"],
-                    "$91.00",
-                    "$45.05",
-                    "$42.85"
-                ]
-
-            },
-            {
-                rownum: 2,
-                data: [
-                    ["Long Consult / Telehealth", "(more than 20 minutes)"],
-                    "$140.00",
-                    "$87.10",
-                    "$52.90"
-                ]
-
-            },
-            {
-                rownum: 3,
-                data: [
-                    ["Extended Consult", " "],
-                    "$180.00",
-                    "$128.35",                   
-                    "$51.65"
-                ]
-
-            },
-            // {
-            //     rownum: 5,
-            //     data: [
-            //         ["Saturday After Hours"],
-            //         "$172.25",
-            //         "$137.25",
-            //         "$35.00"
-            //     ]
-
-            // },
-            {
-                rownum: 7,
-                data: [
-                    ["Pensioner Standard Consult / Telehealth", "(less than 20 minutes)"],
-                    "Bulk Billed",
-                    "Bulk Billed",
-                    "Bulk Billed"
-                ]
-
-            },
-            {
-                rownum: 8,
-                data: [
-                    ["Pensioner Long Consult / Telehealth", "(more than 20 minutes)"],
-                    "Bulk Billed",
-                    "Bulk Billed",
-                    "Bulk Billed"
-                ]
-
-            },
-            {
-                rownum: 9,
-                data: [
-                    ["Pensioner Extended Consult", " "],
-                    "Bulk Billed",
-                    "Bulk Billed",
-                    "Bulk Billed"
-                ]
-
-            },
-            // {
-            //     rownum: 11,
-            //     data: [
-            //         ["Pensioner Saturday After Hours"],
-            //         "157.25",
-            //         "137.25",
-            //         "20.00"
-            //     ]
-
-            // },
-            {
-                rownum: 13,
-                data: [
-                    ["DVA Patients"],
-                    "Bulk Billed",
-                    "Not Applicable",
-                    "Not Applicable"
-                ]
-
-            }
-        ]
-    },
-    {
-        title: "Dr Buddhi, Tharuka, Sampath and Virajinee Fees",
-        bookingDoctorId: "",
-        header: [
-            [""],
-            ["Amount Payable", "on the day"],
-            ["Medicare Rebate", "on the day"],
-            ["Out of pocket", "cost"]
+      },
+      {
+        rownum: 2,
+        data: [
+          ["Long Consult / Telehealth", "(more than 20 minutes)"],
+          "$140.00",
+          "$87.10",
+          "$52.90",
         ],
-        row: [
-            {
-                rownum: 1,
-                data: [
-                    ["Pensioners Health", "Card Holders"],
-                    "Bulk Billed",
-                    "Not Applicable",
-                    "Not Applicable"
-                ]
-
-            },
-            {
-                rownum: 2,
-                data: [
-                    ["Children under 16 yrs", "Adolescents 16-25 yrs"],
-                    "Bulk Billed",
-                    "Not Applicable",
-                    "Not Applicable"
-                ]
-
-            },
-            {
-                rownum: 3,
-                data: [
-                    ["DVA Patients"],
-                    "Bulk Billed",
-                    "Not Applicable",
-                    "Not Applicable"
-                ]
-
-            },
-            {
-                rownum: 4,
-                data: [
-                    ["Standard Consultation 10 minutes"],
-                    "Bulk Billed",
-                    "Not Applicable",
-                    "Not Applicable"
-                ]
-
-            },
-            {
-                rownum: 5,
-                data: [
-                    ["Long Consultation 20 minutes"],
-                    "Bulk Billed",
-                    "Not Applicable",
-                    "Not Applicable"
-                ]
-
-            }
-        ]
-    },
-    // {
-    //     title: "Dr Ramsay: Private Billing Fees",
-    //     bookingDoctorId: "dr-angela-ramsay",
-    //     header: [
-    //         [""],
-    //         ["Amount Payable", "on the day"],
-    //         ["Medicare Rebate", "on the day"],
-    //         ["Out of pocket", "cost"]
-    //     ],
-    //     row: [
-    //         {
-    //             rownum: 1,
-    //             data: [
-    //                 ["Standard Consult / Telehealth", "(less than 20 minutes)"],
-    //                 "$79.00",
-    //                 "$41.20",
-    //                 "$37.80"
-    //             ]
-
-    //         },
-    //         {
-    //             rownum: 2,
-    //             data: [
-    //                 ["Long Consult / Telehealth", "(more than 20 minutes)"],
-    //                 "$120.00",
-    //                 "$79.70",
-    //                 "$37.80"
-    //             ]
-
-    //         },
-    //         {
-    //             rownum: 3,
-    //             data: [
-    //                 ["Extended Consult", "(more than 20 minutes)"],
-    //                 "$154.00",
-    //                 "$117.40",
-    //                 "$36.60"
-    //             ]
-
-    //         },
-    //         {
-    //             rownum: 3,
-    //             data: [
-    //                 ["Pensioner Standard Consult / Telehealth", "(less than 20 minutes)"],
-    //                 "$63.00",
-    //                 "$41.20",
-    //                 "$22.30"
-    //             ]
-
-    //         },
-    //         {
-    //             rownum: 4,
-    //             data: [
-    //                 ["Pensioner Long Consult / Telehealth", "(more than 20 minutes)"],
-    //                 "$102.00",
-    //                 "$79.70",
-    //                 "$21.30"
-    //             ]
-
-    //         },
-    //         {
-    //             rownum: 4,
-    //             data: [
-    //                 ["Extended Consult"],
-    //                 "$139.00",
-    //                 "$117.40",
-    //                 "$22.60"
-    //             ]
-
-    //         },
-    //         {
-    //             rownum: 5,
-    //             data: [
-    //                 ["DVA Patients"],
-    //                 "Bulk Billed",
-    //                 "Not Applicable",
-    //                 "Not Applicable"
-    //             ]
-
-    //         }
-    //     ]
-    // }
-    
-
-]
+      },
+      {
+        rownum: 3,
+        data: [
+          ["Extended Consult", " "],
+          "$180.00",
+          "$128.35",
+          "$51.65",
+        ],
+      },
+      {
+        rownum: 7,
+        data: [
+          ["Pensioner Standard Consult / Telehealth", "(less than 20 minutes)"],
+          "Bulk Billed",
+          "Bulk Billed",
+          "Bulk Billed",
+        ],
+      },
+      {
+        rownum: 8,
+        data: [
+          ["Pensioner Long Consult / Telehealth", "(more than 20 minutes)"],
+          "Bulk Billed",
+          "Bulk Billed",
+          "Bulk Billed",
+        ],
+      },
+      {
+        rownum: 9,
+        data: [
+          ["Pensioner Extended Consult", " "],
+          "Bulk Billed",
+          "Bulk Billed",
+          "Bulk Billed",
+        ],
+      },
+      {
+        rownum: 13,
+        data: [
+          ["DVA Patients"],
+          "Bulk Billed",
+          "Not Applicable",
+          "Not Applicable",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Dr Buddhi, Tharuka, Sampath and Virajinee Fees",
+    doctorIds: [4, 5, 6, 7],
+    header: [
+      [""],
+      ["Amount Payable", "on the day"],
+      ["Medicare Rebate", "on the day"],
+      ["Out of pocket", "cost"],
+    ],
+    row: [
+      {
+        rownum: 1,
+        data: [
+          ["Pensioners Health", "Card Holders"],
+          "Bulk Billed",
+          "Not Applicable",
+          "Not Applicable",
+        ],
+      },
+      {
+        rownum: 2,
+        data: [
+          ["Children under 16 yrs", "Adolescents 16-25 yrs"],
+          "Bulk Billed",
+          "Not Applicable",
+          "Not Applicable",
+        ],
+      },
+      {
+        rownum: 3,
+        data: [
+          ["DVA Patients"],
+          "Bulk Billed",
+          "Not Applicable",
+          "Not Applicable",
+        ],
+      },
+      {
+        rownum: 4,
+        data: [
+          ["Standard Consultation 10 minutes"],
+          "Bulk Billed",
+          "Not Applicable",
+          "Not Applicable",
+        ],
+      },
+      {
+        rownum: 5,
+        data: [
+          ["Long Consultation 20 minutes"],
+          "Bulk Billed",
+          "Not Applicable",
+          "Not Applicable",
+        ],
+      },
+    ],
+  },
+];
 
 export default fees;
-
-/*
-{
-    headers: [
-        "",
-        "Amount Payable on the day",
-        "Medicare Rebate on the day",
-        "Out of pocket cost"
-    ],
-    values: [ 
-        { label: "Pensioners Health Card Holders", value1: "Bulk Billed", value2: "Not Applicable", value3: "Not Applicable" },
-        { label: "Children under 16 yrs Adolescents 16-25 yrs", value1: "Bulk Billed", value2: "Not Applicable", value3: "Not Applicable" },
-        { label: "DVA Patients", value1: "Bulk Billed", value2: "Not Applicable", value3: "Not Applicable" },
-        { label: "Standard Consultation 10 minutes", value1: "$63.20", value2: "$38.20", value3: "$25.00" },
-        { label: "Long Consultation 20 minutes", value1: "$98.95", value2: "$73.95", value3: "$25.00" }
-    ]
-
-}
-
-*/
