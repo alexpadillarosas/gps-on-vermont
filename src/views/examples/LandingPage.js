@@ -8,7 +8,7 @@ import DarkFooter from "../../components/Footers/DarkFooter";
 import BarButtonsLandPageHeader from "../../components/General/BarButtonsLandPageHeader";
 import NewsCardsPreview from "../../components/General/NewsCardsPreview";
 import OpeningHours2 from "../../components/General/OpeninHours2";
-import OurTeam from "../../components/General/OurTeam";
+// import OurTeam from "../../components/General/OurTeam";
 import ServiceCardBlock from "../../components/General/ServiceCardBlock";
 import LandingPageHeader from "../../components/Headers/LandingPageHeader.js";
 import HomeNavbar from "../../components/NavBars/HomeNavbar";
@@ -19,6 +19,7 @@ import TeleHealth from "../../components/General/TeleHealth";
 import SearchNews from "../../components/General/SearchNews";
 import BookingButton from "../../components/General/BookingButton";
 import DoctorsTeam from "../../components/General/DoctorsTeam";
+import PracticeTeam from "../../components/General/PracticeTeam";
 
 function BookIllustration() {
     return (
@@ -1124,6 +1125,25 @@ function LandingPage() {
                                 showBookingButton={true}
                             />
                         </div>
+                    </Container>
+                </section>
+
+                <section className="landing-section">
+                    <Container>
+                        <div className="landing-section-heading">
+                            <h2 className="landing-section-title">
+                                Our Practice Team
+                            </h2>
+
+                            <p className="landing-section-description">
+                                Meet the team supporting your care at GPs on Vermont.
+                            </p>
+                        </div>
+
+                        <PracticeTeam
+                            staffData={staffContent}
+                            columns={3}
+                        />
                     </Container>
                 </section>
 
