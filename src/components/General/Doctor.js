@@ -402,12 +402,12 @@ const Doctor = ({
 
                     border-radius: 999px;
 
-                    background: #e4f7ec;
-
-                    color: #2c8651;
+                    background: #dff7f4;
+                    border: 1px solid #bce8e2;
+                    color: #0a4f4b;
 
                     font-size: 10px;
-                    font-weight: 600;
+                    font-weight: 700;
 
                     line-height: 1;
 
@@ -415,8 +415,9 @@ const Doctor = ({
                 }
 
                 .doctor-team-language-pill.more {
-                    background: #d9f3e4;
-                    color: #267747;
+                    background: #d4f1ed;
+                    border-color: #a9ddd6;
+                    color: #0a4f4b;
                 }
 
                 /*

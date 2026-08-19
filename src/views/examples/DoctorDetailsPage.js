@@ -2,6 +2,8 @@ import React, { useMemo } from "react";
 import { Container } from "reactstrap";
 import { useHistory, useLocation, useParams } from "react-router-dom";
 import BookingButton from "../../components/General/BookingButton";
+import MedicalInterests from "../../components/General/MedicalInterests";
+import medicalInterests from "../../data/medical-interests";
 
 const slugify = (value = "") =>
   String(value)
@@ -89,6 +91,18 @@ const DoctorDetailsPage = ({ staffData = [] }) => {
   const handleBack = () => {
     history.goBack();
   };
+
+  const doctorMedicalInterests = useMemo(() => {
+    const interestIds = Array.isArray(doctor?.medicalInterestIds)
+      ? new Set(doctor.medicalInterestIds.map((id) => Number(id)))
+      : new Set();
+
+    return (Array.isArray(medicalInterests) ? medicalInterests : [])
+      .filter((interest) => interestIds.has(Number(interest?.id)))
+      .sort((a, b) =>
+        String(a?.name || "").localeCompare(String(b?.name || ""))
+      );
+  }, [doctor]);
 
   if (!doctor) {
     return (
@@ -182,6 +196,7 @@ const DoctorDetailsPage = ({ staffData = [] }) => {
     speaks = [],
     booking = false,
     bookingDoctorId = null,
+    medicalInterestIds = [],
   } = doctor;
 
   const qualifications = Array.isArray(accreditations)
@@ -420,8 +435,11 @@ const DoctorDetailsPage = ({ staffData = [] }) => {
           min-height: 30px;
           padding: 5px 11px;
           border-radius: 999px;
+
           background: #dff7f4;
-          color: #267b77;
+          border: 1px solid #bce8e2;
+          color: #0a4f4b;
+
           font-size: 13px;
           font-weight: 700;
           white-space: nowrap;
@@ -666,6 +684,8 @@ const DoctorDetailsPage = ({ staffData = [] }) => {
                     )}
                   </div>
                 </div>
+
+
               </main>
 
               <aside className="doctor-details-sidebar">
@@ -738,7 +758,14 @@ const DoctorDetailsPage = ({ staffData = [] }) => {
                   </a>
                 </div>
               </aside>
+
+
             </div>
+
+                {doctorMedicalInterests.length > 0 ? (
+                  <MedicalInterests interests={doctorMedicalInterests} />
+                ) : null}
+
           </div>
         </Container>
       </div>
@@ -746,4 +773,4 @@ const DoctorDetailsPage = ({ staffData = [] }) => {
   );
 };
 
-export default DoctorDetailsPage;
+export default DoctorDetailsPage
